@@ -4,7 +4,6 @@ import Header from "../components/Header"
 import Banner from '../components/Banner'
 import Footer from '../components/Footer'
 import WhatWeDo from '../components/WhatWeDo'
-import DiscoverArear from '../components/DiscoverArea'
 import Services from '../components/Services'
 import OurTeam from '../components/OurTeam'
 import FactArea from '../components/FactArea'
@@ -19,7 +18,6 @@ const Home = () => (
     
     <Banner></Banner>
     <WhatWeDo></WhatWeDo>
-    <DiscoverArear></DiscoverArear>
     <Services></Services>
     <OurTeam></OurTeam>
     <FactArea></FactArea>

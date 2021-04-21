@@ -8,8 +8,7 @@ export default function Services() {
       <h2>Services We Can Help You With</h2>
       <div className="bar" />
       <p>
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-        eiusmod tempor incididunt ut labore et dolore magna aliqua.
+      We are proficient in highly complex workflows, data structures, and hundreds of API integrations. Check out our common capabilities below!
       </p>
     </div>
     <div className="row">

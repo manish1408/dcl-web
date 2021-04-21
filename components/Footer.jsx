@@ -1,4 +1,5 @@
-import React from 'react'
+import React from 'react';
+import Link from 'next/link';
 
 export default function footer() {
     return (
@@ -8,11 +9,10 @@ export default function footer() {
       <div className="col-lg-3 col-md-6 col-sm-6">
         <div className="single-footer-widget">
           <div className="logo">
-            <a href="#"><img src="assets/img/logo.png" alt="logo" /></a>
+            <a href="#"><img src="assets/img/logo-black.png" alt="logo" /></a>
           </div>
           <p>
-            Quis ipsum suspendisse ultrices gravida. Risus commodo viverra
-            maecenas accumsan lacus vel facilisis.
+          We are an experienced and talented team of passionate developers who get the best of the web without the overhead.
           </p>
         </div>
       </div>
@@ -20,11 +20,10 @@ export default function footer() {
         <div className="single-footer-widget pl-5">
           <h3>Company</h3>
           <ul className="list">
-            <li><a href="#">About Us</a></li>
-            <li><a href="#">Services</a></li>
-            <li><a href="#">Features</a></li>
-            <li><a href="#">Our Pricing</a></li>
-            <li><a href="#">Latest News</a></li>
+            <li><Link href="/about"><a>About</a></Link></li>
+            <li><Link href="/services"><a>Services</a></Link></li>
+            <li><Link href="/projects"><a>Projects</a></Link></li>
+            <li><Link href="/blog"><a>Blog</a></Link></li>
           </ul>
         </div>
       </div>
@@ -32,11 +31,9 @@ export default function footer() {
         <div className="single-footer-widget">
           <h3>Support</h3>
           <ul className="list">
-            <li><a href="#">FAQ's</a></li>
-            <li><a href="#">Privacy Policy</a></li>
-            <li><a href="#">Terms &amp; Condition</a></li>
-            <li><a href="#">Community</a></li>
-            <li><a href="#">Contact Us</a></li>
+            <li><Link href="/faq"><a>FAQ's</a></Link></li>
+            <li><Link href="/contact"><a>Contact</a></Link></li>
+            <li><Link href="/pricing"><a>Hire Us</a></Link></li>
           </ul>
         </div>
       </div>
@@ -45,16 +42,15 @@ export default function footer() {
           <h3>Address</h3>
           <ul className="footer-contact-info">
             <li>
-              <i data-feather="map-pin" /> 27 Division St, New York, NY
-              10002, USA
+              <i data-feather="map-pin" /> 9th Floor, Pride Gateway, S.no.112, Baner Rd, Pune MH (India)
             </li>
             <li>
-              <i data-feather="mail" /> Email:
-              <a href="#"><span className="__cf_email__" data-cfemail="a1d2d5c0d3d5d1e1c6ccc0c8cd8fc2cecc">[email&nbsp;protected]</span></a>
+              <i data-feather="mail" />
+              <a href="#"><span className="__cf_email__">manish.gautam.india@gmail.com</span></a>
             </li>
             <li>
-              <i data-feather="phone-call" /> Phone:
-              <a href="#">+ (321) 984 754</a>
+              <i data-feather="phone-call" />
+              <a href="#">+91 9922533180</a>
             </li>
           </ul>
           <ul className="social-links">
@@ -75,7 +71,7 @@ export default function footer() {
       </div>
       <div className="col-lg-12 col-md-12">
         <div className="copyright-area">
-          <p>Copyright @2020 StartP. All rights reserved</p>
+          <p>Copyright @2021 Distinct Cloud All rights reserved</p>
         </div>
       </div>
     </div>
