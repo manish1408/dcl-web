@@ -33,7 +33,7 @@ export default function about() {
               <i data-feather="mail" />
             </div>
             <h3>Mail Here</h3>
-            <p><a href="#"><span className="__cf_email__">manish.gautam.india@gmail.com</span></a></p>
+            <p><a href="#"><span className="__cf_email__">example@mail.com</span></a></p>
           </div>
         </div>
         <div className="col-lg-4 col-md-6 col-sm-6">
@@ -51,7 +51,7 @@ export default function about() {
               <i data-feather="phone" />
             </div>
             <h3>Call Here</h3>
-            <p><a href="#">+91 9922533180</a></p>
+            <p><a href="#">+91 1234567890</a></p>
           </div>
         </div>
       </div>

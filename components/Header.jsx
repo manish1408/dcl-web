@@ -14,7 +14,7 @@ export default function header() {
         <div className="logo">
           <Link href="/">
             <a>
-              <img src="assets/img/white-logo.png"  alt="logo" />
+              <img src={router.pathname != "/" ? "assets/img/logo-black.png" : "assets/img/white-logo.png"}  alt="logo" />
             </a>
           </Link>
         </div>

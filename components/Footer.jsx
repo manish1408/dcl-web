@@ -46,11 +46,11 @@ export default function footer() {
             </li>
             <li>
               <i data-feather="mail" />
-              <a href="#"><span className="__cf_email__">manish.gautam.india@gmail.com</span></a>
+              <a href="#"><span className="__cf_email__">example@mail.com</span></a>
             </li>
             <li>
               <i data-feather="phone-call" />
-              <a href="#">+91 9922533180</a>
+              <a href="#">+91 1234567890</a>
             </li>
           </ul>
           <ul className="social-links">
