@@ -1,20 +1,28 @@
 import React from 'react'
 
 export default function Banner() {
-    return (
-        <section className="bigdata-analytics-banner">
-  <div className="container">
-    <div className="bigdata-analytics-content">
-      <h1>Better way to build software products</h1>
-      <p>
-        We help companies of all sizes launch software products in a
-        fraction of the time and cost of traditional development.
+  return (
+    <section className="bigdata-analytics-banner">
+      <div className="container">
+        <div className="bigdata-analytics-content">
+          <h1>A better way to build</h1>
+          <p>
+            Distinct cloud offers a suite of software products and services in
+            web, mobile, analytics, complex algos and AI
       </p>
-      <a href="#" className="btn btn-primary">Get Started</a>
 
-    </div>
-  </div>
-  {/* <div className="banner-boxes-area">
+
+          <p>
+            Submit your project or idea and we will get back to you.
+          </p>
+
+          <a href="#" className="btn btn-primary">Start</a>
+
+        </div>
+      </div>
+      {/* 
+    
+      <div className="banner-boxes-area">
     <div className="container">
       <div className="row">
         <div className="col-lg-4 col-md-6 col-sm-6">
@@ -56,7 +64,7 @@ export default function Banner() {
       </div>
     </div>
   </div> */}
-</section>
+    </section>
 
-    )
+  )
 }

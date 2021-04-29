@@ -27,7 +27,7 @@ class MyDocument extends Document {
           <link rel="stylesheet" href="assets/css/slick.min.css" />
           <link rel="stylesheet" href="assets/css/style.css" />
           <link rel="stylesheet" href="assets/css/responsive.css" />
-          <title>Distinct Cloud</title>
+          <title>Distinct Cloud Labs</title>
           <link rel="icon" type="image/png" href="assets/img/favicon.png" />
         </Head>
         <body>

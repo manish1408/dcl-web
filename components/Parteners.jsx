@@ -2,15 +2,11 @@ import React from 'react'
 
 export default function Parteners() {
     return (
-        <section className="industries-serve-area ptb-80">
+        <section className="fbigdata-feedback-area ptb-80">
   <div className="container">
     <div className="section-title">
       <h2>Industries We Serve</h2>
       <div className="bar" />
-      <p>
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-        eiusmod tempor incididunt ut labore et dolore magna aliqua.
-      </p>
     </div>
     <div className="row">
       <div className="col-lg-3 col-6 col-sm-6 col-md-4">
@@ -19,7 +15,7 @@ export default function Parteners() {
             <i className="bx bx-buildings" />
           </div>
           Manufacturing
-          <a href="single-services.html" className="link-btn" />
+          {/* <a href="single-services.html" className="link-btn" /> */}
         </div>
       </div>
       <div className="col-lg-3 col-6 col-sm-6 col-md-4">
@@ -28,7 +24,7 @@ export default function Parteners() {
             <i className="bx bx-building-house" />
           </div>
           Healthcare
-          <a href="single-services.html" className="link-btn" />
+          {/* <a href="single-services.html" className="link-btn" /> */}
         </div>
       </div>
       <div className="col-lg-3 col-6 col-sm-6 col-md-4">
@@ -46,7 +42,7 @@ export default function Parteners() {
             <i className="bx bx-credit-card" />
           </div>
           Banking
-          <a href="single-services.html" className="link-btn" />
+          {/* <a href="single-services.html" className="link-btn" /> */}
         </div>
       </div>
       <div className="col-lg-3 col-6 col-sm-6 col-md-4">
@@ -55,7 +51,7 @@ export default function Parteners() {
             <i className="bx bx-building" />
           </div>
           Real Estate
-          <a href="single-services.html" className="link-btn" />
+          {/* <a href="single-services.html" className="link-btn" /> */}
         </div>
       </div>
       <div className="col-lg-3 col-6 col-sm-6 col-md-4">
@@ -64,7 +60,7 @@ export default function Parteners() {
             <i className="bx bxs-plane-alt" />
           </div>
           Logistics
-          <a href="single-services.html" className="link-btn" />
+          {/* <a href="single-services.html" className="link-btn" /> */}
         </div>
       </div>
       <div className="col-lg-3 col-6 col-sm-6 col-md-4">
@@ -82,7 +78,7 @@ export default function Parteners() {
             <i className="bx bx-bitcoin" />
           </div>
           Capital Markets
-          <a href="single-services.html" className="link-btn" />
+          {/* <a href="single-services.html" className="link-btn" /> */}
         </div>
       </div>
     </div>

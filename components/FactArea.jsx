@@ -2,17 +2,13 @@ import React from 'react'
 
 export default function FactArea() {
     return (
-        <section className="funfacts-area bg-image ptb-80">
+        <section className="industries-serve-area ptb-80">
   <div className="container">
     <div className="section-title">
-      <h2>We always try to understand users expectation</h2>
+      <h2>      We invest our effort only in a few innovative technology companies with farsighted vision</h2>
       <div className="bar" />
-      <p>
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-        eiusmod tempor incididunt ut labore et dolore magna aliqua.
-      </p>
     </div>
-    <div className="row">
+    {/* <div className="row">
       <div className="col-lg-3 col-md-3 col-6 col-sm-6">
         <div className="single-funfact">
           <h3><span className="odometer" data-count={180}>00</span>K</h3>
@@ -37,11 +33,10 @@ export default function FactArea() {
           <p>Contributors</p>
         </div>
       </div>
-    </div>
+    </div> */}
     <div className="contact-cta-box">
-      <h3>Have any question about us?</h3>
-      <p>Don't hesitate to contact us</p>
-      <a href="#" className="btn btn-primary">Contact Us</a>
+      <h3>Submit your project or idea and we will get back to you.</h3>
+      <a href="#" className="btn btn-primary">Start</a>
     </div>
   </div>
 </section>

@@ -18,13 +18,13 @@ const Home = () => (
     
     <Banner></Banner>
     <WhatWeDo></WhatWeDo>
-    <Services></Services>
-    <OurTeam></OurTeam>
+    {/* <Services></Services>
+    <OurTeam></OurTeam> */}
     <FactArea></FactArea>
-    <Feedback></Feedback>
+    {/* <Feedback></Feedback> */}
     <Parteners></Parteners>
-    <Blog></Blog>
-    <Newsletter></Newsletter>
+    {/* <Blog></Blog> */}
+    {/* <Newsletter></Newsletter> */}
 
     <Footer></Footer>
     <div className="go-top"><i data-feather="arrow-up" /></div>
