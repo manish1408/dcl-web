@@ -3,7 +3,7 @@ import Header from '../components/Header';
 import Footer from '../components/Footer';
 import FactArea from '../components/FactArea'
 
-export default function mvp() {
+export default function develop() {
     return (
         <div>
             <Header />
@@ -12,7 +12,7 @@ export default function mvp() {
                     <div className="d-table">
                         <div className="d-table-cell">
                             <div className="container">
-                                <h2>Create a MVP</h2>
+                                <h2>Development Services</h2>
                             </div>
                         </div>
                     </div>

@@ -38,6 +38,11 @@ export default function header() {
               </Link>
             </li>
             <li className="nav-item">
+              <Link href="/develop">
+                <a className={router.pathname == "/develop" ? "nav-link active" : "nav-link"} >Develop</a>
+              </Link>
+            </li>
+            {/* <li className="nav-item">
               <Link href="/services">
                 <a className={router.pathname == "/services" ? "nav-link active" : "nav-link"} >Services</a>
               </Link>
@@ -46,7 +51,7 @@ export default function header() {
               <Link href="/projects">
                 <a className={router.pathname == "/projects" ? "nav-link active" : "nav-link"} >Projects</a>
               </Link>
-            </li>
+            </li> */}
             <li className="nav-item">
               <Link href="/blog">
                 <a className={router.pathname == "/blog" ? "nav-link active" : "nav-link"} >Blog</a>
