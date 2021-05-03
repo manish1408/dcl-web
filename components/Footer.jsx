@@ -12,7 +12,7 @@ export default function footer() {
             <a href="#"><img src="assets/img/logo-black.png" alt="logo" /></a>
           </div>
           <p>
-          We are an experienced and talented team of passionate developers who get the best of the web without the overhead.
+          Distinct cloud offers a suite of software products and services in web, mobile, analytics, complex algos and AI
           </p>
         </div>
       </div>
@@ -21,39 +21,34 @@ export default function footer() {
           <h3>Company</h3>
           <ul className="list">
             <li><Link href="/about"><a>About</a></Link></li>
-            <li><Link href="/services"><a>Services</a></Link></li>
-            <li><Link href="/projects"><a>Projects</a></Link></li>
-            <li><Link href="/blog"><a>Blog</a></Link></li>
+            <li><Link href="/services"><a>Create an MVP</a></Link></li>
+            <li><Link href="/projects"><a>Start a Project</a></Link></li>
           </ul>
         </div>
       </div>
       <div className="col-lg-3 col-md-6 col-sm-6">
         <div className="single-footer-widget">
-          <h3>Support</h3>
+          <h3>Links</h3>
           <ul className="list">
-            <li><Link href="/faq"><a>FAQ's</a></Link></li>
-            <li><Link href="/contact"><a>Contact</a></Link></li>
-            <li><Link href="/pricing"><a>Hire Us</a></Link></li>
+            <li><Link href="/blog"><a>Blog</a></Link></li>
+            <li><Link href="/faq"><a>Privacy policy</a></Link></li>
+            <li><Link href="/contact"><a>Email</a></Link></li>
           </ul>
         </div>
       </div>
       <div className="col-lg-3 col-md-6 col-sm-6">
         <div className="single-footer-widget">
-          <h3>Address</h3>
+          <h3>Contact</h3>
           <ul className="footer-contact-info">
             <li>
               <i data-feather="map-pin" /> 9th Floor, Pride Gateway, S.no.112, Baner Rd, Pune MH (India)
             </li>
             <li>
               <i data-feather="mail" />
-              <a href="#"><span className="__cf_email__">example@mail.com</span></a>
-            </li>
-            <li>
-              <i data-feather="phone-call" />
-              <a href="#">+91 1234567890</a>
+              <a href="#"><span className="__cf_email__">hello@DistinctCloud.com</span></a>
             </li>
           </ul>
-          <ul className="social-links">
+          {/* <ul className="social-links">
             <li>
               <a href="#" className="facebook"><i data-feather="facebook" /></a>
             </li>
@@ -66,7 +61,7 @@ export default function footer() {
             <li>
               <a href="#" className="linkedin"><i data-feather="linkedin" /></a>
             </li>
-          </ul>
+          </ul> */}
         </div>
       </div>
       <div className="col-lg-12 col-md-12">

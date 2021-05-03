@@ -33,8 +33,8 @@ export default function header() {
               </Link>
             </li>
             <li className="nav-item">
-              <Link href="/about">
-                <a className={router.pathname == "/about" ? "nav-link active" : "nav-link"} >About</a>
+              <Link href="/mvp">
+                <a className={router.pathname == "/mvp" ? "nav-link active" : "nav-link"} >MVP</a>
               </Link>
             </li>
             <li className="nav-item">
