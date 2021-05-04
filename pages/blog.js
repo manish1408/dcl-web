@@ -15,7 +15,7 @@ const Index = ({ posts = [] }) => (
   <>
     <Header />
     <PageTitle title="Our Blog" />
-    <p>{JSON.stringify(posts)}</p>
+    {/* <p>{JSON.stringify(posts)}</p> */}
     <section className="blog-area ptb-80">
       <div className="container">
         <DefaultLayout>
@@ -63,11 +63,11 @@ const Index = ({ posts = [] }) => (
                 </div>
               </div>
             ))}
-            <p>
+            {/* <p>
               <Link href="/blogSingle">
                 <a>Detail Page</a>
               </Link>
-            </p>
+            </p> */}
             {/* <div className="col-lg-12 col-md-12">
         <div className="pagination-area">
           <nav aria-label="Page navigation">
