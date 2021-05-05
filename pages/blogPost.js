@@ -10,19 +10,9 @@ import Header from "../components/Header";
 import Footer from "../components/Footer";
 import PageTitle from "../components/PageTitle";
 
-export default class BlogPost extends Component {
-  static async getInitialProps(context) {
-    // we get the slug of the post so that we can
-    // query the API with it
-    const { slug } = context.query;
-    const response = await getBlogPostAPI(slug);
-    return {
-      post: response,
-    };
-  }
 
-  render() {
-    const post = this.props.post.data;
+const BlogPost = ({ post }) => {
+  if (post && post.title) {
     return (
       <>
         <Header />
@@ -65,11 +55,11 @@ export default class BlogPost extends Component {
                             <span className="prev-link-info-wrapper">
                               <span className="prev-title">
                                 Don't buy a tech gift until you read these rules
-                              </span>
+                                </span>
                               <span className="meta-wrapper">
                                 <span className="date-post">
                                   January 21, 2020
-                                </span>
+                                  </span>
                               </span>
                             </span>
                           </a>
@@ -81,11 +71,11 @@ export default class BlogPost extends Component {
                             <span className="next-link-info-wrapper">
                               <span className="next-title">
                                 The golden rule of buying a phone as a gift
-                              </span>
+                                </span>
                               <span className="meta-wrapper">
                                 <span className="date-post">
                                   January 21, 2020
-                                </span>
+                                  </span>
                               </span>
                             </span>
                             <span className="image-next">
@@ -109,6 +99,20 @@ export default class BlogPost extends Component {
 
         <Footer />
       </>
-    );
+    )
+  } else {
+    return (<> </>)
   }
-}
+};
+
+
+BlogPost.getInitialProps = async (ctx) => {
+  // Here we call the API and request 5 documents
+  const slug = ctx.query;
+  const response = await getBlogPostAPI(slug.slug);
+  return {
+    post: response.data,
+  };
+};
+
+export default BlogPost;

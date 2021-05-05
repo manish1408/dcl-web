@@ -1,5 +1,5 @@
 import Prismic from "prismic-javascript";
-import { PRISMIC_API_URL } from "../pages/config";
+import { PRISMIC_API_URL } from "../helpers/config";
 
 const getBlogPostsAPI = async (params) => {
   try {
