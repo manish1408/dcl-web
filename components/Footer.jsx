@@ -9,7 +9,7 @@ export default function footer() {
       <div className="col-lg-3 col-md-6 col-sm-6">
         <div className="single-footer-widget">
           <div className="logo">
-            <a href="#"><img src="assets/img/logo-black.png" alt="logo" /></a>
+            <a href="#"><img src="/assets/img/logo-black.png" alt="logo" /></a>
           </div>
           <p>
           Distinct cloud offers a suite of software products and services in web, mobile, analytics, complex algos and AI
@@ -71,10 +71,10 @@ export default function footer() {
       </div>
     </div>
   </div>
-  <img src="assets/img/map.png" className="map" alt="map" />
-  <div className="shape1"><img src="assets/img/shape1.png" alt="shape" /></div>
+  <img src="/assets/img/map.png" className="map" alt="map" />
+  <div className="shape1"><img src="/assets/img/shape1.png" alt="shape" /></div>
   <div className="shape8 rotateme">
-    <img src="assets/img/shape2.svg" alt="shape" />
+    <img src="/assets/img/shape2.svg" alt="shape" />
   </div>
 </footer>
 

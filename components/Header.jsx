@@ -23,8 +23,8 @@ export default function header() {
                   <img
                     src={
                       router.pathname != "/"
-                        ? "assets/img/logo-black.png"
-                        : "assets/img/white-logo.png"
+                        ?  "/assets/img/logo-black.png"
+                        :  "/assets/img/white-logo.png"
                     }
                     alt="logo"
                   />
@@ -41,8 +41,8 @@ export default function header() {
               <img
                 src={
                   router.pathname != "/"
-                    ? "assets/img/logo-black.png"
-                    : "assets/img/white-logo.png"
+                    ? "/assets/img/logo-black.png"
+                    : "/assets/img/white-logo.png"
                 }
                 alt="logo"
               />

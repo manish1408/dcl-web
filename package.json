@@ -6,7 +6,6 @@
     "build": "next build && next export",
     "start": "next dev"
   },
-  
   "dependencies": {
     "express": "^4.17.1",
     "next": "9.5.5",
@@ -15,5 +14,4 @@
     "react": "16.14.0",
     "react-dom": "16.14.0"
   }
-  
 }

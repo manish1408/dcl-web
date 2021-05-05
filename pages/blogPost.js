@@ -57,7 +57,7 @@ export default class BlogPost extends Component {
                           <a href="#">
                             <span className="image-prev">
                               <img
-                                src="assets/img/blog-image/2.jpg"
+                                src="/assets/img/blog-image/2.jpg"
                                 alt="image"
                               />
                               <span className="post-nav-title">Prev</span>
@@ -90,7 +90,7 @@ export default class BlogPost extends Component {
                             </span>
                             <span className="image-next">
                               <img
-                                src="assets/img/blog-image/3.jpg"
+                                src="/assets/img/blog-image/3.jpg"
                                 alt="image"
                               />
                               <span className="post-nav-title">Next</span>
