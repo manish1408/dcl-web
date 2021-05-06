@@ -9,7 +9,7 @@ import DefaultLayout from "../layouts";
 import Header from "../components/Header";
 import Footer from "../components/Footer";
 import PageTitle from "../components/PageTitle";
-
+import AccessTimeIcon from "@material-ui/icons/AccessTime";
 
 const BlogPost = ({ post }) => {
   if (post && post.title) {
@@ -32,7 +32,7 @@ const BlogPost = ({ post }) => {
                       <div className="entry-meta">
                         <ul>
                           <li>
-                            <i data-feather="clock" />{" "}
+                            <AccessTimeIcon />{" "}
                             <a>{new Date(post.time).toLocaleDateString()}</a>
                           </li>
                         </ul>
@@ -55,11 +55,11 @@ const BlogPost = ({ post }) => {
                             <span className="prev-link-info-wrapper">
                               <span className="prev-title">
                                 Don't buy a tech gift until you read these rules
-                                </span>
+                              </span>
                               <span className="meta-wrapper">
                                 <span className="date-post">
                                   January 21, 2020
-                                  </span>
+                                </span>
                               </span>
                             </span>
                           </a>
@@ -71,11 +71,11 @@ const BlogPost = ({ post }) => {
                             <span className="next-link-info-wrapper">
                               <span className="next-title">
                                 The golden rule of buying a phone as a gift
-                                </span>
+                              </span>
                               <span className="meta-wrapper">
                                 <span className="date-post">
                                   January 21, 2020
-                                  </span>
+                                </span>
                               </span>
                             </span>
                             <span className="image-next">
@@ -99,12 +99,11 @@ const BlogPost = ({ post }) => {
 
         <Footer />
       </>
-    )
+    );
   } else {
-    return (<> </>)
+    return <> </>;
   }
 };
-
 
 BlogPost.getInitialProps = async (ctx) => {
   // Here we call the API and request 5 documents

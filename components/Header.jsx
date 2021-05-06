@@ -1,3 +1,4 @@
+import ArrowUpwardIcon from "@material-ui/icons/ArrowUpward";
 import React from "react";
 import { useRouter } from "next/router";
 import Link from "next/link";
@@ -23,8 +24,8 @@ export default function header() {
                   <img
                     src={
                       router.pathname != "/"
-                        ?  "/assets/img/logo-black.png"
-                        :  "/assets/img/white-logo.png"
+                        ? "/assets/img/logo-black.png"
+                        : "/assets/img/white-logo.png"
                     }
                     alt="logo"
                   />
@@ -167,7 +168,8 @@ export default function header() {
         </div>
       </div>
       <div className="go-top">
-        <i data-feather="arrow-up" />
+        <ArrowUpwardIcon />
+        {/* <i data-feather="arrow-up" /> */}
       </div>
     </header>
   );

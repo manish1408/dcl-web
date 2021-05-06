@@ -5,6 +5,8 @@ import PageTitle from "../components/PageTitle";
 import { linkResolver } from "../helpers";
 import Header from "../components/Header";
 import Footer from "../components/Footer";
+import AddCircleOutlineIcon from "@material-ui/icons/AddCircleOutline";
+
 /**
  * As you can see we are importing our layout here,
  * and below we wrap all of the page in it.
@@ -56,7 +58,7 @@ const Index = ({ posts = [] }) => (
                       passHref
                     >
                       <a className="read-more-btn">
-                        Read More <i data-feather="plus-circle" />
+                        Read More <AddCircleOutlineIcon fontSize="large" />
                       </a>
                     </Link>
                   </div>
