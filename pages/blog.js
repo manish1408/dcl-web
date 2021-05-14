@@ -6,6 +6,8 @@ import { linkResolver } from "../helpers";
 import Header from "../components/Header";
 import Footer from "../components/Footer";
 import AddCircleOutlineIcon from "@material-ui/icons/AddCircleOutline";
+import Prismic from "@prismicio/client";
+// import Search from "../components/Search";
 
 /**
  * As you can see we are importing our layout here,
@@ -17,7 +19,9 @@ const Index = ({ posts = [] }) => (
   <>
     <Header />
     <PageTitle title="Our Blog" />
-    {/* <p>{JSON.stringify(posts)}</p> */}
+    {/* <Search /> */}
+
+    {/* <p>{JSON.stringify(data)}</p> */}
     <section className="blog-area ptb-80">
       <div className="container">
         <DefaultLayout>
@@ -110,6 +114,32 @@ const Index = ({ posts = [] }) => (
     <Footer />
   </>
 );
+
+// // const Prismic = require("@prismicio/client");
+// const apiEndpoint = "https://distinctcloud.prismic.io/api/v2";
+// const client = Prismic.client(apiEndpoint);
+
+// const init = async () => {
+//   const data = await client.query(
+//     Prismic.Predicates.at("document.type", "blog-post"),
+//     { orderings: "[my.blog-post.date desc]" }
+//   );
+// };
+
+// init();
+
+// // // To retrieve the API object check how to query the API
+// // const Prismic = require('@prismicio/client');
+
+// // Prismic.client("https://your-repository-name.cdn.prismic.io/api/v2").then(function(api) {
+// //   return api
+// //   .query([
+// //     Prismic.Predicates.at("document.type", "blog-post"),
+// //     Prismic.Predicates.fulltext("document", "jamstack"),
+// //   ])
+// //   .then(function (custom_response) {
+// //     // response is the response object, response.results holds the documents
+// //   });
 
 Index.getInitialProps = async () => {
   // Here we call the API and request 5 documents

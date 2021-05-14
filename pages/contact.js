@@ -88,6 +88,7 @@ export default function about() {
             </div>
           </div>
         </section>
+
         <section className="contact-area ptb-80">
           <div className="container">
             <div className="section-title">
@@ -100,7 +101,10 @@ export default function about() {
                 <img src="assets/img/1.png" alt="image" />
               </div>
               <div className="col-lg-6 col-md-12">
-                <form id="contactForm">
+                <form
+                  action="https://getform.io/f/5ab6bdb6-7de3-43b0-96c0-7b8f170922cd"
+                  method="POST"
+                >
                   <div className="row">
                     <div className="col-lg-12 col-md-12">
                       <div className="form-group">
@@ -130,7 +134,7 @@ export default function about() {
                         <div className="help-block with-errors" />
                       </div>
                     </div>
-                    <div className="col-lg-12 col-md-6">
+                    {/* <div className="col-lg-12 col-md-6">
                       <div className="form-group">
                         <input
                           type="text"
@@ -143,8 +147,8 @@ export default function about() {
                         />
                         <div className="help-block with-errors" />
                       </div>
-                    </div>
-                    <div className="col-lg-12 col-md-6">
+                    </div> */}
+                    {/* <div className="col-lg-12 col-md-6">
                       <div className="form-group">
                         <input
                           type="text"
@@ -157,19 +161,16 @@ export default function about() {
                         />
                         <div className="help-block with-errors" />
                       </div>
-                    </div>
+                    </div> */}
                     <div className="col-lg-12 col-md-12">
                       <div className="form-group">
-                        <textarea
+                        <input
                           name="message"
-                          className="form-control"
+                          className="form-control message-filed"
                           id="message"
-                          cols={30}
-                          rows={5}
                           required
                           data-error="Write your message"
                           placeholder="Your Message"
-                          defaultValue={""}
                         />
                         <div className="help-block with-errors" />
                       </div>

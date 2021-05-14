@@ -433,92 +433,156 @@ export default function serviceSingle() {
                   </div> */}
                 </div>
               </div>
-              {/* <div className="col-lg-4 col-md-12">
-          <aside className="widget-area" id="secondary">
-            <section className="widget widget_search">
-              <form className="search-form">
-                <label>
-                  <span className="screen-reader-text">Search for:</span>
-                  <input type="search" className="search-field" placeholder="Search..." />
-                </label>
-                <button type="submit"><i data-feather="search" /></button>
-              </form>
-            </section>
-            <section className="widget widget_startp_posts_thumb">
-              <h3 className="widget-title">Popular Posts</h3>
-              <article className="item">
-                <a href="#" className="thumb">
-                  <span className="fullimage cover bg1" role="img" />
-                </a>
-                <div className="info">
-                  <time dateTime="2019-06-30">June 10, 2019</time>
-                  <h4 className="title usmall"><a href="#">Making Peace With The Feast Or Famine Of Freelancing</a></h4>
-                </div>
-                <div className="clear" />
-              </article>
-              <article className="item">
-                <a href="#" className="thumb">
-                  <span className="fullimage cover bg2" role="img" />
-                </a>
-                <div className="info">
-                  <time dateTime="2019-06-30">June 21, 2019</time>
-                  <h4 className="title usmall"><a href="#">I Used The Web For A Day On A 50 MB Budget</a></h4>
-                </div>
-                <div className="clear" />
-              </article>
-              <article className="item">
-                <a href="#" className="thumb">
-                  <span className="fullimage cover bg3" role="img" />
-                </a>
-                <div className="info">
-                  <time dateTime="2019-06-30">June 30, 2019</time>
-                  <h4 className="title usmall"><a href="#">How To Create A Responsive Popup Gallery?</a></h4>
-                </div>
-                <div className="clear" />
-              </article>
-            </section>
-            <section className="widget widget_categories">
-              <h3 className="widget-title">Categories</h3>
-              <ul>
-                <li><a href="#">Business</a></li>
-                <li><a href="#">Privacy</a></li>
-                <li><a href="#">Technology</a></li>
-                <li><a href="#">Tips</a></li>
-                <li><a href="#">Uncategorized</a></li>
-              </ul>
-            </section>
-            <section className="widget widget_archive">
-              <h3 className="widget-title">Archives</h3>
-              <ul>
-                <li><a href="#">May 2019</a></li>
-                <li><a href="#">April 2019</a></li>
-                <li><a href="#">June 2019</a></li>
-              </ul>
-            </section>
-            <section className="widget widget_meta">
-              <h3 className="widget-title">Meta</h3>
-              <ul>
-                <li><a href="#">Log in</a></li>
-                <li><a href="#">Entries <abbr title="Really Simple Syndication">RSS</abbr></a></li>
-                <li><a href="#">Comments <abbr title="Really Simple Syndication">RSS</abbr></a></li>
-                <li><a href="#">WordPress.org</a></li>
-              </ul>
-            </section>
-            <section className="widget widget_tag_cloud">
-              <h3 className="widget-title">Tags</h3>
-              <div className="tagcloud">
-                <a href="#">IT <span className="tag-link-count"> (3)</span></a>
-                <a href="#">Spacle <span className="tag-link-count"> (3)</span></a>
-                <a href="#">Games <span className="tag-link-count"> (2)</span></a>
-                <a href="#">Fashion <span className="tag-link-count"> (2)</span></a>
-                <a href="#">Travel <span className="tag-link-count"> (1)</span></a>
-                <a href="#">Smart <span className="tag-link-count"> (1)</span></a>
-                <a href="#">Marketing <span className="tag-link-count"> (1)</span></a>
-                <a href="#">Tips <span className="tag-link-count"> (2)</span></a>
+              <div className="col-lg-4 col-md-12">
+                <aside className="widget-area" id="secondary">
+                  <section className="widget widget_search">
+                    <form className="search-form">
+                      <label>
+                        <span className="screen-reader-text">Search for:</span>
+                        <input
+                          type="search"
+                          className="search-field"
+                          placeholder="Search..."
+                        />
+                      </label>
+                      <button type="submit">
+                        <i data-feather="search" />
+                      </button>
+                    </form>
+                  </section>
+                  <section className="widget widget_startp_posts_thumb">
+                    <h3 className="widget-title">Popular Posts</h3>
+                    <article className="item">
+                      <a href="#" className="thumb">
+                        <span className="fullimage cover bg1" role="img" />
+                      </a>
+                      <div className="info">
+                        <time dateTime="2019-06-30">June 10, 2019</time>
+                        <h4 className="title usmall">
+                          <a href="#">
+                            Making Peace With The Feast Or Famine Of Freelancing
+                          </a>
+                        </h4>
+                      </div>
+                      <div className="clear" />
+                    </article>
+                    <article className="item">
+                      <a href="#" className="thumb">
+                        <span className="fullimage cover bg2" role="img" />
+                      </a>
+                      <div className="info">
+                        <time dateTime="2019-06-30">June 21, 2019</time>
+                        <h4 className="title usmall">
+                          <a href="#">
+                            I Used The Web For A Day On A 50 MB Budget
+                          </a>
+                        </h4>
+                      </div>
+                      <div className="clear" />
+                    </article>
+                    <article className="item">
+                      <a href="#" className="thumb">
+                        <span className="fullimage cover bg3" role="img" />
+                      </a>
+                      <div className="info">
+                        <time dateTime="2019-06-30">June 30, 2019</time>
+                        <h4 className="title usmall">
+                          <a href="#">
+                            How To Create A Responsive Popup Gallery?
+                          </a>
+                        </h4>
+                      </div>
+                      <div className="clear" />
+                    </article>
+                  </section>
+                  <section className="widget widget_categories">
+                    <h3 className="widget-title">Categories</h3>
+                    <ul>
+                      <li>
+                        <a href="#">Business</a>
+                      </li>
+                      <li>
+                        <a href="#">Privacy</a>
+                      </li>
+                      <li>
+                        <a href="#">Technology</a>
+                      </li>
+                      <li>
+                        <a href="#">Tips</a>
+                      </li>
+                      <li>
+                        <a href="#">Uncategorized</a>
+                      </li>
+                    </ul>
+                  </section>
+                  <section className="widget widget_archive">
+                    <h3 className="widget-title">Archives</h3>
+                    <ul>
+                      <li>
+                        <a href="#">May 2019</a>
+                      </li>
+                      <li>
+                        <a href="#">April 2019</a>
+                      </li>
+                      <li>
+                        <a href="#">June 2019</a>
+                      </li>
+                    </ul>
+                  </section>
+                  <section className="widget widget_meta">
+                    <h3 className="widget-title">Meta</h3>
+                    <ul>
+                      <li>
+                        <a href="#">Log in</a>
+                      </li>
+                      <li>
+                        <a href="#">
+                          Entries{" "}
+                          <abbr title="Really Simple Syndication">RSS</abbr>
+                        </a>
+                      </li>
+                      <li>
+                        <a href="#">
+                          Comments{" "}
+                          <abbr title="Really Simple Syndication">RSS</abbr>
+                        </a>
+                      </li>
+                      <li>
+                        <a href="#">WordPress.org</a>
+                      </li>
+                    </ul>
+                  </section>
+                  <section className="widget widget_tag_cloud">
+                    <h3 className="widget-title">Tags</h3>
+                    <div className="tagcloud">
+                      <a href="#">
+                        IT <span className="tag-link-count"> (3)</span>
+                      </a>
+                      <a href="#">
+                        Spacle <span className="tag-link-count"> (3)</span>
+                      </a>
+                      <a href="#">
+                        Games <span className="tag-link-count"> (2)</span>
+                      </a>
+                      <a href="#">
+                        Fashion <span className="tag-link-count"> (2)</span>
+                      </a>
+                      <a href="#">
+                        Travel <span className="tag-link-count"> (1)</span>
+                      </a>
+                      <a href="#">
+                        Smart <span className="tag-link-count"> (1)</span>
+                      </a>
+                      <a href="#">
+                        Marketing <span className="tag-link-count"> (1)</span>
+                      </a>
+                      <a href="#">
+                        Tips <span className="tag-link-count"> (2)</span>
+                      </a>
+                    </div>
+                  </section>
+                </aside>
               </div>
-            </section>
-          </aside>
-        </div> */}
             </div>
           </div>
         </section>

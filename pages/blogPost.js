@@ -10,89 +10,511 @@ import Header from "../components/Header";
 import Footer from "../components/Footer";
 import PageTitle from "../components/PageTitle";
 import AccessTimeIcon from "@material-ui/icons/AccessTime";
+import { Check, Person, Search } from "@material-ui/icons";
+import CheckIcon from "@material-ui/icons/Check";
+import SearchComponent from "../components/SearchComponent";
+import Prismic from "@prismicio/client";
 
 const BlogPost = ({ post }) => {
+  // const apiEndpoint = "https://distinctcloud.prismic.io/api/v2";
+  // const api = Prismic.client(apiEndpoint);
+
+  // const prevpost = api.query([
+  //   Prismic.Predicates.at("document.type", "blog_post"),
+  //   { pageSize: 1, after: post.id, orderings: "[my.post.date desc]" },
+  // ]);
+  // const nextpost = api.query([
+  //   Prismic.Predicates.at("document.type", "blog_post"),
+  //   { pageSize: 1, after: post.id, orderings: "[my.post.date]" },
+  // ]);
+
   if (post && post.title) {
     return (
       <>
         <Header />
         <PageTitle title={post.title.length ? post.title[0].text : ""} />
+
         <section className="blog-details-area ptb-80">
           <div className="container">
             <div className="row">
-              <article>
-                {/* <DefaultLayout></DefaultLayout> */}
-                {/* {posts.map((post, index) => ( */}
-                <div className="col-lg-12 col-md-12">
-                  <div className="blog-details-desc">
-                    <div className="article-image">
-                      <img src={post.banner_image.url} alt="image" />
-                    </div>
-                    <div className="article-content">
-                      <div className="entry-meta">
-                        <ul>
-                          <li>
-                            <AccessTimeIcon />{" "}
-                            <a>{new Date(post.time).toLocaleDateString()}</a>
-                          </li>
-                        </ul>
-                      </div>
-                      <h3>{post.heading.length ? post.heading[0].text : ""}</h3>
-                      {/* Here we pass our rich text field to Prismics RichText renderer, along with our linkResolver */}
-                      {RichText.render(post.body, linkResolver)}
-                    </div>
-                    <div className="startp-post-navigation">
-                      <div className="prev-link-wrapper">
-                        <div className="info-prev-link-wrapper">
+              <div className="col-lg-8 col-md-12">
+                <div className="blog-details-desc">
+                  <div className="article-image">
+                    <img src={post.banner_image.url} alt="image" />
+                  </div>
+                  <div className="article-content">
+                    <div className="entry-meta">
+                      <ul>
+                        <li>
+                          <AccessTimeIcon />{" "}
                           <a href="#">
-                            <span className="image-prev">
-                              <img
-                                src="/assets/img/blog-image/2.jpg"
-                                alt="image"
-                              />
-                              <span className="post-nav-title">Prev</span>
-                            </span>
-                            <span className="prev-link-info-wrapper">
-                              <span className="prev-title">
-                                Don't buy a tech gift until you read these rules
-                              </span>
-                              <span className="meta-wrapper">
-                                <span className="date-post">
-                                  January 21, 2020
-                                </span>
-                              </span>
-                            </span>
+                            {new Date(post.time).toLocaleDateString()}
                           </a>
-                        </div>
+                        </li>
+                      </ul>
+                    </div>
+                    <div className="blog-content">
+                      {RichText.render(post.body, linkResolver)}{" "}
+                    </div>
+                    {/* <blockquote className="wp-block-quote">
+                      <p>
+                        It is a long established fact that a reader will be
+                        distracted by the readable content of a page when
+                        looking at its layout.
+                      </p>
+                      <cite>Tom Cruise</cite>
+                    </blockquote> */}
+                  </div>
+                  <div className="startp-post-navigation">
+                    {/* <p>{JSON.stringify(prevpost.results)}</p>
+                    <p>{JSON.stringify(nextpost.results)}</p> */}
+                    <div className="prev-link-wrapper">
+                      <div className="info-prev-link-wrapper">
+                        <a href="#">
+                          <span className="image-prev">
+                            <img
+                              src="assets/img/blog-image/2.jpg"
+                              alt="image"
+                            />
+                            <span className="post-nav-title">Prev</span>
+                          </span>
+                          <span className="prev-link-info-wrapper">
+                            <span className="prev-title">
+                              Don't buy a tech gift until you read these rules
+                            </span>
+                            <span className="meta-wrapper">
+                              <span className="date-post">
+                                January 21, 2020
+                              </span>
+                            </span>
+                          </span>
+                        </a>
                       </div>
-                      <div className="next-link-wrapper">
-                        <div className="info-next-link-wrapper">
-                          <a href="#">
-                            <span className="next-link-info-wrapper">
-                              <span className="next-title">
-                                The golden rule of buying a phone as a gift
-                              </span>
-                              <span className="meta-wrapper">
-                                <span className="date-post">
-                                  January 21, 2020
-                                </span>
+                    </div>
+                    <div className="next-link-wrapper">
+                      <div className="info-next-link-wrapper">
+                        <a href="#">
+                          <span className="next-link-info-wrapper">
+                            <span className="next-title">
+                              The golden rule of buying a phone as a gift
+                            </span>
+                            <span className="meta-wrapper">
+                              <span className="date-post">
+                                January 21, 2020
                               </span>
                             </span>
-                            <span className="image-next">
-                              <img
-                                src="/assets/img/blog-image/3.jpg"
-                                alt="image"
-                              />
-                              <span className="post-nav-title">Next</span>
-                            </span>
-                          </a>
-                        </div>
+                          </span>
+                          <span className="image-next">
+                            <img
+                              src="assets/img/blog-image/3.jpg"
+                              alt="image"
+                            />
+                            <span className="post-nav-title">Next</span>
+                          </span>
+                        </a>
                       </div>
                     </div>
                   </div>
+                  {/* <div className="comments-area">
+                    <h3 className="comments-title">2 Comments:</h3>
+                    <ol className="comment-list">
+                      <li className="comment">
+                        <article className="comment-body">
+                          <footer className="comment-meta">
+                            <div className="comment-author vcard">
+                              <img
+                                src="assets/img/client-image/1.jpg"
+                                className="avatar"
+                                alt="image"
+                              />
+                              <b className="fn">John Jones</b>
+                              <span className="says">says:</span>
+                            </div>
+                            <div className="comment-metadata">
+                              <a href="#">
+                                <time>April 24, 2019 at 10:59 am</time>
+                              </a>
+                            </div>
+                          </footer>
+                          <div className="comment-content">
+                            <p>
+                              Lorem Ipsum has been the industry’s standard dummy
+                              text ever since the 1500s, when an unknown printer
+                              took a galley of type and scrambled it to make a
+                              type specimen.
+                            </p>
+                          </div>
+                          <div className="reply">
+                            <a href="#" className="comment-reply-link">
+                              Reply
+                            </a>
+                          </div>
+                        </article>
+                        <ol className="children">
+                          <li className="comment">
+                            <article className="comment-body">
+                              <footer className="comment-meta">
+                                <div className="comment-author vcard">
+                                  <img
+                                    src="assets/img/client-image/2.jpg"
+                                    className="avatar"
+                                    alt="image"
+                                  />
+                                  <b className="fn">Steven Smith</b>
+                                  <span className="says">says:</span>
+                                </div>
+                                <div className="comment-metadata">
+                                  <a href="#">
+                                    <time>April 24, 2019 at 10:59 am</time>
+                                  </a>
+                                </div>
+                              </footer>
+                              <div className="comment-content">
+                                <p>
+                                  Lorem Ipsum has been the industry’s standard
+                                  dummy text ever since the 1500s, when an
+                                  unknown printer took a galley of type and
+                                  scrambled it to make a type specimen.
+                                </p>
+                              </div>
+                              <div className="reply">
+                                <a href="#" className="comment-reply-link">
+                                  Reply
+                                </a>
+                              </div>
+                            </article>
+                          </li>
+                          <ol className="children">
+                            <li className="comment">
+                              <article className="comment-body">
+                                <footer className="comment-meta">
+                                  <div className="comment-author vcard">
+                                    <img
+                                      src="assets/img/client-image/3.jpg"
+                                      className="avatar"
+                                      alt="image"
+                                    />
+                                    <b className="fn">Sarah Taylor</b>
+                                    <span className="says">says:</span>
+                                  </div>
+                                  <div className="comment-metadata">
+                                    <a href="#">
+                                      <time>April 24, 2019 at 10:59 am</time>
+                                    </a>
+                                  </div>
+                                </footer>
+                                <div className="comment-content">
+                                  <p>
+                                    Lorem Ipsum has been the industry’s standard
+                                    dummy text ever since the 1500s, when an
+                                    unknown printer took a galley of type and
+                                    scrambled it to make a type specimen.
+                                  </p>
+                                </div>
+                                <div className="reply">
+                                  <a href="#" className="comment-reply-link">
+                                    Reply
+                                  </a>
+                                </div>
+                              </article>
+                            </li>
+                          </ol>
+                        </ol>
+                      </li>
+                      <li className="comment">
+                        <article className="comment-body">
+                          <footer className="comment-meta">
+                            <div className="comment-author vcard">
+                              <img
+                                src="assets/img/client-image/4.jpg"
+                                className="avatar"
+                                alt="image"
+                              />
+                              <b className="fn">John Doe</b>
+                              <span className="says">says:</span>
+                            </div>
+                            <div className="comment-metadata">
+                              <a href="#">
+                                <time>April 24, 2019 at 10:59 am</time>
+                              </a>
+                            </div>
+                          </footer>
+                          <div className="comment-content">
+                            <p>
+                              Lorem Ipsum has been the industry’s standard dummy
+                              text ever since the 1500s, when an unknown printer
+                              took a galley of type and scrambled it to make a
+                              type specimen.
+                            </p>
+                          </div>
+                          <div className="reply">
+                            <a href="#" className="comment-reply-link">
+                              Reply
+                            </a>
+                          </div>
+                        </article>
+                        <ol className="children">
+                          <li className="comment">
+                            <article className="comment-body">
+                              <footer className="comment-meta">
+                                <div className="comment-author vcard">
+                                  <img
+                                    src="assets/img/client-image/5.jpg"
+                                    className="avatar"
+                                    alt="image"
+                                  />
+                                  <b className="fn">James Anderson</b>
+                                  <span className="says">says:</span>
+                                </div>
+                                <div className="comment-metadata">
+                                  <a href="#">
+                                    <time>April 24, 2019 at 10:59 am</time>
+                                  </a>
+                                </div>
+                              </footer>
+                              <div className="comment-content">
+                                <p>
+                                  Lorem Ipsum has been the industry’s standard
+                                  dummy text ever since the 1500s, when an
+                                  unknown printer took a galley of type and
+                                  scrambled it to make a type specimen.
+                                </p>
+                              </div>
+                              <div className="reply">
+                                <a href="#" className="comment-reply-link">
+                                  Reply
+                                </a>
+                              </div>
+                            </article>
+                          </li>
+                        </ol>
+                      </li>
+                    </ol>
+                    <div className="comment-respond">
+                      <h3 className="comment-reply-title">Leave a Reply</h3>
+                      <form className="comment-form">
+                        <p className="comment-notes">
+                          <span id="email-notes">
+                            Your email address will not be published.
+                          </span>
+                          Required fields are marked
+                          <span className="required">*</span>
+                        </p>
+                        <p className="comment-form-comment">
+                          <label>Comment</label>
+                          <textarea
+                            name="comment"
+                            id="comment"
+                            cols={45}
+                            rows={5}
+                            maxLength={65525}
+                            required="required"
+                            defaultValue={""}
+                          />
+                        </p>
+                        <p className="comment-form-author">
+                          <label>
+                            Name <span className="required">*</span>
+                          </label>
+                          <input
+                            type="text"
+                            id="author"
+                            name="author"
+                            required="required"
+                          />
+                        </p>
+                        <p className="comment-form-email">
+                          <label>
+                            Email <span className="required">*</span>
+                          </label>
+                          <input
+                            type="email"
+                            id="email"
+                            name="email"
+                            required="required"
+                          />
+                        </p>
+                        <p className="comment-form-url">
+                          <label>Website</label>
+                          <input type="url" id="url" name="url" />
+                        </p>
+                        <p className="comment-form-cookies-consent">
+                          <input
+                            type="checkbox"
+                            defaultValue="yes"
+                            name="wp-comment-cookies-consent"
+                            id="wp-comment-cookies-consent"
+                          />
+                          <label htmlFor="wp-comment-cookies-consent">
+                            Save my name, email, and website in this browser for
+                            the next time I comment.
+                          </label>
+                        </p>
+                        <p className="form-submit">
+                          <input
+                            type="submit"
+                            name="submit"
+                            id="submit"
+                            className="submit"
+                            defaultValue="Post Comment"
+                          />
+                        </p>
+                      </form>
+                    </div>
+                  </div> */}
                 </div>
-                {/* ))} */}
-              </article>
+              </div>
+              <div className="col-lg-4 col-md-12">
+                <aside className="widget-area" id="secondary">
+                  <section className="widget widget_search">
+                    {/* <form className="search-form">
+                      <label>
+                        <span className="screen-reader-text">Search for:</span>
+                        <input
+                          type="search"
+                          className="search-field"
+                          placeholder="Search..."
+                        />
+                      </label>
+                      <button type="submit">
+                        <Search />
+                      </button>
+                    </form> */}
+                    <SearchComponent />
+                  </section>
+                  <section className="widget widget_startp_posts_thumb">
+                    <h3 className="widget-title">Popular Posts</h3>
+                    <article className="item">
+                      <a href="#" className="thumb">
+                        <span className="fullimage cover bg1" role="img" />
+                      </a>
+                      <div className="info">
+                        <time dateTime="2019-06-30">June 10, 2019</time>
+                        <h4 className="title usmall">
+                          <a href="#">
+                            Making Peace With The Feast Or Famine Of Freelancing
+                          </a>
+                        </h4>
+                      </div>
+                      <div className="clear" />
+                    </article>
+                    <article className="item">
+                      <a href="#" className="thumb">
+                        <span className="fullimage cover bg2" role="img" />
+                      </a>
+                      <div className="info">
+                        <time dateTime="2019-06-30">June 21, 2019</time>
+                        <h4 className="title usmall">
+                          <a href="#">
+                            I Used The Web For A Day On A 50 MB Budget
+                          </a>
+                        </h4>
+                      </div>
+                      <div className="clear" />
+                    </article>
+                    <article className="item">
+                      <a href="#" className="thumb">
+                        <span className="fullimage cover bg3" role="img" />
+                      </a>
+                      <div className="info">
+                        <time dateTime="2019-06-30">June 30, 2019</time>
+                        <h4 className="title usmall">
+                          <a href="#">
+                            How To Create A Responsive Popup Gallery?
+                          </a>
+                        </h4>
+                      </div>
+                      <div className="clear" />
+                    </article>
+                  </section>
+                  <section className="widget widget_categories">
+                    <h3 className="widget-title">Categories</h3>
+                    <ul>
+                      <li>
+                        <a href="#">Business</a>
+                      </li>
+                      <li>
+                        <a href="#">Privacy</a>
+                      </li>
+                      <li>
+                        <a href="#">Technology</a>
+                      </li>
+                      <li>
+                        <a href="#">Tips</a>
+                      </li>
+                      <li>
+                        <a href="#">Uncategorized</a>
+                      </li>
+                    </ul>
+                  </section>
+                  <section className="widget widget_archive">
+                    <h3 className="widget-title">Archives</h3>
+                    <ul>
+                      <li>
+                        <a href="#">May 2019</a>
+                      </li>
+                      <li>
+                        <a href="#">April 2019</a>
+                      </li>
+                      <li>
+                        <a href="#">June 2019</a>
+                      </li>
+                    </ul>
+                  </section>
+                  <section className="widget widget_meta">
+                    <h3 className="widget-title">Meta</h3>
+                    <ul>
+                      <li>
+                        <a href="#">Log in</a>
+                      </li>
+                      <li>
+                        <a href="#">
+                          Entries{" "}
+                          <abbr title="Really Simple Syndication">RSS</abbr>
+                        </a>
+                      </li>
+                      <li>
+                        <a href="#">
+                          Comments{" "}
+                          <abbr title="Really Simple Syndication">RSS</abbr>
+                        </a>
+                      </li>
+                      <li>
+                        <a href="#">WordPress.org</a>
+                      </li>
+                    </ul>
+                  </section>
+                  <section className="widget widget_tag_cloud">
+                    <h3 className="widget-title">Tags</h3>
+                    <div className="tagcloud">
+                      <a href="#">
+                        IT <span className="tag-link-count"> (3)</span>
+                      </a>
+                      <a href="#">
+                        Spacle <span className="tag-link-count"> (3)</span>
+                      </a>
+                      <a href="#">
+                        Games <span className="tag-link-count"> (2)</span>
+                      </a>
+                      <a href="#">
+                        Fashion <span className="tag-link-count"> (2)</span>
+                      </a>
+                      <a href="#">
+                        Travel <span className="tag-link-count"> (1)</span>
+                      </a>
+                      <a href="#">
+                        Smart <span className="tag-link-count"> (1)</span>
+                      </a>
+                      <a href="#">
+                        Marketing <span className="tag-link-count"> (1)</span>
+                      </a>
+                      <a href="#">
+                        Tips <span className="tag-link-count"> (2)</span>
+                      </a>
+                    </div>
+                  </section>
+                </aside>
+              </div>
             </div>
           </div>
         </section>
