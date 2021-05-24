@@ -4,10 +4,14 @@ import Footer from "../components/Footer";
 import EmailIcon from "@material-ui/icons/Email";
 import LocationOnIcon from "@material-ui/icons/LocationOn";
 import CallIcon from "@material-ui/icons/Call";
+import Head from "next/head";
 
 export default function about() {
   return (
     <div>
+      <Head>
+        <title>Distinct Cloud Labs - Contact</title>
+      </Head>
       <Header />
       <>
         <div className="page-title-area">

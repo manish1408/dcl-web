@@ -7,6 +7,7 @@ import Header from "../components/Header";
 import Footer from "../components/Footer";
 import AddCircleOutlineIcon from "@material-ui/icons/AddCircleOutline";
 import Prismic from "@prismicio/client";
+import Head from "next/head";
 // import Search from "../components/Search";
 
 /**

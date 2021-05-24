@@ -14,6 +14,7 @@ import { Check, Person, Search } from "@material-ui/icons";
 import CheckIcon from "@material-ui/icons/Check";
 import SearchComponent from "../components/SearchComponent";
 import Prismic from "@prismicio/client";
+import Head from "next/head";
 
 const BlogPost = ({ post }) => {
   // const apiEndpoint = "https://distinctcloud.prismic.io/api/v2";
@@ -31,6 +32,9 @@ const BlogPost = ({ post }) => {
   if (post && post.title) {
     return (
       <>
+        <Head>
+          <title>Distinct Cloud Labs - Blog</title>
+        </Head>
         <Header />
         <PageTitle title={post.title.length ? post.title[0].text : ""} />
 

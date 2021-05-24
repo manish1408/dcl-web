@@ -1,10 +1,14 @@
 import React from "react";
 import Header from "../components/Header";
 import Footer from "../components/Footer";
+import Head from "next/head";
 
 export default function about() {
   return (
     <div>
+      <Head>
+        <title>Distinct Cloud Labs - About</title>
+      </Head>
       <Header />
       <>
         {/* <div className="page-title-area">

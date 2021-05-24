@@ -3,10 +3,14 @@ import Header from "../components/Header";
 import Footer from "../components/Footer";
 import FactArea from "../components/FactArea";
 import PageTitle from "../components/PageTitle";
+import Head from "next/head";
 
 export default function mvp() {
   return (
     <div>
+      <Head>
+        <title>Distinct Cloud Labs - MVP</title>
+      </Head>
       <Header />
       <>
         <PageTitle title="MVP" />

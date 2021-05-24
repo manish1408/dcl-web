@@ -26,7 +26,7 @@ const Blog = ({ doc, posts }) => {
           <section className="blog-area ptb-80">
             <div className="container">
               <Head>
-                <title>Distinct Cloud Blog</title>
+                <title>Distinct Cloud Labs - Blog</title>
               </Head>
               <Header />
               <PageTitle title="Our Blog" />

@@ -10,12 +10,6 @@ class MyDocument extends Document {
     return (
       <Html>
         <Head>
-          <meta charset="utf-8" />
-          <meta
-            name="viewport"
-            content="width=device-width, initial-scale=1, shrink-to-fit=no"
-          />
-
           <base href="/" />
 
           <link rel="stylesheet" href="/assets/css/bootstrap.min.css" />
@@ -29,7 +23,7 @@ class MyDocument extends Document {
           <link rel="stylesheet" href="/assets/css/slick.min.css" />
           <link rel="stylesheet" href="/assets/css/style.css" />
           <link rel="stylesheet" href="/assets/css/responsive.css" />
-          <title>Distinct Cloud Labs</title>
+          {/* <title>Distinct Cloud Labs</title> */}
           <link rel="icon" type="image/png" href="assets/img/favicon.png" />
         </Head>
         <body>
