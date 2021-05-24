@@ -6123,6 +6123,11 @@ blockquote::after,
   position: relative;
   margin-top: 15px;
   margin-bottom: 15px;
+  transition: transform 0.3s ease;
+}
+
+.result-items:hover {
+  transform: scale(1.02);
 }
 
 .image-username {
@@ -6133,8 +6138,13 @@ blockquote::after,
   text-align: center;
   color: #fff;
   background-color: rgba(68, 206, 111, 0.7);
+  transition: background-color 0.3s ease;
   bottom: 0;
   margin-bottom: 0;
+}
+
+.image-username:hover {
+  background-color: rgba(68, 206, 111, 1);
 }
 
 .widget-area .widget_startp_posts_thumb {
@@ -6164,7 +6174,7 @@ blockquote::after,
   background-repeat: no-repeat;
   background-position: center center !important;
 }
-.widget-area .widget_startp_posts_thumb .item .thumb .fullimage.bg1 {
+/* .widget-area .widget_startp_posts_thumb .item .thumb .fullimage.bg1 {
   background-image: url(../img/blog-image/7.jpg);
 }
 .widget-area .widget_startp_posts_thumb .item .thumb .fullimage.bg2 {
@@ -6172,7 +6182,7 @@ blockquote::after,
 }
 .widget-area .widget_startp_posts_thumb .item .thumb .fullimage.bg3 {
   background-image: url(../img/blog-image/9.jpg);
-}
+} */
 .widget-area .widget_startp_posts_thumb .item .info {
   overflow: hidden;
   margin-top: 5px;

@@ -2,8 +2,9 @@ import Prismic from "@prismicio/client";
 import Loader from "./Loader";
 import React from "react";
 import { Search } from "@material-ui/icons";
-import { Link } from "prismic-reactjs";
-import { linkResolver } from "../helpers";
+import Link from "next/link";
+// import { Link } from "prismic-reactjs";
+import { hrefResolver, linkResolver } from "prismic-configuration";
 
 class SearchComponent extends React.Component {
   constructor(props) {
@@ -70,16 +71,22 @@ class SearchComponent extends React.Component {
         <div>
           {results.map((result) => {
             return (
-              <a key={result.id} className="result-items">
-                <h6 className="image-username">{result.data.title[0].text}</h6>
-                <div className="image-wrapper">
-                  <img
-                    className="image"
-                    src={result.data.featured_image.url}
-                    alt="image"
-                  />
-                </div>
-              </a>
+              <div key={result.id}>
+                <Link as={linkResolver(result)} href={hrefResolver(result)}>
+                  <a className="result-items">
+                    <h6 className="image-username">
+                      {result.data.title[0].text}
+                    </h6>
+                    <div className="image-wrapper">
+                      <img
+                        className="image"
+                        src={result.data.featured_image.url}
+                        alt="image"
+                      />
+                    </div>
+                  </a>
+                </Link>
+              </div>
             );
           })}
         </div>
