@@ -11,6 +11,7 @@ import Feedback from "../components/Feedback";
 import Parteners from "../components/Parteners";
 import Blog from "../components/Blog";
 import Newsletter from "../components/Newsletter";
+import ArrowUpwardIcon from "@material-ui/icons/ArrowUpward";
 
 const Home = () => (
   <div>
@@ -31,7 +32,7 @@ const Home = () => (
 
     <Footer></Footer>
     <div className="go-top">
-      <i data-feather="arrow-up" />
+      <ArrowUpwardIcon />
     </div>
   </div>
 );
