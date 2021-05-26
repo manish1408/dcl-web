@@ -1,0 +1,1 @@
+_N_E=(window.webpackJsonp_N_E=window.webpackJsonp_N_E||[]).push([[16],{Dh1d:function(n,_,o){(window.__NEXT_P=window.__NEXT_P||[]).push(["/categories/[category]",function(){return o("kDdD")}])},kDdD:function(n,_){}},[["Dh1d",0]]]);

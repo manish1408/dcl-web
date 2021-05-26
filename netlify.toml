@@ -1,12 +1,4 @@
-
-
-[[plugins]]
-package = "@netlify/plugin-sitemap"
-
-  [plugins.inputs]
-  buildDir = "out"
-
-  [build]
+[build]
   command   = "npm run build"
   functions = "out_functions"
   publish   = "out_publish"
