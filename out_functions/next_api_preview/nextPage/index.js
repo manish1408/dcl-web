@@ -88,7 +88,7 @@ module.exports =
 /******/
 /******/
 /******/ 	// Load entry module and return exports
-/******/ 	return __webpack_require__(__webpack_require__.s = "gQHb");
+/******/ 	return __webpack_require__(__webpack_require__.s = "0qR8");
 /******/ })
 /************************************************************************/
 /******/ ({
@@ -147,6 +147,115 @@ function withRouter(ComposedComponent) {
 
   return WithRouterWrapper;
 }
+
+/***/ }),
+
+/***/ "0qR8":
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var next_plugin_loader_middleware_on_init_server___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__("GX0O");
+/* harmony import */ var next_plugin_loader_middleware_on_error_server___WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__("KqAr");
+/* harmony import */ var next_dist_next_server_server_node_polyfill_fetch__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__("fkL1");
+/* harmony import */ var next_dist_next_server_server_node_polyfill_fetch__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(next_dist_next_server_server_node_polyfill_fetch__WEBPACK_IMPORTED_MODULE_2__);
+
+      
+      
+      
+
+      
+    const { processEnv } = __webpack_require__("fXeI")
+    processEnv([])
+  
+      
+      const runtimeConfig = {}
+      
+      const { parse: parseUrl } = __webpack_require__("bzos")
+      const { apiResolver } = __webpack_require__("PCLx")
+      
+    const { rewrites } = __webpack_require__("Skye")
+    const { pathToRegexp, default: pathMatch } = __webpack_require__("N6Fi")
+  
+
+      
+
+      
+
+      
+
+      
+    const getCustomRouteMatcher = pathMatch(true)
+    const prepareDestination = __webpack_require__("6mnf").default
+
+    function handleRewrites(parsedUrl) {
+      for (const rewrite of rewrites) {
+        const matcher = getCustomRouteMatcher(rewrite.source)
+        const params = matcher(parsedUrl.pathname)
+
+        if (params) {
+          const { parsedDestination } = prepareDestination(
+            rewrite.destination,
+            params,
+            parsedUrl.query,
+            true,
+            ""
+          )
+
+          Object.assign(parsedUrl.query, parsedDestination.query)
+          delete parsedDestination.query
+
+          Object.assign(parsedUrl, parsedDestination)
+
+          if (parsedUrl.pathname === '/api/preview'){
+            break
+          }
+          
+        }
+      }
+
+      return parsedUrl
+    }
+  
+
+      /* harmony default export */ __webpack_exports__["default"] = (async (req, res) => {
+        try {
+          await Object(next_plugin_loader_middleware_on_init_server___WEBPACK_IMPORTED_MODULE_0__["default"])()
+
+          // We need to trust the dynamic route params from the proxy
+          // to ensure we are using the correct values
+          const trustQuery = req.headers['x-vercel-id']
+          const parsedUrl = handleRewrites(parseUrl(req.url, true))
+
+          
+
+          const params = {}
+
+          const resolver = __webpack_require__("XCOm")
+          await apiResolver(
+            req,
+            res,
+            Object.assign({}, parsedUrl.query, params ),
+            resolver,
+            {previewModeId:"f67e87bca47ae02117266f7827b606b0",previewModeSigningKey:"f6dd61c5d7ba05937c24b6ba2095f860e72f11898f2af24a8581f7e7d433480a",previewModeEncryptionKey:"f48ff0f169ac8812edadb1ff31b32e8923d4fab1ca015004822e905a553878db"},
+            true,
+            next_plugin_loader_middleware_on_error_server___WEBPACK_IMPORTED_MODULE_1__["default"]
+          )
+        } catch (err) {
+          console.error(err)
+          await Object(next_plugin_loader_middleware_on_error_server___WEBPACK_IMPORTED_MODULE_1__["default"])(err)
+
+          // TODO: better error for DECODE_FAILED?
+          if (err.code === 'DECODE_FAILED') {
+            res.statusCode = 400
+            res.end('Bad Request')
+          } else {
+            // Throw the error to crash the serverless function
+            throw err
+          }
+        }
+      });
+    
 
 /***/ }),
 
@@ -632,7 +741,7 @@ function _defineProperty(obj, key, value) { if (key in obj) { Object.definePrope
 const customLink = (type, element, content, children, index) => __jsx(next_link__WEBPACK_IMPORTED_MODULE_2___default.a, {
   key: index,
   href: Object(prismic_configuration__WEBPACK_IMPORTED_MODULE_3__[/* hrefResolver */ "c"])(element.data),
-  as: Object(prismic_configuration__WEBPACK_IMPORTED_MODULE_3__[/* linkResolver */ "d"])(element.data)
+  as: Object(prismic_configuration__WEBPACK_IMPORTED_MODULE_3__[/* linkResolver */ "e"])(element.data)
 }, __jsx("a", null, content)); // Client method to query documents from the Prismic repo
 
 const Client = (req = null) => prismic_javascript__WEBPACK_IMPORTED_MODULE_1___default.a.client(prismic_configuration__WEBPACK_IMPORTED_MODULE_3__[/* apiEndpoint */ "b"], createClientOptions(req, prismic_configuration__WEBPACK_IMPORTED_MODULE_3__[/* accessToken */ "a"]));
@@ -1152,7 +1261,7 @@ __webpack_require__.r(__webpack_exports__);
     token: ref,
     documentId
   } = req.query;
-  const redirectUrl = await Object(utils_prismicHelpers__WEBPACK_IMPORTED_MODULE_1__[/* Client */ "a"])(req).getPreviewResolver(ref, documentId).resolve(prismic_configuration__WEBPACK_IMPORTED_MODULE_0__[/* linkResolver */ "d"], "/");
+  const redirectUrl = await Object(utils_prismicHelpers__WEBPACK_IMPORTED_MODULE_1__[/* Client */ "a"])(req).getPreviewResolver(ref, documentId).resolve(prismic_configuration__WEBPACK_IMPORTED_MODULE_0__[/* linkResolver */ "e"], "/");
 
   if (!redirectUrl) {
     return res.status(401).json({
@@ -3987,115 +4096,6 @@ exports.ST = ST;
 
 /***/ }),
 
-/***/ "gQHb":
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-/* harmony import */ var next_plugin_loader_middleware_on_init_server___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__("GX0O");
-/* harmony import */ var next_plugin_loader_middleware_on_error_server___WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__("KqAr");
-/* harmony import */ var next_dist_next_server_server_node_polyfill_fetch__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__("fkL1");
-/* harmony import */ var next_dist_next_server_server_node_polyfill_fetch__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(next_dist_next_server_server_node_polyfill_fetch__WEBPACK_IMPORTED_MODULE_2__);
-
-      
-      
-      
-
-      
-    const { processEnv } = __webpack_require__("fXeI")
-    processEnv([])
-  
-      
-      const runtimeConfig = {}
-      
-      const { parse: parseUrl } = __webpack_require__("bzos")
-      const { apiResolver } = __webpack_require__("PCLx")
-      
-    const { rewrites } = __webpack_require__("Skye")
-    const { pathToRegexp, default: pathMatch } = __webpack_require__("N6Fi")
-  
-
-      
-
-      
-
-      
-
-      
-    const getCustomRouteMatcher = pathMatch(true)
-    const prepareDestination = __webpack_require__("6mnf").default
-
-    function handleRewrites(parsedUrl) {
-      for (const rewrite of rewrites) {
-        const matcher = getCustomRouteMatcher(rewrite.source)
-        const params = matcher(parsedUrl.pathname)
-
-        if (params) {
-          const { parsedDestination } = prepareDestination(
-            rewrite.destination,
-            params,
-            parsedUrl.query,
-            true,
-            ""
-          )
-
-          Object.assign(parsedUrl.query, parsedDestination.query)
-          delete parsedDestination.query
-
-          Object.assign(parsedUrl, parsedDestination)
-
-          if (parsedUrl.pathname === '/api/preview'){
-            break
-          }
-          
-        }
-      }
-
-      return parsedUrl
-    }
-  
-
-      /* harmony default export */ __webpack_exports__["default"] = (async (req, res) => {
-        try {
-          await Object(next_plugin_loader_middleware_on_init_server___WEBPACK_IMPORTED_MODULE_0__["default"])()
-
-          // We need to trust the dynamic route params from the proxy
-          // to ensure we are using the correct values
-          const trustQuery = req.headers['x-vercel-id']
-          const parsedUrl = handleRewrites(parseUrl(req.url, true))
-
-          
-
-          const params = {}
-
-          const resolver = __webpack_require__("XCOm")
-          await apiResolver(
-            req,
-            res,
-            Object.assign({}, parsedUrl.query, params ),
-            resolver,
-            {previewModeId:"cdc5543cb45ddd03bed55cf5ce7a8bc5",previewModeSigningKey:"c3e3e6e17d49b7e53475ec4fdeb5a3ec130f071b2e180211fd9b7d787d71d6f1",previewModeEncryptionKey:"385c2a213562cb0ef6590d3203da3f9633aaaffba710f63fae6b6b408f6643a1"},
-            true,
-            next_plugin_loader_middleware_on_error_server___WEBPACK_IMPORTED_MODULE_1__["default"]
-          )
-        } catch (err) {
-          console.error(err)
-          await Object(next_plugin_loader_middleware_on_error_server___WEBPACK_IMPORTED_MODULE_1__["default"])(err)
-
-          // TODO: better error for DECODE_FAILED?
-          if (err.code === 'DECODE_FAILED') {
-            res.statusCode = 400
-            res.end('Bad Request')
-          } else {
-            // Throw the error to crash the serverless function
-            throw err
-          }
-        }
-      });
-    
-
-/***/ }),
-
 /***/ "gguc":
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -6039,8 +6039,10 @@ if (true) {
 "use strict";
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "b", function() { return apiEndpoint; });
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return accessToken; });
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "d", function() { return linkResolver; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "e", function() { return linkResolver; });
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "c", function() { return hrefResolver; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "f", function() { return linkResolverCat; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "d", function() { return hrefResolverCat; });
 // -- Prismic API endpoint
 // Determines which repository to query and fetch data from
 // Configure your site's access point here
@@ -6061,6 +6063,22 @@ const linkResolver = doc => {
 const hrefResolver = doc => {
   if (doc.type === "blog_post") {
     return "/posts/[uid]";
+  }
+
+  return "/";
+}; // Manages the url links to internal Prismic documents
+
+const linkResolverCat = doc => {
+  if (doc.type === "tag") {
+    return `/categories/${doc.id}`;
+  }
+
+  return "/";
+}; // Additional helper function for Next/Link components
+
+const hrefResolverCat = doc => {
+  if (doc.type === "tag") {
+    return "/categories/[category]";
   }
 
   return "/";

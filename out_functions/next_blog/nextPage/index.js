@@ -88,7 +88,7 @@ module.exports =
 /******/
 /******/
 /******/ 	// Load entry module and return exports
-/******/ 	return __webpack_require__(__webpack_require__.s = "npbp");
+/******/ 	return __webpack_require__(__webpack_require__.s = "EjAZ");
 /******/ })
 /************************************************************************/
 /******/ ({
@@ -485,190 +485,25 @@ function isDynamicRoute(route) {
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-// ESM COMPAT FLAG
 __webpack_require__.r(__webpack_exports__);
-
-// EXPORTS
-__webpack_require__.d(__webpack_exports__, "getStaticProps", function() { return /* binding */ getStaticProps; });
-
-// EXTERNAL MODULE: ./node_modules/react/index.js
-var react = __webpack_require__("q1tI");
-var react_default = /*#__PURE__*/__webpack_require__.n(react);
-
-// EXTERNAL MODULE: ./node_modules/next/dist/next-server/lib/head.js
-var head = __webpack_require__("8Kt/");
-var head_default = /*#__PURE__*/__webpack_require__.n(head);
-
-// EXTERNAL MODULE: ./node_modules/prismic-javascript/cjs/prismic-javascript.js
-var prismic_javascript = __webpack_require__("cWa2");
-var prismic_javascript_default = /*#__PURE__*/__webpack_require__.n(prismic_javascript);
-
-// EXTERNAL MODULE: ./node_modules/prismic-reactjs/dist/prismic-reactjs.js
-var prismic_reactjs = __webpack_require__("wG+1");
-
-// EXTERNAL MODULE: ./node_modules/next/link.js
-var next_link = __webpack_require__("YFqc");
-var link_default = /*#__PURE__*/__webpack_require__.n(next_link);
-
-// EXTERNAL MODULE: ./components/PageTitle.jsx
-var PageTitle = __webpack_require__("mgkc");
-
-// EXTERNAL MODULE: ./components/Header.jsx
-var Header = __webpack_require__("Cgje");
-
-// EXTERNAL MODULE: ./components/Footer.jsx
-var Footer = __webpack_require__("naWs");
-
-// EXTERNAL MODULE: ./layouts/index.js
-var layouts = __webpack_require__("ZDfL");
-
-// EXTERNAL MODULE: ./components/home/PostList/PostDate.js
-var PostDate = __webpack_require__("yiKj");
-
-// CONCATENATED MODULE: ./components/home/PostList/FirstParagraph.js
-var __jsx = react_default.a.createElement;
-
-
-/**
- * Component that returns the first paragraph of a post
- */
-
-const FirstParagraph = ({
-  sliceZone,
-  textLimit = 300
-}) => {
-  // Find the first text slice of post's body
-  const firstTextSlice = sliceZone.find(slice => slice.slice_type === "text");
-
-  if (firstTextSlice) {
-    const text = prismic_reactjs["RichText"].asText(firstTextSlice.primary.text);
-    let limitedText = text.substring(0, textLimit);
-
-    if (text.length > textLimit) {
-      // Cut only up to the last word and attach '...' for readability
-      limitedText = `${limitedText.substring(0, limitedText.lastIndexOf(" "))}...`;
-    }
-
-    return __jsx("p", null, limitedText);
-  } // If there are no slices of type 'text', return nothing
-
-
-  return null;
-};
-
-/* harmony default export */ var PostList_FirstParagraph = (FirstParagraph);
-// EXTERNAL MODULE: ./prismic-configuration.js
-var prismic_configuration = __webpack_require__("qLLh");
-
-// EXTERNAL MODULE: ./node_modules/@material-ui/icons/AddCircleOutline.js
-var AddCircleOutline = __webpack_require__("bnla");
-var AddCircleOutline_default = /*#__PURE__*/__webpack_require__.n(AddCircleOutline);
-
-// CONCATENATED MODULE: ./components/home/PostList/PostItem.js
-var PostItem_jsx = react_default.a.createElement;
-
-
-
-
-
-
-
-/**
- * Post list item component
- */
-
-const PostItem = ({
-  post
-}) => {
-  const title = prismic_reactjs["RichText"].asText(post.data.title) ? prismic_reactjs["RichText"].asText(post.data.title) : "Untitled";
-  return PostItem_jsx("div", {
-    className: "col-lg-4 col-md-6"
-  }, PostItem_jsx("div", {
-    className: "single-blog-post-item"
-  }, PostItem_jsx("div", {
-    className: "post-image"
-  }, PostItem_jsx(link_default.a, {
-    as: Object(prismic_configuration["d" /* linkResolver */])(post),
-    href: Object(prismic_configuration["c" /* hrefResolver */])(post)
-  }, PostItem_jsx("a", null, PostItem_jsx("img", {
-    src: post.data.featured_image.url,
-    alt: "Featured Image"
-  })))), PostItem_jsx("div", {
-    className: "post-content"
-  }, PostItem_jsx("ul", {
-    className: "post-meta"
-  }, PostItem_jsx("li", null, PostItem_jsx(PostDate["a" /* default */], {
-    date: post.data.date
-  }))), PostItem_jsx("h3", null, PostItem_jsx(link_default.a, {
-    as: Object(prismic_configuration["d" /* linkResolver */])(post),
-    href: Object(prismic_configuration["c" /* hrefResolver */])(post)
-  }, PostItem_jsx("a", null, post.data.title[0].text))), PostItem_jsx(link_default.a, {
-    as: Object(prismic_configuration["d" /* linkResolver */])(post),
-    href: Object(prismic_configuration["c" /* hrefResolver */])(post)
-  }, PostItem_jsx("a", {
-    className: "read-more-btn"
-  }, "Read More ", PostItem_jsx(AddCircleOutline_default.a, {
-    fontSize: "large"
-  })))))) // <div className="blog-post">
-  //   <NextLink as={linkResolver(post)} href={hrefResolver(post)}>
-  //     <a>
-  //       <h2>{title}</h2>
-  //     </a>
-  //   </NextLink>
-  //
-  //   <FirstParagraph sliceZone={post.data.body} textLimit={300} />
-  // </div>
-  ;
-};
-
-/* harmony default export */ var PostList_PostItem = (PostItem);
-// CONCATENATED MODULE: ./components/home/PostList/index.js
-var PostList_jsx = react_default.a.createElement;
-
- // import { postListStyles } from "styles";
-
-/**
- * Post list component
- */
-
-const PostList = ({
-  posts
-}) => {
-  return PostList_jsx(react_default.a.Fragment, null, posts.map(post => PostList_jsx(PostList_PostItem, {
-    post: post,
-    key: post.id
-  })));
-};
-
-/* harmony default export */ var home_PostList = (PostList);
-// CONCATENATED MODULE: ./components/home/SetupRepo.js
-var SetupRepo_jsx = react_default.a.createElement;
-
-
- // import { setupRepoStyles } from "styles";
-
-/**
- * Setup repo component
- */
-
-const SetupRepo = () => {
-  const repoUrl = `${prismic_configuration["b" /* apiEndpoint */].replace(".cdn", "").slice(0, -6)}documents/`;
-  return SetupRepo_jsx(layouts["a" /* default */], null, SetupRepo_jsx("div", {
-    className: "setup-repo"
-  }, SetupRepo_jsx("h1", null, "Good job!"), SetupRepo_jsx("h2", null, "You're halfway done with setting up your Prismic website"), SetupRepo_jsx("h4", null, "Just visit your ", SetupRepo_jsx("a", {
-    href: repoUrl
-  }, "Prismic dashboard"), " and add some content there")));
-};
-
-/* harmony default export */ var home_SetupRepo = (SetupRepo);
-// CONCATENATED MODULE: ./components/home/index.js
-
-
-// EXTERNAL MODULE: ./utils/prismicHelpers.js
-var prismicHelpers = __webpack_require__("AYOr");
-
-// CONCATENATED MODULE: ./pages/blog/index.js
-var blog_jsx = react_default.a.createElement;
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "getStaticProps", function() { return getStaticProps; });
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__("q1tI");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var next_head__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__("8Kt/");
+/* harmony import */ var next_head__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(next_head__WEBPACK_IMPORTED_MODULE_1__);
+/* harmony import */ var prismic_javascript__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__("cWa2");
+/* harmony import */ var prismic_javascript__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(prismic_javascript__WEBPACK_IMPORTED_MODULE_2__);
+/* harmony import */ var prismic_reactjs__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__("wG+1");
+/* harmony import */ var prismic_reactjs__WEBPACK_IMPORTED_MODULE_3___default = /*#__PURE__*/__webpack_require__.n(prismic_reactjs__WEBPACK_IMPORTED_MODULE_3__);
+/* harmony import */ var next_link__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__("YFqc");
+/* harmony import */ var next_link__WEBPACK_IMPORTED_MODULE_4___default = /*#__PURE__*/__webpack_require__.n(next_link__WEBPACK_IMPORTED_MODULE_4__);
+/* harmony import */ var components_PageTitle__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__("mgkc");
+/* harmony import */ var components_Header__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__("Cgje");
+/* harmony import */ var components_Footer__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__("naWs");
+/* harmony import */ var layouts__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__("ZDfL");
+/* harmony import */ var components_home__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__("iD2K");
+/* harmony import */ var utils_prismicHelpers__WEBPACK_IMPORTED_MODULE_10__ = __webpack_require__("AYOr");
+var __jsx = react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement;
 
 function ownKeys(object, enumerableOnly) { var keys = Object.keys(object); if (Object.getOwnPropertySymbols) { var symbols = Object.getOwnPropertySymbols(object); if (enumerableOnly) { symbols = symbols.filter(function (sym) { return Object.getOwnPropertyDescriptor(object, sym).enumerable; }); } keys.push.apply(keys, symbols); } return keys; }
 
@@ -699,21 +534,21 @@ const Blog = ({
   posts
 }) => {
   if (doc && doc.data) {
-    return blog_jsx(react_default.a.Fragment, null, blog_jsx(layouts["a" /* default */], null, blog_jsx("section", {
+    return __jsx(react__WEBPACK_IMPORTED_MODULE_0___default.a.Fragment, null, __jsx(layouts__WEBPACK_IMPORTED_MODULE_8__[/* default */ "a"], null, __jsx("section", {
       className: "blog-area ptb-80"
-    }, blog_jsx("div", {
+    }, __jsx("div", {
       className: "container"
-    }, blog_jsx(head_default.a, null, blog_jsx("title", null, "Distinct Cloud Labs - Blog")), blog_jsx(Header["a" /* default */], null), blog_jsx(PageTitle["a" /* default */], {
+    }, __jsx(next_head__WEBPACK_IMPORTED_MODULE_1___default.a, null, __jsx("title", null, "Distinct Cloud Labs - Blog")), __jsx(components_Header__WEBPACK_IMPORTED_MODULE_6__[/* default */ "a"], null), __jsx(components_PageTitle__WEBPACK_IMPORTED_MODULE_5__[/* default */ "a"], {
       title: "Our Blog"
-    }), blog_jsx("div", {
+    }), __jsx("div", {
       className: "row"
-    }, blog_jsx(home_PostList, {
+    }, __jsx(components_home__WEBPACK_IMPORTED_MODULE_9__[/* PostList */ "a"], {
       posts: posts
-    }))))), blog_jsx(Footer["a" /* default */], null));
+    }))))), __jsx(components_Footer__WEBPACK_IMPORTED_MODULE_7__[/* default */ "a"], null));
   } // Message when repository has not been setup yet
 
 
-  return blog_jsx(home_SetupRepo, null);
+  return __jsx(components_home__WEBPACK_IMPORTED_MODULE_9__[/* SetupRepo */ "b"], null);
 };
 
 async function getStaticProps({
@@ -723,11 +558,11 @@ async function getStaticProps({
   const {
     ref
   } = previewData;
-  const client = Object(prismicHelpers["a" /* Client */])();
+  const client = Object(utils_prismicHelpers__WEBPACK_IMPORTED_MODULE_10__[/* Client */ "a"])();
   const doc = (await client.getSingle("blog_post", ref ? {
     ref
   } : null)) || {};
-  const posts = await client.query(prismic_javascript_default.a.Predicates.at("document.type", "blog_post"), _objectSpread({
+  const posts = await client.query(prismic_javascript__WEBPACK_IMPORTED_MODULE_2___default.a.Predicates.at("document.type", "blog_post"), _objectSpread({
     orderings: "[my.post.date desc]"
   }, ref ? {
     ref
@@ -740,7 +575,7 @@ async function getStaticProps({
     }
   };
 }
-/* harmony default export */ var blog = __webpack_exports__["default"] = (Blog);
+/* harmony default export */ __webpack_exports__["default"] = (Blog);
 
 /***/ }),
 
@@ -5387,7 +5222,7 @@ function _defineProperty(obj, key, value) { if (key in obj) { Object.definePrope
 const customLink = (type, element, content, children, index) => __jsx(next_link__WEBPACK_IMPORTED_MODULE_2___default.a, {
   key: index,
   href: Object(prismic_configuration__WEBPACK_IMPORTED_MODULE_3__[/* hrefResolver */ "c"])(element.data),
-  as: Object(prismic_configuration__WEBPACK_IMPORTED_MODULE_3__[/* linkResolver */ "d"])(element.data)
+  as: Object(prismic_configuration__WEBPACK_IMPORTED_MODULE_3__[/* linkResolver */ "e"])(element.data)
 }, __jsx("a", null, content)); // Client method to query documents from the Prismic repo
 
 const Client = (req = null) => prismic_javascript__WEBPACK_IMPORTED_MODULE_1___default.a.client(prismic_configuration__WEBPACK_IMPORTED_MODULE_3__[/* apiEndpoint */ "b"], createClientOptions(req, prismic_configuration__WEBPACK_IMPORTED_MODULE_3__[/* accessToken */ "a"]));
@@ -6142,6 +5977,317 @@ exports.default = jssGlobal;
 
 /***/ }),
 
+/***/ "EjAZ":
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "unstable_getStaticParams", function() { return unstable_getStaticParams; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "getStaticProps", function() { return getStaticProps; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "getStaticPaths", function() { return getStaticPaths; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "getServerSideProps", function() { return getServerSideProps; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "unstable_getStaticProps", function() { return unstable_getStaticProps; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "unstable_getStaticPaths", function() { return unstable_getStaticPaths; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "unstable_getServerProps", function() { return unstable_getServerProps; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "config", function() { return config; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "_app", function() { return _app; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "renderReqToHTML", function() { return renderReqToHTML; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "render", function() { return render; });
+/* harmony import */ var next_plugin_loader_middleware_on_init_server___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__("GX0O");
+/* harmony import */ var next_plugin_loader_middleware_on_error_server___WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__("KqAr");
+/* harmony import */ var next_dist_next_server_server_node_polyfill_fetch__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__("fkL1");
+/* harmony import */ var next_dist_next_server_server_node_polyfill_fetch__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(next_dist_next_server_server_node_polyfill_fetch__WEBPACK_IMPORTED_MODULE_2__);
+
+    
+    
+    
+    const {isResSent} = __webpack_require__("g/15");
+
+    
+    const { processEnv } = __webpack_require__("fXeI")
+    processEnv([])
+  
+    
+    const runtimeConfig = {}
+    const {parse: parseUrl, format: formatUrl} = __webpack_require__("bzos")
+    const {parse: parseQs} = __webpack_require__("8xkj")
+    const { renderToHTML } = __webpack_require__("/bjS");
+    const { tryGetPreviewData } = __webpack_require__("PCLx");
+    const { denormalizePagePath } = __webpack_require__("wkBG")
+    const { setLazyProp, getCookieParser } = __webpack_require__("PCLx")
+    const {sendPayload} = __webpack_require__("KyNf");
+    const buildManifest = __webpack_require__("LZ9C");
+    const reactLoadableManifest = __webpack_require__("67Bq");
+    const Document = __webpack_require__("5w0S").default;
+    const Error = __webpack_require__("/a9y").default;
+    const App = __webpack_require__("1TCz").default;
+
+    
+    
+    const { rewrites } = __webpack_require__("Skye")
+    const { pathToRegexp, default: pathMatch } = __webpack_require__("N6Fi")
+  
+
+    const ComponentInfo = __webpack_require__("/yi9")
+
+    const Component = ComponentInfo.default
+    /* harmony default export */ __webpack_exports__["default"] = (Component);
+    const unstable_getStaticParams = ComponentInfo['unstable_getStaticParam' + 's']
+    const getStaticProps = ComponentInfo['getStaticProp' + 's']
+    const getStaticPaths = ComponentInfo['getStaticPath' + 's']
+    const getServerSideProps = ComponentInfo['getServerSideProp' + 's']
+
+    // kept for detecting legacy exports
+    const unstable_getStaticProps = ComponentInfo['unstable_getStaticProp' + 's']
+    const unstable_getStaticPaths = ComponentInfo['unstable_getStaticPath' + 's']
+    const unstable_getServerProps = ComponentInfo['unstable_getServerProp' + 's']
+
+    
+    
+    
+    
+    const getCustomRouteMatcher = pathMatch(true)
+    const prepareDestination = __webpack_require__("6mnf").default
+
+    function handleRewrites(parsedUrl) {
+      for (const rewrite of rewrites) {
+        const matcher = getCustomRouteMatcher(rewrite.source)
+        const params = matcher(parsedUrl.pathname)
+
+        if (params) {
+          const { parsedDestination } = prepareDestination(
+            rewrite.destination,
+            params,
+            parsedUrl.query,
+            true,
+            ""
+          )
+
+          Object.assign(parsedUrl.query, parsedDestination.query)
+          delete parsedDestination.query
+
+          Object.assign(parsedUrl, parsedDestination)
+
+          if (parsedUrl.pathname === '/blog'){
+            break
+          }
+          
+        }
+      }
+
+      return parsedUrl
+    }
+  
+
+    const config = ComponentInfo['confi' + 'g'] || {}
+    const _app = App
+    async function renderReqToHTML(req, res, renderMode, _renderOpts, _params) {
+      const fromExport = renderMode === 'export' || renderMode === true;
+      const nextStartMode = renderMode === 'passthrough'
+
+      setLazyProp({ req }, 'cookies', getCookieParser(req))
+
+      const options = {
+        App,
+        Document,
+        buildManifest,
+        getStaticProps,
+        getServerSideProps,
+        getStaticPaths,
+        reactLoadableManifest,
+        canonicalBase: "",
+        buildId: "U1L2yZ7M-f-ZRFvF5UiEp",
+        assetPrefix: "",
+        runtimeConfig: runtimeConfig.publicRuntimeConfig || {},
+        previewProps: {previewModeId:"f67e87bca47ae02117266f7827b606b0",previewModeSigningKey:"f6dd61c5d7ba05937c24b6ba2095f860e72f11898f2af24a8581f7e7d433480a",previewModeEncryptionKey:"f48ff0f169ac8812edadb1ff31b32e8923d4fab1ca015004822e905a553878db"},
+        env: process.env,
+        basePath: "",
+        ..._renderOpts
+      }
+      let _nextData = false
+      let parsedUrl
+
+      try {
+        // We need to trust the dynamic route params from the proxy
+        // to ensure we are using the correct values
+        const trustQuery = !getStaticProps && req.headers['x-vercel-id']
+        let parsedUrl = parseUrl(req.url, true)
+        let routeNoAssetPath = parsedUrl.pathname
+        const origQuery = Object.assign({}, parsedUrl.query)
+
+        parsedUrl = handleRewrites(parsedUrl)
+
+        
+
+        if (parsedUrl.pathname.match(/_next\/data/)) {
+          const {
+            default: getrouteNoAssetPath,
+          } = __webpack_require__("1Ej0");
+          _nextData = true;
+          parsedUrl.pathname = getrouteNoAssetPath(
+            parsedUrl.pathname.replace(
+              new RegExp('/_next/data/U1L2yZ7M\-f\-ZRFvF5UiEp/'),
+              '/'
+            ),
+            '.json'
+          );
+          routeNoAssetPath = parsedUrl.pathname
+        }
+
+        
+      const i18n = {}
+      const detectedLocale = undefined
+    
+
+        const renderOpts = Object.assign(
+          {
+            Component,
+            pageConfig: config,
+            nextExport: fromExport,
+            isDataReq: _nextData,
+            locale: detectedLocale,
+            locales: i18n.locales,
+            defaultLocale: i18n.defaultLocale,
+          },
+          options,
+        )
+
+        
+
+        const params = {};
+        const nowParams = null;
+
+        // make sure to set renderOpts to the correct params e.g. _params
+        // if provided from worker or params if we're parsing them here
+        renderOpts.params = _params || params
+
+        // make sure to normalize req.url on Vercel to strip dynamic params
+        // from the query which are added during routing
+        
+
+        // normalize request URL/asPath for fallback/revalidate pages since the
+        // proxy sets the request URL to the output's path for fallback pages
+        
+
+        // make sure to normalize asPath for revalidate and _next/data requests
+        // since the asPath should match what is shown on the client
+        if (
+          !fromExport &&
+          (getStaticProps || getServerSideProps)
+        ) {
+          
+
+          parsedUrl.pathname = denormalizePagePath(parsedUrl.pathname)
+          renderOpts.resolvedUrl = formatUrl({
+            ...parsedUrl,
+            query: origQuery
+          })
+
+          // For getServerSideProps we need to ensure we use the original URL
+          // and not the resolved URL to prevent a hydration mismatch on asPath
+          renderOpts.resolvedAsPath = getServerSideProps
+            ? formatUrl({
+              ...parsedUrl,
+              pathname: routeNoAssetPath,
+              query: origQuery,
+            })
+            : renderOpts.resolvedUrl
+        }
+
+        const isFallback = parsedUrl.query.__nextFallback
+
+        const previewData = tryGetPreviewData(req, res, options.previewProps)
+        const isPreviewMode = previewData !== false
+
+        if (false) {}
+        let result = await renderToHTML(req, res, "/blog", Object.assign({}, getStaticProps ? { ...(parsedUrl.query.amp ? { amp: '1' } : {}) } : parsedUrl.query, nowParams ? nowParams : params, _params, isFallback ? { __nextFallback: 'true' } : {}), renderOpts)
+
+        if (!renderMode) {
+          if (_nextData || getStaticProps || getServerSideProps) {
+            sendPayload(req, res, _nextData ? JSON.stringify(renderOpts.pageData) : result, _nextData ? 'json' : 'html', true, {
+              private: isPreviewMode,
+              stateful: !!getServerSideProps,
+              revalidate: renderOpts.revalidate,
+            })
+            return null
+          }
+        } else if (isPreviewMode) {
+          res.setHeader(
+            'Cache-Control',
+            'private, no-cache, no-store, max-age=0, must-revalidate'
+          )
+        }
+
+        if (renderMode) return { html: result, renderOpts }
+        return result
+      } catch (err) {
+        if (!parsedUrl) {
+          parsedUrl = parseUrl(req.url, true)
+        }
+
+        if (err.code === 'ENOENT') {
+          res.statusCode = 404
+        } else if (err.code === 'DECODE_FAILED') {
+          // TODO: better error?
+          res.statusCode = 400
+        } else {
+          console.error('Unhandled error during request:', err)
+
+          // Backwards compat (call getInitialProps in custom error):
+          try {
+            await renderToHTML(req, res, "/_error", parsedUrl.query, Object.assign({}, options, {
+              getStaticProps: undefined,
+              getStaticPaths: undefined,
+              getServerSideProps: undefined,
+              Component: Error,
+              err: err,
+              // Short-circuit rendering:
+              isDataReq: true
+            }))
+          } catch (underErrorErr) {
+            console.error('Failed call /_error subroutine, continuing to crash function:', underErrorErr)
+          }
+
+          // Throw the error to crash the serverless function
+          if (isResSent(res)) {
+            console.error('!!! WARNING !!!')
+            console.error(
+              'Your function crashed, but closed the response before allowing the function to exit.\n' +
+              'This may cause unexpected behavior for the next request.'
+            )
+            console.error('!!! WARNING !!!')
+          }
+          throw err
+        }
+
+        const result = await renderToHTML(req, res, "/_error", parsedUrl.query, Object.assign({}, options, {
+          getStaticProps: undefined,
+          getStaticPaths: undefined,
+          getServerSideProps: undefined,
+          Component: Error,
+          err: res.statusCode === 404 ? undefined : err
+        }))
+        return result
+      }
+    }
+    async function render (req, res) {
+      try {
+        await Object(next_plugin_loader_middleware_on_init_server___WEBPACK_IMPORTED_MODULE_0__["default"])()
+        const html = await renderReqToHTML(req, res)
+        if (html) {
+          sendPayload(req, res, html, 'html', {generateEtags: true, poweredByHeader: true})
+        }
+      } catch(err) {
+        console.error(err)
+        await Object(next_plugin_loader_middleware_on_error_server___WEBPACK_IMPORTED_MODULE_1__["default"])(err)
+        // Throw the error to crash the serverless function
+        throw err
+      }
+    }
+  
+
+/***/ }),
+
 /***/ "FDah":
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -6581,7 +6727,7 @@ exports.__esModule=true;exports.sendPayload=sendPayload;var _utils=__webpack_req
 /***/ "LZ9C":
 /***/ (function(module) {
 
-module.exports = JSON.parse("{\"polyfillFiles\":[\"static/chunks/polyfills-e69cc13a7e89296a69e4.js\"],\"devFiles\":[],\"ampDevFiles\":[],\"lowPriorityFiles\":[\"static/CSa5Ry8AT_QdqkbLDw-io/_buildManifest.js\",\"static/CSa5Ry8AT_QdqkbLDw-io/_ssgManifest.js\"],\"pages\":{\"/\":[\"static/chunks/main-5f18c6500ac458ba4100.js\",\"static/chunks/webpack-e067438c4cf4ef2ef178.js\",\"static/chunks/framework.18a81529ca607127d8ce.js\",\"static/chunks/730dd77ec482b3c334749f545aa47077de4a22d2.e4f65c1763809e22dfe2.js\",\"static/chunks/8e35e2268b5f7de23cc5e1e711f189c7961b86dd.474b8c9ab85bc3fcc241.js\",\"static/chunks/pages/index-0c5807214d4f617618d2.js\"],\"/404\":[\"static/chunks/main-5f18c6500ac458ba4100.js\",\"static/chunks/webpack-e067438c4cf4ef2ef178.js\",\"static/chunks/framework.18a81529ca607127d8ce.js\",\"static/chunks/pages/404-a714fe8ce5f8b56ea03e.js\"],\"/_app\":[\"static/chunks/main-5f18c6500ac458ba4100.js\",\"static/chunks/webpack-e067438c4cf4ef2ef178.js\",\"static/chunks/framework.18a81529ca607127d8ce.js\",\"static/chunks/730dd77ec482b3c334749f545aa47077de4a22d2.e4f65c1763809e22dfe2.js\",\"static/css/aea3675af88d5deac27b.css\",\"static/chunks/pages/_app-66bc423607a98748e95a.js\"],\"/_error\":[\"static/chunks/main-5f18c6500ac458ba4100.js\",\"static/chunks/webpack-e067438c4cf4ef2ef178.js\",\"static/chunks/framework.18a81529ca607127d8ce.js\",\"static/chunks/pages/_error-e003eaecd059111bcd76.js\"],\"/about\":[\"static/chunks/main-5f18c6500ac458ba4100.js\",\"static/chunks/webpack-e067438c4cf4ef2ef178.js\",\"static/chunks/framework.18a81529ca607127d8ce.js\",\"static/chunks/730dd77ec482b3c334749f545aa47077de4a22d2.e4f65c1763809e22dfe2.js\",\"static/chunks/8e35e2268b5f7de23cc5e1e711f189c7961b86dd.474b8c9ab85bc3fcc241.js\",\"static/chunks/pages/about-6b5ee47b88ebfa37dafd.js\"],\"/blog\":[\"static/chunks/main-5f18c6500ac458ba4100.js\",\"static/chunks/webpack-e067438c4cf4ef2ef178.js\",\"static/chunks/framework.18a81529ca607127d8ce.js\",\"static/chunks/730dd77ec482b3c334749f545aa47077de4a22d2.e4f65c1763809e22dfe2.js\",\"static/chunks/8e35e2268b5f7de23cc5e1e711f189c7961b86dd.474b8c9ab85bc3fcc241.js\",\"static/chunks/8db4d65e83ea52708f25ffa0bf5c65b413f50fa0.1ce8186deb91a177a29e.js\",\"static/chunks/pages/blog-1c5bf945df74821e264d.js\"],\"/blogOld\":[\"static/chunks/main-5f18c6500ac458ba4100.js\",\"static/chunks/webpack-e067438c4cf4ef2ef178.js\",\"static/chunks/framework.18a81529ca607127d8ce.js\",\"static/chunks/730dd77ec482b3c334749f545aa47077de4a22d2.e4f65c1763809e22dfe2.js\",\"static/chunks/8e35e2268b5f7de23cc5e1e711f189c7961b86dd.474b8c9ab85bc3fcc241.js\",\"static/chunks/pages/blogOld-8704d2de17e039afb0f5.js\"],\"/blogPost\":[\"static/chunks/main-5f18c6500ac458ba4100.js\",\"static/chunks/webpack-e067438c4cf4ef2ef178.js\",\"static/chunks/framework.18a81529ca607127d8ce.js\",\"static/chunks/730dd77ec482b3c334749f545aa47077de4a22d2.e4f65c1763809e22dfe2.js\",\"static/chunks/8e35e2268b5f7de23cc5e1e711f189c7961b86dd.474b8c9ab85bc3fcc241.js\",\"static/chunks/452ee2613212461b3bce4da9d5fbdaf95b92dd35.ff455dd4f98ba1f22a48.js\",\"static/chunks/8db4d65e83ea52708f25ffa0bf5c65b413f50fa0.1ce8186deb91a177a29e.js\",\"static/chunks/pages/blogPost-94f8deeff032cdc1eaf5.js\"],\"/blogSingle\":[\"static/chunks/main-5f18c6500ac458ba4100.js\",\"static/chunks/webpack-e067438c4cf4ef2ef178.js\",\"static/chunks/framework.18a81529ca607127d8ce.js\",\"static/chunks/730dd77ec482b3c334749f545aa47077de4a22d2.e4f65c1763809e22dfe2.js\",\"static/chunks/8e35e2268b5f7de23cc5e1e711f189c7961b86dd.474b8c9ab85bc3fcc241.js\",\"static/chunks/pages/blogSingle-71e859ccf27a2063a9a8.js\"],\"/blog_old\":[\"static/chunks/main-5f18c6500ac458ba4100.js\",\"static/chunks/webpack-e067438c4cf4ef2ef178.js\",\"static/chunks/framework.18a81529ca607127d8ce.js\",\"static/chunks/730dd77ec482b3c334749f545aa47077de4a22d2.e4f65c1763809e22dfe2.js\",\"static/chunks/8e35e2268b5f7de23cc5e1e711f189c7961b86dd.474b8c9ab85bc3fcc241.js\",\"static/chunks/452ee2613212461b3bce4da9d5fbdaf95b92dd35.ff455dd4f98ba1f22a48.js\",\"static/chunks/pages/blog_old-10f2d5091746feb4ff3e.js\"],\"/categories/[category]\":[\"static/chunks/main-5f18c6500ac458ba4100.js\",\"static/chunks/webpack-e067438c4cf4ef2ef178.js\",\"static/chunks/framework.18a81529ca607127d8ce.js\",\"static/chunks/730dd77ec482b3c334749f545aa47077de4a22d2.e4f65c1763809e22dfe2.js\",\"static/chunks/8e35e2268b5f7de23cc5e1e711f189c7961b86dd.474b8c9ab85bc3fcc241.js\",\"static/chunks/452ee2613212461b3bce4da9d5fbdaf95b92dd35.ff455dd4f98ba1f22a48.js\",\"static/chunks/8db4d65e83ea52708f25ffa0bf5c65b413f50fa0.1ce8186deb91a177a29e.js\",\"static/chunks/pages/categories/[category]-b5a9cfab45ebbea7bbc1.js\"],\"/contact\":[\"static/chunks/main-5f18c6500ac458ba4100.js\",\"static/chunks/webpack-e067438c4cf4ef2ef178.js\",\"static/chunks/framework.18a81529ca607127d8ce.js\",\"static/chunks/730dd77ec482b3c334749f545aa47077de4a22d2.e4f65c1763809e22dfe2.js\",\"static/chunks/8e35e2268b5f7de23cc5e1e711f189c7961b86dd.474b8c9ab85bc3fcc241.js\",\"static/chunks/pages/contact-4a2a2505786eedbfd919.js\"],\"/develop\":[\"static/chunks/main-5f18c6500ac458ba4100.js\",\"static/chunks/webpack-e067438c4cf4ef2ef178.js\",\"static/chunks/framework.18a81529ca607127d8ce.js\",\"static/chunks/730dd77ec482b3c334749f545aa47077de4a22d2.e4f65c1763809e22dfe2.js\",\"static/chunks/8e35e2268b5f7de23cc5e1e711f189c7961b86dd.474b8c9ab85bc3fcc241.js\",\"static/chunks/pages/develop-51cd7a8e1a8f645a13ab.js\"],\"/faq\":[\"static/chunks/main-5f18c6500ac458ba4100.js\",\"static/chunks/webpack-e067438c4cf4ef2ef178.js\",\"static/chunks/framework.18a81529ca607127d8ce.js\",\"static/chunks/730dd77ec482b3c334749f545aa47077de4a22d2.e4f65c1763809e22dfe2.js\",\"static/chunks/8e35e2268b5f7de23cc5e1e711f189c7961b86dd.474b8c9ab85bc3fcc241.js\",\"static/chunks/pages/faq-bb8c8bd5f865ae8fd4ba.js\"],\"/mvp\":[\"static/chunks/main-5f18c6500ac458ba4100.js\",\"static/chunks/webpack-e067438c4cf4ef2ef178.js\",\"static/chunks/framework.18a81529ca607127d8ce.js\",\"static/chunks/730dd77ec482b3c334749f545aa47077de4a22d2.e4f65c1763809e22dfe2.js\",\"static/chunks/8e35e2268b5f7de23cc5e1e711f189c7961b86dd.474b8c9ab85bc3fcc241.js\",\"static/chunks/pages/mvp-d8d0a7fa614813207d8b.js\"],\"/posts/[uid]\":[\"static/chunks/main-5f18c6500ac458ba4100.js\",\"static/chunks/webpack-e067438c4cf4ef2ef178.js\",\"static/chunks/framework.18a81529ca607127d8ce.js\",\"static/chunks/730dd77ec482b3c334749f545aa47077de4a22d2.e4f65c1763809e22dfe2.js\",\"static/chunks/8e35e2268b5f7de23cc5e1e711f189c7961b86dd.474b8c9ab85bc3fcc241.js\",\"static/chunks/452ee2613212461b3bce4da9d5fbdaf95b92dd35.ff455dd4f98ba1f22a48.js\",\"static/chunks/8db4d65e83ea52708f25ffa0bf5c65b413f50fa0.1ce8186deb91a177a29e.js\",\"static/chunks/pages/posts/[uid]-4705d0b309dc934c9993.js\"],\"/pricing\":[\"static/chunks/main-5f18c6500ac458ba4100.js\",\"static/chunks/webpack-e067438c4cf4ef2ef178.js\",\"static/chunks/framework.18a81529ca607127d8ce.js\",\"static/chunks/730dd77ec482b3c334749f545aa47077de4a22d2.e4f65c1763809e22dfe2.js\",\"static/chunks/8e35e2268b5f7de23cc5e1e711f189c7961b86dd.474b8c9ab85bc3fcc241.js\",\"static/chunks/pages/pricing-ec599a15ca5badbfbb80.js\"],\"/projectSingle\":[\"static/chunks/main-5f18c6500ac458ba4100.js\",\"static/chunks/webpack-e067438c4cf4ef2ef178.js\",\"static/chunks/framework.18a81529ca607127d8ce.js\",\"static/chunks/730dd77ec482b3c334749f545aa47077de4a22d2.e4f65c1763809e22dfe2.js\",\"static/chunks/8e35e2268b5f7de23cc5e1e711f189c7961b86dd.474b8c9ab85bc3fcc241.js\",\"static/chunks/pages/projectSingle-762767f3c1ab37639ccc.js\"],\"/projects\":[\"static/chunks/main-5f18c6500ac458ba4100.js\",\"static/chunks/webpack-e067438c4cf4ef2ef178.js\",\"static/chunks/framework.18a81529ca607127d8ce.js\",\"static/chunks/730dd77ec482b3c334749f545aa47077de4a22d2.e4f65c1763809e22dfe2.js\",\"static/chunks/8e35e2268b5f7de23cc5e1e711f189c7961b86dd.474b8c9ab85bc3fcc241.js\",\"static/chunks/pages/projects-d16969302e40cf1a3b6b.js\"],\"/serviceSingle\":[\"static/chunks/main-5f18c6500ac458ba4100.js\",\"static/chunks/webpack-e067438c4cf4ef2ef178.js\",\"static/chunks/framework.18a81529ca607127d8ce.js\",\"static/chunks/730dd77ec482b3c334749f545aa47077de4a22d2.e4f65c1763809e22dfe2.js\",\"static/chunks/8e35e2268b5f7de23cc5e1e711f189c7961b86dd.474b8c9ab85bc3fcc241.js\",\"static/chunks/pages/serviceSingle-1340acba421a123f49a3.js\"],\"/services\":[\"static/chunks/main-5f18c6500ac458ba4100.js\",\"static/chunks/webpack-e067438c4cf4ef2ef178.js\",\"static/chunks/framework.18a81529ca607127d8ce.js\",\"static/chunks/730dd77ec482b3c334749f545aa47077de4a22d2.e4f65c1763809e22dfe2.js\",\"static/chunks/8e35e2268b5f7de23cc5e1e711f189c7961b86dd.474b8c9ab85bc3fcc241.js\",\"static/chunks/pages/services-b98c901f7f7050b48b74.js\"]},\"ampFirstPages\":[]}");
+module.exports = JSON.parse("{\"polyfillFiles\":[\"static/chunks/polyfills-e69cc13a7e89296a69e4.js\"],\"devFiles\":[],\"ampDevFiles\":[],\"lowPriorityFiles\":[\"static/U1L2yZ7M-f-ZRFvF5UiEp/_buildManifest.js\",\"static/U1L2yZ7M-f-ZRFvF5UiEp/_ssgManifest.js\"],\"pages\":{\"/\":[\"static/chunks/main-5f18c6500ac458ba4100.js\",\"static/chunks/webpack-e067438c4cf4ef2ef178.js\",\"static/chunks/framework.18a81529ca607127d8ce.js\",\"static/chunks/730dd77ec482b3c334749f545aa47077de4a22d2.e4f65c1763809e22dfe2.js\",\"static/chunks/8e35e2268b5f7de23cc5e1e711f189c7961b86dd.474b8c9ab85bc3fcc241.js\",\"static/chunks/pages/index-0c5807214d4f617618d2.js\"],\"/404\":[\"static/chunks/main-5f18c6500ac458ba4100.js\",\"static/chunks/webpack-e067438c4cf4ef2ef178.js\",\"static/chunks/framework.18a81529ca607127d8ce.js\",\"static/chunks/pages/404-a714fe8ce5f8b56ea03e.js\"],\"/_app\":[\"static/chunks/main-5f18c6500ac458ba4100.js\",\"static/chunks/webpack-e067438c4cf4ef2ef178.js\",\"static/chunks/framework.18a81529ca607127d8ce.js\",\"static/chunks/730dd77ec482b3c334749f545aa47077de4a22d2.e4f65c1763809e22dfe2.js\",\"static/css/aea3675af88d5deac27b.css\",\"static/chunks/pages/_app-66bc423607a98748e95a.js\"],\"/_error\":[\"static/chunks/main-5f18c6500ac458ba4100.js\",\"static/chunks/webpack-e067438c4cf4ef2ef178.js\",\"static/chunks/framework.18a81529ca607127d8ce.js\",\"static/chunks/pages/_error-e003eaecd059111bcd76.js\"],\"/about\":[\"static/chunks/main-5f18c6500ac458ba4100.js\",\"static/chunks/webpack-e067438c4cf4ef2ef178.js\",\"static/chunks/framework.18a81529ca607127d8ce.js\",\"static/chunks/730dd77ec482b3c334749f545aa47077de4a22d2.e4f65c1763809e22dfe2.js\",\"static/chunks/8e35e2268b5f7de23cc5e1e711f189c7961b86dd.474b8c9ab85bc3fcc241.js\",\"static/chunks/pages/about-6b5ee47b88ebfa37dafd.js\"],\"/blog\":[\"static/chunks/main-5f18c6500ac458ba4100.js\",\"static/chunks/webpack-e067438c4cf4ef2ef178.js\",\"static/chunks/framework.18a81529ca607127d8ce.js\",\"static/chunks/730dd77ec482b3c334749f545aa47077de4a22d2.e4f65c1763809e22dfe2.js\",\"static/chunks/8e35e2268b5f7de23cc5e1e711f189c7961b86dd.474b8c9ab85bc3fcc241.js\",\"static/chunks/8db4d65e83ea52708f25ffa0bf5c65b413f50fa0.643111118877a349126c.js\",\"static/chunks/pages/blog-8cf95fe8231ecb7c8f3e.js\"],\"/blogOld\":[\"static/chunks/main-5f18c6500ac458ba4100.js\",\"static/chunks/webpack-e067438c4cf4ef2ef178.js\",\"static/chunks/framework.18a81529ca607127d8ce.js\",\"static/chunks/730dd77ec482b3c334749f545aa47077de4a22d2.e4f65c1763809e22dfe2.js\",\"static/chunks/8e35e2268b5f7de23cc5e1e711f189c7961b86dd.474b8c9ab85bc3fcc241.js\",\"static/chunks/pages/blogOld-8704d2de17e039afb0f5.js\"],\"/blogPost\":[\"static/chunks/main-5f18c6500ac458ba4100.js\",\"static/chunks/webpack-e067438c4cf4ef2ef178.js\",\"static/chunks/framework.18a81529ca607127d8ce.js\",\"static/chunks/730dd77ec482b3c334749f545aa47077de4a22d2.e4f65c1763809e22dfe2.js\",\"static/chunks/8e35e2268b5f7de23cc5e1e711f189c7961b86dd.474b8c9ab85bc3fcc241.js\",\"static/chunks/452ee2613212461b3bce4da9d5fbdaf95b92dd35.ff455dd4f98ba1f22a48.js\",\"static/chunks/8db4d65e83ea52708f25ffa0bf5c65b413f50fa0.643111118877a349126c.js\",\"static/chunks/pages/blogPost-6621112e5b4aefd7ac49.js\"],\"/blogSingle\":[\"static/chunks/main-5f18c6500ac458ba4100.js\",\"static/chunks/webpack-e067438c4cf4ef2ef178.js\",\"static/chunks/framework.18a81529ca607127d8ce.js\",\"static/chunks/730dd77ec482b3c334749f545aa47077de4a22d2.e4f65c1763809e22dfe2.js\",\"static/chunks/8e35e2268b5f7de23cc5e1e711f189c7961b86dd.474b8c9ab85bc3fcc241.js\",\"static/chunks/pages/blogSingle-71e859ccf27a2063a9a8.js\"],\"/blog_old\":[\"static/chunks/main-5f18c6500ac458ba4100.js\",\"static/chunks/webpack-e067438c4cf4ef2ef178.js\",\"static/chunks/framework.18a81529ca607127d8ce.js\",\"static/chunks/730dd77ec482b3c334749f545aa47077de4a22d2.e4f65c1763809e22dfe2.js\",\"static/chunks/8e35e2268b5f7de23cc5e1e711f189c7961b86dd.474b8c9ab85bc3fcc241.js\",\"static/chunks/452ee2613212461b3bce4da9d5fbdaf95b92dd35.ff455dd4f98ba1f22a48.js\",\"static/chunks/pages/blog_old-10f2d5091746feb4ff3e.js\"],\"/categories/[category]\":[\"static/chunks/main-5f18c6500ac458ba4100.js\",\"static/chunks/webpack-e067438c4cf4ef2ef178.js\",\"static/chunks/framework.18a81529ca607127d8ce.js\",\"static/chunks/730dd77ec482b3c334749f545aa47077de4a22d2.e4f65c1763809e22dfe2.js\",\"static/chunks/8e35e2268b5f7de23cc5e1e711f189c7961b86dd.474b8c9ab85bc3fcc241.js\",\"static/chunks/452ee2613212461b3bce4da9d5fbdaf95b92dd35.ff455dd4f98ba1f22a48.js\",\"static/chunks/8db4d65e83ea52708f25ffa0bf5c65b413f50fa0.643111118877a349126c.js\",\"static/chunks/pages/categories/[category]-29e9e439202f220c17ec.js\"],\"/contact\":[\"static/chunks/main-5f18c6500ac458ba4100.js\",\"static/chunks/webpack-e067438c4cf4ef2ef178.js\",\"static/chunks/framework.18a81529ca607127d8ce.js\",\"static/chunks/730dd77ec482b3c334749f545aa47077de4a22d2.e4f65c1763809e22dfe2.js\",\"static/chunks/8e35e2268b5f7de23cc5e1e711f189c7961b86dd.474b8c9ab85bc3fcc241.js\",\"static/chunks/pages/contact-4a2a2505786eedbfd919.js\"],\"/develop\":[\"static/chunks/main-5f18c6500ac458ba4100.js\",\"static/chunks/webpack-e067438c4cf4ef2ef178.js\",\"static/chunks/framework.18a81529ca607127d8ce.js\",\"static/chunks/730dd77ec482b3c334749f545aa47077de4a22d2.e4f65c1763809e22dfe2.js\",\"static/chunks/8e35e2268b5f7de23cc5e1e711f189c7961b86dd.474b8c9ab85bc3fcc241.js\",\"static/chunks/pages/develop-51cd7a8e1a8f645a13ab.js\"],\"/faq\":[\"static/chunks/main-5f18c6500ac458ba4100.js\",\"static/chunks/webpack-e067438c4cf4ef2ef178.js\",\"static/chunks/framework.18a81529ca607127d8ce.js\",\"static/chunks/730dd77ec482b3c334749f545aa47077de4a22d2.e4f65c1763809e22dfe2.js\",\"static/chunks/8e35e2268b5f7de23cc5e1e711f189c7961b86dd.474b8c9ab85bc3fcc241.js\",\"static/chunks/pages/faq-bb8c8bd5f865ae8fd4ba.js\"],\"/mvp\":[\"static/chunks/main-5f18c6500ac458ba4100.js\",\"static/chunks/webpack-e067438c4cf4ef2ef178.js\",\"static/chunks/framework.18a81529ca607127d8ce.js\",\"static/chunks/730dd77ec482b3c334749f545aa47077de4a22d2.e4f65c1763809e22dfe2.js\",\"static/chunks/8e35e2268b5f7de23cc5e1e711f189c7961b86dd.474b8c9ab85bc3fcc241.js\",\"static/chunks/pages/mvp-d8d0a7fa614813207d8b.js\"],\"/posts/[uid]\":[\"static/chunks/main-5f18c6500ac458ba4100.js\",\"static/chunks/webpack-e067438c4cf4ef2ef178.js\",\"static/chunks/framework.18a81529ca607127d8ce.js\",\"static/chunks/730dd77ec482b3c334749f545aa47077de4a22d2.e4f65c1763809e22dfe2.js\",\"static/chunks/8e35e2268b5f7de23cc5e1e711f189c7961b86dd.474b8c9ab85bc3fcc241.js\",\"static/chunks/452ee2613212461b3bce4da9d5fbdaf95b92dd35.ff455dd4f98ba1f22a48.js\",\"static/chunks/8db4d65e83ea52708f25ffa0bf5c65b413f50fa0.643111118877a349126c.js\",\"static/chunks/pages/posts/[uid]-c083410e552c25b46e92.js\"],\"/pricing\":[\"static/chunks/main-5f18c6500ac458ba4100.js\",\"static/chunks/webpack-e067438c4cf4ef2ef178.js\",\"static/chunks/framework.18a81529ca607127d8ce.js\",\"static/chunks/730dd77ec482b3c334749f545aa47077de4a22d2.e4f65c1763809e22dfe2.js\",\"static/chunks/8e35e2268b5f7de23cc5e1e711f189c7961b86dd.474b8c9ab85bc3fcc241.js\",\"static/chunks/pages/pricing-ec599a15ca5badbfbb80.js\"],\"/projectSingle\":[\"static/chunks/main-5f18c6500ac458ba4100.js\",\"static/chunks/webpack-e067438c4cf4ef2ef178.js\",\"static/chunks/framework.18a81529ca607127d8ce.js\",\"static/chunks/730dd77ec482b3c334749f545aa47077de4a22d2.e4f65c1763809e22dfe2.js\",\"static/chunks/8e35e2268b5f7de23cc5e1e711f189c7961b86dd.474b8c9ab85bc3fcc241.js\",\"static/chunks/pages/projectSingle-762767f3c1ab37639ccc.js\"],\"/projects\":[\"static/chunks/main-5f18c6500ac458ba4100.js\",\"static/chunks/webpack-e067438c4cf4ef2ef178.js\",\"static/chunks/framework.18a81529ca607127d8ce.js\",\"static/chunks/730dd77ec482b3c334749f545aa47077de4a22d2.e4f65c1763809e22dfe2.js\",\"static/chunks/8e35e2268b5f7de23cc5e1e711f189c7961b86dd.474b8c9ab85bc3fcc241.js\",\"static/chunks/pages/projects-d16969302e40cf1a3b6b.js\"],\"/serviceSingle\":[\"static/chunks/main-5f18c6500ac458ba4100.js\",\"static/chunks/webpack-e067438c4cf4ef2ef178.js\",\"static/chunks/framework.18a81529ca607127d8ce.js\",\"static/chunks/730dd77ec482b3c334749f545aa47077de4a22d2.e4f65c1763809e22dfe2.js\",\"static/chunks/8e35e2268b5f7de23cc5e1e711f189c7961b86dd.474b8c9ab85bc3fcc241.js\",\"static/chunks/pages/serviceSingle-1340acba421a123f49a3.js\"],\"/services\":[\"static/chunks/main-5f18c6500ac458ba4100.js\",\"static/chunks/webpack-e067438c4cf4ef2ef178.js\",\"static/chunks/framework.18a81529ca607127d8ce.js\",\"static/chunks/730dd77ec482b3c334749f545aa47077de4a22d2.e4f65c1763809e22dfe2.js\",\"static/chunks/8e35e2268b5f7de23cc5e1e711f189c7961b86dd.474b8c9ab85bc3fcc241.js\",\"static/chunks/pages/services-b98c901f7f7050b48b74.js\"]},\"ampFirstPages\":[]}");
 
 /***/ }),
 
@@ -15132,6 +15278,174 @@ if (true) {
 
 /***/ }),
 
+/***/ "iD2K":
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+
+// EXPORTS
+__webpack_require__.d(__webpack_exports__, "a", function() { return /* reexport */ home_PostList; });
+__webpack_require__.d(__webpack_exports__, "b", function() { return /* reexport */ home_SetupRepo; });
+
+// EXTERNAL MODULE: ./node_modules/react/index.js
+var react = __webpack_require__("q1tI");
+var react_default = /*#__PURE__*/__webpack_require__.n(react);
+
+// EXTERNAL MODULE: ./node_modules/next/link.js
+var next_link = __webpack_require__("YFqc");
+var link_default = /*#__PURE__*/__webpack_require__.n(next_link);
+
+// EXTERNAL MODULE: ./node_modules/prismic-reactjs/dist/prismic-reactjs.js
+var prismic_reactjs = __webpack_require__("wG+1");
+
+// EXTERNAL MODULE: ./components/home/PostList/PostDate.js
+var PostDate = __webpack_require__("yiKj");
+
+// CONCATENATED MODULE: ./components/home/PostList/FirstParagraph.js
+var __jsx = react_default.a.createElement;
+
+
+/**
+ * Component that returns the first paragraph of a post
+ */
+
+const FirstParagraph = ({
+  sliceZone,
+  textLimit = 300
+}) => {
+  // Find the first text slice of post's body
+  const firstTextSlice = sliceZone.find(slice => slice.slice_type === "text");
+
+  if (firstTextSlice) {
+    const text = prismic_reactjs["RichText"].asText(firstTextSlice.primary.text);
+    let limitedText = text.substring(0, textLimit);
+
+    if (text.length > textLimit) {
+      // Cut only up to the last word and attach '...' for readability
+      limitedText = `${limitedText.substring(0, limitedText.lastIndexOf(" "))}...`;
+    }
+
+    return __jsx("p", null, limitedText);
+  } // If there are no slices of type 'text', return nothing
+
+
+  return null;
+};
+
+/* harmony default export */ var PostList_FirstParagraph = (FirstParagraph);
+// EXTERNAL MODULE: ./prismic-configuration.js
+var prismic_configuration = __webpack_require__("qLLh");
+
+// EXTERNAL MODULE: ./node_modules/@material-ui/icons/AddCircleOutline.js
+var AddCircleOutline = __webpack_require__("bnla");
+var AddCircleOutline_default = /*#__PURE__*/__webpack_require__.n(AddCircleOutline);
+
+// CONCATENATED MODULE: ./components/home/PostList/PostItem.js
+var PostItem_jsx = react_default.a.createElement;
+
+
+
+
+
+
+
+/**
+ * Post list item component
+ */
+
+const PostItem = ({
+  post
+}) => {
+  const title = prismic_reactjs["RichText"].asText(post.data.title) ? prismic_reactjs["RichText"].asText(post.data.title) : "Untitled";
+  return PostItem_jsx("div", {
+    className: "col-lg-4 col-md-6"
+  }, PostItem_jsx("div", {
+    className: "single-blog-post-item"
+  }, PostItem_jsx("div", {
+    className: "post-image"
+  }, PostItem_jsx(link_default.a, {
+    as: Object(prismic_configuration["e" /* linkResolver */])(post),
+    href: Object(prismic_configuration["c" /* hrefResolver */])(post)
+  }, PostItem_jsx("a", null, PostItem_jsx("img", {
+    src: post.data.featured_image.url,
+    alt: "Featured Image"
+  })))), PostItem_jsx("div", {
+    className: "post-content"
+  }, PostItem_jsx("ul", {
+    className: "post-meta"
+  }, PostItem_jsx("li", null, PostItem_jsx(PostDate["a" /* default */], {
+    date: post.data.date
+  }))), PostItem_jsx("h3", null, PostItem_jsx(link_default.a, {
+    as: Object(prismic_configuration["e" /* linkResolver */])(post),
+    href: Object(prismic_configuration["c" /* hrefResolver */])(post)
+  }, PostItem_jsx("a", null, post.data.title[0].text))), PostItem_jsx(link_default.a, {
+    as: Object(prismic_configuration["e" /* linkResolver */])(post),
+    href: Object(prismic_configuration["c" /* hrefResolver */])(post)
+  }, PostItem_jsx("a", {
+    className: "read-more-btn"
+  }, "Read More ", PostItem_jsx(AddCircleOutline_default.a, {
+    fontSize: "large"
+  })))))) // <div className="blog-post">
+  //   <NextLink as={linkResolver(post)} href={hrefResolver(post)}>
+  //     <a>
+  //       <h2>{title}</h2>
+  //     </a>
+  //   </NextLink>
+  //
+  //   <FirstParagraph sliceZone={post.data.body} textLimit={300} />
+  // </div>
+  ;
+};
+
+/* harmony default export */ var PostList_PostItem = (PostItem);
+// CONCATENATED MODULE: ./components/home/PostList/index.js
+var PostList_jsx = react_default.a.createElement;
+
+ // import { postListStyles } from "styles";
+
+/**
+ * Post list component
+ */
+
+const PostList = ({
+  posts
+}) => {
+  return PostList_jsx(react_default.a.Fragment, null, posts.map(post => PostList_jsx(PostList_PostItem, {
+    post: post,
+    key: post.id
+  })));
+};
+
+/* harmony default export */ var home_PostList = (PostList);
+// EXTERNAL MODULE: ./layouts/index.js
+var layouts = __webpack_require__("ZDfL");
+
+// CONCATENATED MODULE: ./components/home/SetupRepo.js
+var SetupRepo_jsx = react_default.a.createElement;
+
+
+ // import { setupRepoStyles } from "styles";
+
+/**
+ * Setup repo component
+ */
+
+const SetupRepo = () => {
+  const repoUrl = `${prismic_configuration["b" /* apiEndpoint */].replace(".cdn", "").slice(0, -6)}documents/`;
+  return SetupRepo_jsx(layouts["a" /* default */], null, SetupRepo_jsx("div", {
+    className: "setup-repo"
+  }, SetupRepo_jsx("h1", null, "Good job!"), SetupRepo_jsx("h2", null, "You're halfway done with setting up your Prismic website"), SetupRepo_jsx("h4", null, "Just visit your ", SetupRepo_jsx("a", {
+    href: repoUrl
+  }, "Prismic dashboard"), " and add some content there")));
+};
+
+/* harmony default export */ var home_SetupRepo = (SetupRepo);
+// CONCATENATED MODULE: ./components/home/index.js
+
+
+
+/***/ }),
+
 /***/ "iGm5":
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -20228,317 +20542,6 @@ function footer() {
 
 /***/ }),
 
-/***/ "npbp":
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "unstable_getStaticParams", function() { return unstable_getStaticParams; });
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "getStaticProps", function() { return getStaticProps; });
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "getStaticPaths", function() { return getStaticPaths; });
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "getServerSideProps", function() { return getServerSideProps; });
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "unstable_getStaticProps", function() { return unstable_getStaticProps; });
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "unstable_getStaticPaths", function() { return unstable_getStaticPaths; });
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "unstable_getServerProps", function() { return unstable_getServerProps; });
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "config", function() { return config; });
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "_app", function() { return _app; });
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "renderReqToHTML", function() { return renderReqToHTML; });
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "render", function() { return render; });
-/* harmony import */ var next_plugin_loader_middleware_on_init_server___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__("GX0O");
-/* harmony import */ var next_plugin_loader_middleware_on_error_server___WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__("KqAr");
-/* harmony import */ var next_dist_next_server_server_node_polyfill_fetch__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__("fkL1");
-/* harmony import */ var next_dist_next_server_server_node_polyfill_fetch__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(next_dist_next_server_server_node_polyfill_fetch__WEBPACK_IMPORTED_MODULE_2__);
-
-    
-    
-    
-    const {isResSent} = __webpack_require__("g/15");
-
-    
-    const { processEnv } = __webpack_require__("fXeI")
-    processEnv([])
-  
-    
-    const runtimeConfig = {}
-    const {parse: parseUrl, format: formatUrl} = __webpack_require__("bzos")
-    const {parse: parseQs} = __webpack_require__("8xkj")
-    const { renderToHTML } = __webpack_require__("/bjS");
-    const { tryGetPreviewData } = __webpack_require__("PCLx");
-    const { denormalizePagePath } = __webpack_require__("wkBG")
-    const { setLazyProp, getCookieParser } = __webpack_require__("PCLx")
-    const {sendPayload} = __webpack_require__("KyNf");
-    const buildManifest = __webpack_require__("LZ9C");
-    const reactLoadableManifest = __webpack_require__("67Bq");
-    const Document = __webpack_require__("5w0S").default;
-    const Error = __webpack_require__("/a9y").default;
-    const App = __webpack_require__("1TCz").default;
-
-    
-    
-    const { rewrites } = __webpack_require__("Skye")
-    const { pathToRegexp, default: pathMatch } = __webpack_require__("N6Fi")
-  
-
-    const ComponentInfo = __webpack_require__("/yi9")
-
-    const Component = ComponentInfo.default
-    /* harmony default export */ __webpack_exports__["default"] = (Component);
-    const unstable_getStaticParams = ComponentInfo['unstable_getStaticParam' + 's']
-    const getStaticProps = ComponentInfo['getStaticProp' + 's']
-    const getStaticPaths = ComponentInfo['getStaticPath' + 's']
-    const getServerSideProps = ComponentInfo['getServerSideProp' + 's']
-
-    // kept for detecting legacy exports
-    const unstable_getStaticProps = ComponentInfo['unstable_getStaticProp' + 's']
-    const unstable_getStaticPaths = ComponentInfo['unstable_getStaticPath' + 's']
-    const unstable_getServerProps = ComponentInfo['unstable_getServerProp' + 's']
-
-    
-    
-    
-    
-    const getCustomRouteMatcher = pathMatch(true)
-    const prepareDestination = __webpack_require__("6mnf").default
-
-    function handleRewrites(parsedUrl) {
-      for (const rewrite of rewrites) {
-        const matcher = getCustomRouteMatcher(rewrite.source)
-        const params = matcher(parsedUrl.pathname)
-
-        if (params) {
-          const { parsedDestination } = prepareDestination(
-            rewrite.destination,
-            params,
-            parsedUrl.query,
-            true,
-            ""
-          )
-
-          Object.assign(parsedUrl.query, parsedDestination.query)
-          delete parsedDestination.query
-
-          Object.assign(parsedUrl, parsedDestination)
-
-          if (parsedUrl.pathname === '/blog'){
-            break
-          }
-          
-        }
-      }
-
-      return parsedUrl
-    }
-  
-
-    const config = ComponentInfo['confi' + 'g'] || {}
-    const _app = App
-    async function renderReqToHTML(req, res, renderMode, _renderOpts, _params) {
-      const fromExport = renderMode === 'export' || renderMode === true;
-      const nextStartMode = renderMode === 'passthrough'
-
-      setLazyProp({ req }, 'cookies', getCookieParser(req))
-
-      const options = {
-        App,
-        Document,
-        buildManifest,
-        getStaticProps,
-        getServerSideProps,
-        getStaticPaths,
-        reactLoadableManifest,
-        canonicalBase: "",
-        buildId: "CSa5Ry8AT_QdqkbLDw-io",
-        assetPrefix: "",
-        runtimeConfig: runtimeConfig.publicRuntimeConfig || {},
-        previewProps: {previewModeId:"cdc5543cb45ddd03bed55cf5ce7a8bc5",previewModeSigningKey:"c3e3e6e17d49b7e53475ec4fdeb5a3ec130f071b2e180211fd9b7d787d71d6f1",previewModeEncryptionKey:"385c2a213562cb0ef6590d3203da3f9633aaaffba710f63fae6b6b408f6643a1"},
-        env: process.env,
-        basePath: "",
-        ..._renderOpts
-      }
-      let _nextData = false
-      let parsedUrl
-
-      try {
-        // We need to trust the dynamic route params from the proxy
-        // to ensure we are using the correct values
-        const trustQuery = !getStaticProps && req.headers['x-vercel-id']
-        let parsedUrl = parseUrl(req.url, true)
-        let routeNoAssetPath = parsedUrl.pathname
-        const origQuery = Object.assign({}, parsedUrl.query)
-
-        parsedUrl = handleRewrites(parsedUrl)
-
-        
-
-        if (parsedUrl.pathname.match(/_next\/data/)) {
-          const {
-            default: getrouteNoAssetPath,
-          } = __webpack_require__("1Ej0");
-          _nextData = true;
-          parsedUrl.pathname = getrouteNoAssetPath(
-            parsedUrl.pathname.replace(
-              new RegExp('/_next/data/CSa5Ry8AT_QdqkbLDw\-io/'),
-              '/'
-            ),
-            '.json'
-          );
-          routeNoAssetPath = parsedUrl.pathname
-        }
-
-        
-      const i18n = {}
-      const detectedLocale = undefined
-    
-
-        const renderOpts = Object.assign(
-          {
-            Component,
-            pageConfig: config,
-            nextExport: fromExport,
-            isDataReq: _nextData,
-            locale: detectedLocale,
-            locales: i18n.locales,
-            defaultLocale: i18n.defaultLocale,
-          },
-          options,
-        )
-
-        
-
-        const params = {};
-        const nowParams = null;
-
-        // make sure to set renderOpts to the correct params e.g. _params
-        // if provided from worker or params if we're parsing them here
-        renderOpts.params = _params || params
-
-        // make sure to normalize req.url on Vercel to strip dynamic params
-        // from the query which are added during routing
-        
-
-        // normalize request URL/asPath for fallback/revalidate pages since the
-        // proxy sets the request URL to the output's path for fallback pages
-        
-
-        // make sure to normalize asPath for revalidate and _next/data requests
-        // since the asPath should match what is shown on the client
-        if (
-          !fromExport &&
-          (getStaticProps || getServerSideProps)
-        ) {
-          
-
-          parsedUrl.pathname = denormalizePagePath(parsedUrl.pathname)
-          renderOpts.resolvedUrl = formatUrl({
-            ...parsedUrl,
-            query: origQuery
-          })
-
-          // For getServerSideProps we need to ensure we use the original URL
-          // and not the resolved URL to prevent a hydration mismatch on asPath
-          renderOpts.resolvedAsPath = getServerSideProps
-            ? formatUrl({
-              ...parsedUrl,
-              pathname: routeNoAssetPath,
-              query: origQuery,
-            })
-            : renderOpts.resolvedUrl
-        }
-
-        const isFallback = parsedUrl.query.__nextFallback
-
-        const previewData = tryGetPreviewData(req, res, options.previewProps)
-        const isPreviewMode = previewData !== false
-
-        if (false) {}
-        let result = await renderToHTML(req, res, "/blog", Object.assign({}, getStaticProps ? { ...(parsedUrl.query.amp ? { amp: '1' } : {}) } : parsedUrl.query, nowParams ? nowParams : params, _params, isFallback ? { __nextFallback: 'true' } : {}), renderOpts)
-
-        if (!renderMode) {
-          if (_nextData || getStaticProps || getServerSideProps) {
-            sendPayload(req, res, _nextData ? JSON.stringify(renderOpts.pageData) : result, _nextData ? 'json' : 'html', true, {
-              private: isPreviewMode,
-              stateful: !!getServerSideProps,
-              revalidate: renderOpts.revalidate,
-            })
-            return null
-          }
-        } else if (isPreviewMode) {
-          res.setHeader(
-            'Cache-Control',
-            'private, no-cache, no-store, max-age=0, must-revalidate'
-          )
-        }
-
-        if (renderMode) return { html: result, renderOpts }
-        return result
-      } catch (err) {
-        if (!parsedUrl) {
-          parsedUrl = parseUrl(req.url, true)
-        }
-
-        if (err.code === 'ENOENT') {
-          res.statusCode = 404
-        } else if (err.code === 'DECODE_FAILED') {
-          // TODO: better error?
-          res.statusCode = 400
-        } else {
-          console.error('Unhandled error during request:', err)
-
-          // Backwards compat (call getInitialProps in custom error):
-          try {
-            await renderToHTML(req, res, "/_error", parsedUrl.query, Object.assign({}, options, {
-              getStaticProps: undefined,
-              getStaticPaths: undefined,
-              getServerSideProps: undefined,
-              Component: Error,
-              err: err,
-              // Short-circuit rendering:
-              isDataReq: true
-            }))
-          } catch (underErrorErr) {
-            console.error('Failed call /_error subroutine, continuing to crash function:', underErrorErr)
-          }
-
-          // Throw the error to crash the serverless function
-          if (isResSent(res)) {
-            console.error('!!! WARNING !!!')
-            console.error(
-              'Your function crashed, but closed the response before allowing the function to exit.\n' +
-              'This may cause unexpected behavior for the next request.'
-            )
-            console.error('!!! WARNING !!!')
-          }
-          throw err
-        }
-
-        const result = await renderToHTML(req, res, "/_error", parsedUrl.query, Object.assign({}, options, {
-          getStaticProps: undefined,
-          getStaticPaths: undefined,
-          getServerSideProps: undefined,
-          Component: Error,
-          err: res.statusCode === 404 ? undefined : err
-        }))
-        return result
-      }
-    }
-    async function render (req, res) {
-      try {
-        await Object(next_plugin_loader_middleware_on_init_server___WEBPACK_IMPORTED_MODULE_0__["default"])()
-        const html = await renderReqToHTML(req, res)
-        if (html) {
-          sendPayload(req, res, html, 'html', {generateEtags: true, poweredByHeader: true})
-        }
-      } catch(err) {
-        console.error(err)
-        await Object(next_plugin_loader_middleware_on_error_server___WEBPACK_IMPORTED_MODULE_1__["default"])(err)
-        // Throw the error to crash the serverless function
-        throw err
-      }
-    }
-  
-
-/***/ }),
-
 /***/ "o8Rm":
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
@@ -20930,8 +20933,10 @@ if (true) {
 "use strict";
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "b", function() { return apiEndpoint; });
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return accessToken; });
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "d", function() { return linkResolver; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "e", function() { return linkResolver; });
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "c", function() { return hrefResolver; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "f", function() { return linkResolverCat; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "d", function() { return hrefResolverCat; });
 // -- Prismic API endpoint
 // Determines which repository to query and fetch data from
 // Configure your site's access point here
@@ -20952,6 +20957,22 @@ const linkResolver = doc => {
 const hrefResolver = doc => {
   if (doc.type === "blog_post") {
     return "/posts/[uid]";
+  }
+
+  return "/";
+}; // Manages the url links to internal Prismic documents
+
+const linkResolverCat = doc => {
+  if (doc.type === "tag") {
+    return `/categories/${doc.id}`;
+  }
+
+  return "/";
+}; // Additional helper function for Next/Link components
+
+const hrefResolverCat = doc => {
+  if (doc.type === "tag") {
+    return "/categories/[category]";
   }
 
   return "/";

@@ -3,7 +3,7 @@ import Head from "next/head";
 import { RichText } from "prismic-reactjs";
 import Header from "components/Header";
 
-import { queryRepeatableDocuments } from "utils/queries";
+import { queryRepeatableDocuments, queryCategories } from "utils/queries";
 import Link from "next/link";
 import { hrefResolver, linkResolver } from "prismic-configuration";
 
@@ -84,9 +84,9 @@ export async function getStaticProps({
 }
 
 export async function getStaticPaths() {
-  const documents = await queryRepeatableDocuments((doc) => doc.type === "tag");
+  const documents = await queryCategories((doc) => doc.type === "tag");
   return {
-    paths: documents.map((doc) => `/categories/${doc.data.categories}`),
+    paths: documents.map((doc) => `/categories/${doc.id}`),
     fallback: true,
   };
 }

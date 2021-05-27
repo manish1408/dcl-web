@@ -1,4 +1,5 @@
 import { Client } from "./prismicHelpers";
+import Prismic from "@prismicio/client";
 
 async function fetchDocs(page = 1, routes = []) {
   const response = await Client().query("", { pageSize: 100, lang: "*", page });
@@ -14,6 +15,12 @@ async function fetchDocs(page = 1, routes = []) {
 export const queryRepeatableDocuments = async (filter) => {
   const allRoutes = await fetchDocs();
   return allRoutes.filter(filter);
+};
+
+export const queryCategories = async () => {
+  const categories =
+    (await Client().query(Prismic.Predicates.at("document.type", "tag"))) || {};
+  return categories.results;
 };
 
 export const homePageQuery = async () => {

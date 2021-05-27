@@ -1,17 +1,24 @@
 # Next-on-Netlify Redirects
-/_next/data/CSa5Ry8AT_QdqkbLDw-io/blog.json  /.netlify/functions/next_blog  200!  Cookie=__prerender_bypass,__next_preview_data
-/_next/data/CSa5Ry8AT_QdqkbLDw-io/posts/flutter-vs.-react-native.json  /.netlify/functions/next_posts_uid  200!  Cookie=__prerender_bypass,__next_preview_data
-/_next/data/CSa5Ry8AT_QdqkbLDw-io/posts/lorem-ipsum.json  /.netlify/functions/next_posts_uid  200!  Cookie=__prerender_bypass,__next_preview_data
-/_next/data/CSa5Ry8AT_QdqkbLDw-io/posts/why-you-should-be-using-jamstack.json  /.netlify/functions/next_posts_uid  200!  Cookie=__prerender_bypass,__next_preview_data
+/_next/data/U1L2yZ7M-f-ZRFvF5UiEp/blog.json  /.netlify/functions/next_blog  200!  Cookie=__prerender_bypass,__next_preview_data
+/_next/data/U1L2yZ7M-f-ZRFvF5UiEp/categories/YJQtQhEAACMAGmBK.json  /.netlify/functions/next_categories_category  200!  Cookie=__prerender_bypass,__next_preview_data
+/_next/data/U1L2yZ7M-f-ZRFvF5UiEp/categories/YJQtchEAACIAGmEq.json  /.netlify/functions/next_categories_category  200!  Cookie=__prerender_bypass,__next_preview_data
+/_next/data/U1L2yZ7M-f-ZRFvF5UiEp/categories/YJQtkxEAACIAGmHC.json  /.netlify/functions/next_categories_category  200!  Cookie=__prerender_bypass,__next_preview_data
+/_next/data/U1L2yZ7M-f-ZRFvF5UiEp/posts/flutter-vs.-react-native.json  /.netlify/functions/next_posts_uid  200!  Cookie=__prerender_bypass,__next_preview_data
+/_next/data/U1L2yZ7M-f-ZRFvF5UiEp/posts/lorem-ipsum.json  /.netlify/functions/next_posts_uid  200!  Cookie=__prerender_bypass,__next_preview_data
+/_next/data/U1L2yZ7M-f-ZRFvF5UiEp/posts/why-you-should-be-using-jamstack.json  /.netlify/functions/next_posts_uid  200!  Cookie=__prerender_bypass,__next_preview_data
 /api/exit-preview  /.netlify/functions/next_api_exitpreview  200
 /api/preview  /.netlify/functions/next_api_preview  200
 /blog  /.netlify/functions/next_blog  200!  Cookie=__prerender_bypass,__next_preview_data
 /blogPost  /.netlify/functions/next_blogPost  200
 /blog_old  /.netlify/functions/next_blog_old  200
+/categories/YJQtQhEAACMAGmBK  /.netlify/functions/next_categories_category  200!  Cookie=__prerender_bypass,__next_preview_data
+/categories/YJQtchEAACIAGmEq  /.netlify/functions/next_categories_category  200!  Cookie=__prerender_bypass,__next_preview_data
+/categories/YJQtkxEAACIAGmHC  /.netlify/functions/next_categories_category  200!  Cookie=__prerender_bypass,__next_preview_data
 /posts/flutter-vs.-react-native  /.netlify/functions/next_posts_uid  200!  Cookie=__prerender_bypass,__next_preview_data
 /posts/lorem-ipsum  /.netlify/functions/next_posts_uid  200!  Cookie=__prerender_bypass,__next_preview_data
 /posts/why-you-should-be-using-jamstack  /.netlify/functions/next_posts_uid  200!  Cookie=__prerender_bypass,__next_preview_data
-/_next/data/CSa5Ry8AT_QdqkbLDw-io/posts/:uid.json  /.netlify/functions/next_posts_uid  200
+/_next/data/U1L2yZ7M-f-ZRFvF5UiEp/categories/:category.json  /.netlify/functions/next_categories_category  200
+/_next/data/U1L2yZ7M-f-ZRFvF5UiEp/posts/:uid.json  /.netlify/functions/next_posts_uid  200
 /_next/image*  url=:url w=:width q=:quality  /.netlify/functions/next_image?url=:url&w=:width&q=:quality  200
-/categories/:category  /categories/[category].html  200
+/categories/:category  /.netlify/functions/next_categories_category  200
 /posts/:uid  /.netlify/functions/next_posts_uid  200
