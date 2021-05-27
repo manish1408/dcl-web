@@ -23,3 +23,19 @@ export const hrefResolver = (doc) => {
   }
   return "/";
 };
+
+// Manages the url links to internal Prismic documents
+export const linkResolverCat = (doc) => {
+  if (doc.type === "tag") {
+    return `/categories/${doc.id}`;
+  }
+  return "/";
+};
+
+// Additional helper function for Next/Link components
+export const hrefResolverCat = (doc) => {
+  if (doc.type === "tag") {
+    return "/categories/[category]";
+  }
+  return "/";
+};

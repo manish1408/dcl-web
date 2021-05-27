@@ -25,29 +25,16 @@ import Prismic from "@prismicio/client";
 import PostDate from "../../components/home/PostList/PostDate";
 // import { hrefResolver, linkResolver } from "prismic-configuration";
 import SearchComponent from "components/SearchComponent";
+import { hrefResolverCat, linkResolverCat } from "../../prismic-configuration";
 
 /**
  * Post page component
  */
-const Post = ({ post, postList, featuredPosts, categories }) => {
+const Post = ({ post, postList, featuredPosts, categories, data }) => {
+  // console.log(data);
   if (post && post.data) {
     const hasTitle = RichText.asText(post.data.title).length !== 0;
     const title = hasTitle ? RichText.asText(post.data.title) : "Untitled";
-    // const [value, setValue] = useState(searchResult);
-    // // This will launch only if propName value has chaged.
-    // useEffect(() => {
-    //   setValue(searchResult);
-    // }, [searchResult]);
-    // fetchSearchResult();
-
-    // const nextpost = (
-    //   await Client().query(
-    //     $prismic.predicates.at("document.type", "blog_post"),
-    //     { pageSize: 1, after: `${post.id}`, orderings: "[my.post.date]" }
-    //   )
-    // ).results[0];
-    // console.log(categories);
-    // console.log(post);
 
     return (
       // <DefaultLayout>
@@ -250,7 +237,12 @@ const Post = ({ post, postList, featuredPosts, categories }) => {
                       categories.results.map((categorie) => (
                         <ul key={categorie.id}>
                           <li>
-                            <a>{categorie.data.categories}</a>
+                            <Link
+                              as={linkResolverCat(categorie)}
+                              href={hrefResolverCat(categorie)}
+                            >
+                              <a>{categorie.data.categories}</a>
+                            </Link>
                           </li>
                         </ul>
                       ))
@@ -347,10 +339,10 @@ export async function getStaticProps({
     (await Client().getByUID("blog_post", params.uid, ref ? { ref } : null)) ||
     {};
 
-  const posts =
-    (await Client().query(Prismic.Predicates.at("document.type", "blog_post"), {
-      orderings: "[my.blog-post.date desc]",
-    })) || {};
+  // const posts =
+  //   (await Client().query(Prismic.Predicates.at("document.type", "blog_post"), {
+  //     orderings: "[my.blog-post.date desc]",
+  //   })) || {};
 
   const categories =
     (await Client().query(Prismic.Predicates.at("document.type", "tag"))) || {};

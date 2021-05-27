@@ -8,6 +8,7 @@ import Link from "next/link";
 import { hrefResolver, linkResolver } from "prismic-configuration";
 
 // Project components
+import { PostList } from "components/home";
 import DefaultLayout from "layouts";
 import { BackButton, SliceZone } from "components/post";
 
@@ -29,8 +30,65 @@ import SearchComponent from "components/SearchComponent";
 /**
  * Post page component
  */
-const Post = ({ post }) => {
-  return <div>HELLOw</div>;
+const Category = ({ posts, category }) => {
+  if (posts) {
+    return (
+      <>
+        <DefaultLayout>
+          <section className="blog-area ptb-80">
+            <div className="container">
+              <Head>
+                <title>{"Archive - " + category.data.categories}</title>
+              </Head>
+              <Header />
+              <PageTitle title={"Archive - " + category.data.categories} />
+              <div className="row">
+                <PostList posts={posts} />
+              </div>
+            </div>
+          </section>
+        </DefaultLayout>
+
+        <Footer />
+      </>
+    );
+  }
+
+  // Message when repository has not been setup yet
+  return null;
 };
 
-export default Post;
+export async function getStaticProps({
+  params,
+  preview = null,
+  previewData = {},
+}) {
+  const data = params.category;
+  const { ref } = previewData;
+
+  const category = (await Client().getByID(data)) || {};
+
+  const posts =
+    (await Client().query([
+      Prismic.Predicates.at("document.type", "blog_post"),
+      Prismic.Predicates.at("my.blog_post.categories.categories", data),
+    ])) || {};
+
+  return {
+    props: {
+      posts: posts ? posts.results : [],
+      category,
+      preview,
+    },
+  };
+}
+
+export async function getStaticPaths() {
+  const documents = await queryRepeatableDocuments((doc) => doc.type === "tag");
+  return {
+    paths: documents.map((doc) => `/categories/${doc.data.categories}`),
+    fallback: true,
+  };
+}
+
+export default Category;
