@@ -59,7 +59,7 @@ export default function about() {
                   <h3>Mail Here</h3>
                   <p>
                     <a href="#">
-                      <span className="__cf_email__">example@mail.com</span>
+                      <span className="__cf_email__">contact@distinctcloud.io</span>
                     </a>
                   </p>
                 </div>
@@ -85,7 +85,7 @@ export default function about() {
                   </div>
                   <h3>Call Here</h3>
                   <p>
-                    <a href="#">+91 1234567890</a>
+                    <a href="#">+91 90318 96342</a>
                   </p>
                 </div>
               </div>

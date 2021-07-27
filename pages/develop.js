@@ -59,18 +59,15 @@ export default function develop() {
               <div className="col-lg-6 col-md-12">
                 <div className="agency-about-content">
                   <span className="sub-title">
-                    MVP = Minimum Viable Product
+                    Code your Imagination
                   </span>
                   <h2>
                     {" "}
-                    collect the maximum amount of validated learning about
-                    customers with the least effort
+                    Stay ahead of your competitors by accelerating your business with secure, fast, and real-time development
                   </h2>
                   <div className="bar" />
                   <p>
-                    Distinct cloud helps your project to achieve an MVP in the
-                    shortest time possible taking care of product market fit,
-                    launch and fundraise.
+                    Distinct cloud helps shaping your ideas into result oriented applications. With our deep expertise in multiple domains, we reduce the complexity involved in web development by scaling your application from front end to back end under a single roof.
                   </p>
                   <p>
                     Our team will understand your vision and turn it into a
@@ -320,8 +317,7 @@ export default function develop() {
             <div className="section-title">
               <span className="sub-title">How we work</span>
               <h2>
-                Distinct cloud has developed through numerous startups a solid
-                process to have a successful MVP and beyond.
+              One of our most experienced Product Owners will interview relevant stakeholders, conduct market research, and come up with proposed functionality for your product.
               </h2>
               <div className="bar" />
               <p>

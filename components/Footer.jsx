@@ -77,7 +77,7 @@ export default function footer() {
                   <EmailIcon />
                   <a href="#">
                     <span className="__cf_email__">
-                      hello@DistinctCloud.com
+                      contact@distinctcloud.io
                     </span>
                   </a>
                 </li>
