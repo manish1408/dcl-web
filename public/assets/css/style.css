@@ -267,7 +267,6 @@ label {
 }
 .section-title h2 {
   margin-bottom: 0;
-  text-transform: capitalize;
   font-size: 28px;
   font-weight: 600;
 }
@@ -8727,7 +8726,6 @@ blockquote::after,
   line-height: 1.4;
   font-size: 28px;
   font-weight: 600;
-  text-transform: capitalize;
 }
 .agency-about-content .bar {
   height: 5px;

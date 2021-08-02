@@ -15,8 +15,10 @@ import ArrowUpwardIcon from "@material-ui/icons/ArrowUpward";
 
 const Home = () => (
   <div>
+
     <Head>
       <title>Distinct Cloud Labs - Home</title>
+      <script type="text/javascript" src="js/typeform.js"></script>
     </Head>
     <Header></Header>
 

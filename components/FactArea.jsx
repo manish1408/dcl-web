@@ -36,7 +36,9 @@ export default function FactArea() {
     </div> */}
     <div className="contact-cta-box">
       <h3>Submit your project or idea and we will get back to you.</h3>
-      <a href="#" className="btn btn-primary">Start</a>
+      <a href="https://form.typeform.com/to/gZjdpopp"
+            data-mode="popup"
+            data-size="100" target="_blank" className="btn btn-primary">Start</a>
     </div>
   </div>
 </section>

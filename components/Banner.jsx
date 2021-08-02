@@ -9,15 +9,16 @@ export default function Banner() {
           <p>
             Distinct cloud offers a suite of software products and services in
             web, mobile, analytics, complex algos and AI
-      </p>
+          </p>
 
 
           <p>
             Submit your project or idea and we will get back to you.
           </p>
 
-          <a href="#" className="btn btn-primary">Start</a>
-
+          <a href="https://form.typeform.com/to/gZjdpopp"
+            data-mode="popup"
+            data-size="100" target="_blank" className="btn btn-primary">Start</a>
         </div>
       </div>
       {/* 
