@@ -14,10 +14,18 @@ import Newsletter from "../components/Newsletter";
 import ArrowUpwardIcon from "@material-ui/icons/ArrowUpward";
 
 const Home = () => (
+
   <div>
 
     <Head>
-      <title>Distinct Cloud Labs - Home</title>
+      <title>Distinct Cloud Labs - Cloud Product Development services</title>
+      <meta name="title" content="Distinct Cloud Labs - Cloud Product Development services" />
+      <meta name="description" content="Distinct cloud offers a suite of software products and services in web, mobile, analytics, complex algos and AI" />
+      <meta name="keywords" content="software development, platform development, ios development, android development, web development, ai development, machine learning platform, fundraising, market research, architecture" />
+      <meta name="robots" content="index, follow" />
+      <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+      <meta name="language" content="English"></meta>
+
       <script type="text/javascript" src="js/typeform.js"></script>
     </Head>
     <Header></Header>
