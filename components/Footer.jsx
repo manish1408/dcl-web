@@ -25,20 +25,20 @@ export default function footer() {
             <div className="single-footer-widget pl-5">
               <h3>Company</h3>
               <ul className="list">
-                <li>
+                {/* <li>
                   <Link href="/about">
                     <a>About</a>
                   </Link>
-                </li>
+                </li> */}
                 <li>
-                  <Link href="/services">
+                  <Link href="/mvp">
                     <a>Create an MVP</a>
                   </Link>
                 </li>
                 <li>
-                  <Link href="/projects">
-                    <a>Start a Project</a>
-                  </Link>
+                  <a href="https://form.typeform.com/to/gZjdpopp"
+                    data-mode="popup"
+                    data-size="100" target="_blank" >Start a Project</a>
                 </li>
               </ul>
             </div>
@@ -77,7 +77,7 @@ export default function footer() {
                   <EmailIcon />
                   <a href="#">
                     <span className="__cf_email__">
-                      hello@DistinctCloud.com
+                      contact@distinctcloud.io
                     </span>
                   </a>
                 </li>

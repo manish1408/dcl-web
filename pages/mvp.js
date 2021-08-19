@@ -9,7 +9,13 @@ export default function mvp() {
   return (
     <div>
       <Head>
-        <title>Distinct Cloud Labs - MVP</title>
+      <title>Distinct Cloud Labs - Cloud Product Development services</title>
+      <meta name="title" content="Distinct Cloud Labs - Cloud Product Development services" />
+      <meta name="description" content="Distinct cloud offers a suite of software products and services in web, mobile, analytics, complex algos and AI" />
+      <meta name="keywords" content="software development, platform development, ios development, android development, web development, ai development, machine learning platform, fundraising, market research, architecture" />
+      <meta name="robots" content="index, follow" />
+      <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+      <meta name="language" content="English"></meta>
       </Head>
       <Header />
       <>
@@ -63,9 +69,9 @@ export default function mvp() {
                     polished web app using best development practices. Submit
                     your project or idea and we will get back to you.
                   </p>
-                  <a href="#" className="btn btn-secondary">
-                    Start
-                  </a>
+                  <a href="https://form.typeform.com/to/gZjdpopp"
+            data-mode="popup"
+            data-size="100" target="_blank" className="btn btn-primary">Start</a>
                 </div>
               </div>
             </div>

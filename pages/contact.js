@@ -10,7 +10,14 @@ export default function about() {
   return (
     <div>
       <Head>
-        <title>Distinct Cloud Labs - Contact</title>
+      <title>Distinct Cloud Labs - Cloud Product Development services</title>
+      <meta name="title" content="Distinct Cloud Labs - Cloud Product Development services" />
+      <meta name="description" content="Distinct cloud offers a suite of software products and services in web, mobile, analytics, complex algos and AI" />
+      <meta name="keywords" content="software development, platform development, ios development, android development, web development, ai development, machine learning platform, fundraising, market research, architecture" />
+      <meta name="robots" content="index, follow" />
+      <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+      <meta name="language" content="English"></meta>
+      
       </Head>
       <Header />
       <>
@@ -59,7 +66,7 @@ export default function about() {
                   <h3>Mail Here</h3>
                   <p>
                     <a href="#">
-                      <span className="__cf_email__">example@mail.com</span>
+                      <span className="__cf_email__">contact@distinctcloud.io</span>
                     </a>
                   </p>
                 </div>
@@ -85,7 +92,7 @@ export default function about() {
                   </div>
                   <h3>Call Here</h3>
                   <p>
-                    <a href="#">+91 1234567890</a>
+                    <a href="#">+91 90318 96342</a>
                   </p>
                 </div>
               </div>

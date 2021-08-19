@@ -8,7 +8,13 @@ export default function develop() {
   return (
     <div>
       <Head>
-        <title>Distinct Cloud Labs - Develop</title>
+      <title>Distinct Cloud Labs - Cloud Product Development services</title>
+      <meta name="title" content="Distinct Cloud Labs - Cloud Product Development services" />
+      <meta name="description" content="Distinct cloud offers a suite of software products and services in web, mobile, analytics, complex algos and AI" />
+      <meta name="keywords" content="software development, platform development, ios development, android development, web development, ai development, machine learning platform, fundraising, market research, architecture" />
+      <meta name="robots" content="index, follow" />
+      <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+      <meta name="language" content="English"></meta>
       </Head>
       <Header />
       <>
@@ -59,27 +65,24 @@ export default function develop() {
               <div className="col-lg-6 col-md-12">
                 <div className="agency-about-content">
                   <span className="sub-title">
-                    MVP = Minimum Viable Product
+                    Code your Imagination
                   </span>
                   <h2>
                     {" "}
-                    collect the maximum amount of validated learning about
-                    customers with the least effort
+                    Stay ahead of your competitors by accelerating your business with secure, fast, and real-time development
                   </h2>
                   <div className="bar" />
                   <p>
-                    Distinct cloud helps your project to achieve an MVP in the
-                    shortest time possible taking care of product market fit,
-                    launch and fundraise.
+                    Distinct cloud helps shaping your ideas into result oriented applications. With our deep expertise in multiple domains, we reduce the complexity involved in web development by scaling your application from front end to back end under a single roof.
                   </p>
                   <p>
                     Our team will understand your vision and turn it into a
                     polished web app using best development practices. Submit
                     your project or idea and we will get back to you.
                   </p>
-                  <a href="#" className="btn btn-secondary">
-                    Start
-                  </a>
+                  <a href="https://form.typeform.com/to/gZjdpopp"
+            data-mode="popup"
+            data-size="100" target="_blank" className="btn btn-primary">Start</a>
                 </div>
               </div>
             </div>
@@ -320,8 +323,7 @@ export default function develop() {
             <div className="section-title">
               <span className="sub-title">How we work</span>
               <h2>
-                Distinct cloud has developed through numerous startups a solid
-                process to have a successful MVP and beyond.
+              One of our most experienced Product Owners will interview relevant stakeholders, conduct market research, and come up with proposed functionality for your product.
               </h2>
               <div className="bar" />
               <p>
