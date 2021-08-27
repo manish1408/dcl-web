@@ -5,7 +5,7 @@ export default function FactArea() {
         <section className="industries-serve-area ptb-80">
   <div className="container">
     <div className="section-title">
-      <h2>      We invest our effort only in a few innovative technology companies with farsighted vision</h2>
+      <h2> We follow CISQ standards to build reliable, maintainable, secure, and efficient software.</h2>
       <div className="bar" />
     </div>
     {/* <div className="row">
@@ -35,10 +35,10 @@ export default function FactArea() {
       </div>
     </div> */}
     <div className="contact-cta-box">
-      <h3>Submit your project or idea and we will get back to you.</h3>
+      <h3>If you want to discuss a technology partnership, contact us.</h3>
       <a href="https://form.typeform.com/to/gZjdpopp"
             data-mode="popup"
-            data-size="100" target="_blank" className="btn btn-primary">Start</a>
+            data-size="100" target="_blank" className="btn btn-primary">Drop us a message</a>
     </div>
   </div>
 </section>

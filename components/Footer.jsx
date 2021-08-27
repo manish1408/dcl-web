@@ -25,11 +25,11 @@ export default function footer() {
             <div className="single-footer-widget pl-5">
               <h3>Company</h3>
               <ul className="list">
-                {/* <li>
+                <li>
                   <Link href="/about">
                     <a>About</a>
                   </Link>
-                </li> */}
+                </li>
                 <li>
                   <Link href="/mvp">
                     <a>Create an MVP</a>

@@ -2498,7 +2498,7 @@ label {
 }
 .contact-cta-box {
   margin: 80px auto 0;
-  max-width: 600px;
+  /* max-width: 600px; */
   border: 1px dashed #ebebeb;
   padding: 30px 210px 30px 30px;
   border-radius: 5px;
@@ -3567,6 +3567,7 @@ label {
   margin-bottom: 12px;
   font-size: 18px;
   font-weight: 600;
+  margin-top: 15px;
 }
 .single-banner-boxes p {
   color: #dadada;
@@ -7951,7 +7952,6 @@ blockquote::after,
   line-height: 1.4;
   font-size: 28px;
   font-weight: 600;
-  text-transform: capitalize;
 }
 .ml-about-content .bar {
   height: 5px;

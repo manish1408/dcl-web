@@ -13,7 +13,7 @@ export default function Banner() {
 
           <a href="https://form.typeform.com/to/gZjdpopp"
             data-mode="popup"
-            data-size="100" target="_blank" className="btn btn-primary">Tell us about your project</a>
+            data-size="100" target="_blank" className="btn btn-primary">Free Consultation</a>
         </div>
       </div>
 
@@ -24,37 +24,27 @@ export default function Banner() {
             <div className="col-lg-4 col-md-6 col-sm-6">
               <div className="single-banner-boxes">
                 <div className="icon">
-                  <i data-feather="server" />
+                <i className="flaticon-support" />
                 </div>
-                <h3>Ecommerce Platform</h3>
-                <p>
-                  Lorem ipsum dolor sit amet elit, adipiscing, sed do eiusmod
-                  tempor incididunt ut labore dolore magna aliqua.
-                </p>
+                <h3>5+ Years in Business</h3>
+                
               </div>
             </div>
             <div className="col-lg-4 col-md-6 col-sm-6">
               <div className="single-banner-boxes">
                 <div className="icon">
-                  <i data-feather="code" />
+                <i className="flaticon-software" />
                 </div>
-                <h3>Customized Plan</h3>
-                <p>
-                  Lorem ipsum dolor sit amet elit, adipiscing, sed do eiusmod
-                  tempor incididunt ut labore dolore magna aliqua.
-                </p>
+                <h3>90+ Successful Projects</h3>
+                
               </div>
             </div>
             <div className="col-lg-4 col-md-6 col-sm-6 offset-lg-0 offset-md-3 offset-sm-3">
               <div className="single-banner-boxes">
                 <div className="icon">
-                  <i data-feather="users" />
+                <i className="flaticon-star" />
                 </div>
-                <h3>Implement Solution</h3>
-                <p>
-                  Lorem ipsum dolor sit amet elit, adipiscing, sed do eiusmod
-                  tempor incididunt ut labore dolore magna aliqua.
-                </p>
+                <h3>150+ In-House Talents</h3>
               </div>
             </div>
           </div>

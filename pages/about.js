@@ -26,12 +26,12 @@ export default function about() {
               <div className="ml-about-content">
                 <span className="sub-title">About Us</span>
                 <h2>
-                  Software Development Company That Will Save You Time, Money,
-                  and Stress.
+                  Software development company that will save you time, money,
+                  and stress.
                 </h2>
                 <div className="bar" />
                 <p>
-                  Distinct Cloud is an Agile software development company that
+                  Distinct Cloud is an agile software development company that
                   serves clients all over the world. We are a team of highly
                   skilled and experienced software developers with expertise in
                   multiple platforms.
@@ -525,12 +525,11 @@ export default function about() {
             <div className="col-lg-6">
               <div className="cta-repair-content">
                 <h3>
-                  We Invest Our Effort Only In A Few Innovative Technology
-                  Companies With Farsighted Vision
+                  We follow CISQ standards to build reliable, maintainable, secure, and efficient software.
                 </h3>
-                <p>Submit your project or idea and we will get back to you.</p>
+                <p>If you want to discuss a technology partnership, contact us.</p>
                 <a href="#" className="btn btn-primary">
-                  Start
+                  Drop us a message
                 </a>
               </div>
             </div>
