@@ -5,6 +5,7 @@ import Link from "next/link";
 
 export default function header() {
   const router = useRouter();
+  console.log(router.pathname);
 
   return (
     <header
@@ -89,6 +90,110 @@ export default function header() {
                       Develop
                     </a>
                   </Link>
+                </li>
+                <li className="nav-item">
+                  <Link href="/about">
+                    <a
+                      className={
+                        router.pathname == "/about"
+                          ? "nav-link active"
+                          : "nav-link"
+                      }
+                    >
+                      About
+                    </a>
+                  </Link>
+                </li>
+                <li className="nav-item">
+                  <a
+                    className={
+                      router.pathname.startsWith("/service-detail")
+                        ? "nav-link active"
+                        : "nav-link"
+                    }
+                  >
+                    Services
+                  </a>
+                  <ul className="dropdown_menu">
+                    <li className="nav-item">
+                      <Link href="/service-detail/startup">
+                        <a
+                          className={
+                            router.pathname == "/service-detail/startup"
+                              ? "nav-link active"
+                              : "nav-link"
+                          }
+                        >
+                          For Startups
+                        </a>
+                      </Link>
+                    </li>
+                    <li className="nav-item">
+                      <Link href="/service-detail/enterprise">
+                        <a
+                          className={
+                            router.pathname == "/service-detail/enterprise"
+                              ? "nav-link active"
+                              : "nav-link"
+                          }
+                        >
+                          For enterprises
+                        </a>
+                      </Link>
+                    </li>
+                    <li className="nav-item">
+                      <Link href="/service-detail/design">
+                        <a
+                          className={
+                            router.pathname == "/service-detail/design"
+                              ? "nav-link active"
+                              : "nav-link"
+                          }
+                        >
+                          Design Services
+                        </a>
+                      </Link>
+                    </li>
+                    <li className="nav-item">
+                      <Link href="/service-detail/testing">
+                        <a
+                          className={
+                            router.pathname == "/service-detail/testing"
+                              ? "nav-link active"
+                              : "nav-link"
+                          }
+                        >
+                          Software Testing
+                        </a>
+                      </Link>
+                    </li>
+                    <li className="nav-item">
+                      <Link href="/service-detail/webdev">
+                        <a
+                          className={
+                            router.pathname == "/service-detail/webdev"
+                              ? "nav-link active"
+                              : "nav-link"
+                          }
+                        >
+                          Web Development
+                        </a>
+                      </Link>
+                    </li>
+                    <li className="nav-item">
+                      <Link href="/service-detail/mobdev">
+                        <a
+                          className={
+                            router.pathname == "/service-detail/mobdev"
+                              ? "nav-link active"
+                              : "nav-link"
+                          }
+                        >
+                          Mobile Development
+                        </a>
+                      </Link>
+                    </li>
+                  </ul>
                 </li>
                 <li className="nav-item">
                   <Link href="/blog">

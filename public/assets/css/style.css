@@ -5,6 +5,9 @@ body {
   margin: 0;
   font-size: 14px;
 }
+html {
+  scroll-behavior: smooth;
+}
 img {
   max-width: 100%;
 }
@@ -3497,7 +3500,7 @@ label {
   background-repeat: no-repeat;
   padding-top: 280px;
   padding-bottom: 25px;
-  height: 100vh;
+  /* height: 100vh; */
 }
 .bigdata-analytics-content {
   max-width: 555px;

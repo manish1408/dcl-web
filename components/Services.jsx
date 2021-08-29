@@ -1,4 +1,5 @@
-import React from 'react'
+import React from "react";
+import Link from "next/link";
 
 export default function Services() {
   return (
@@ -8,7 +9,9 @@ export default function Services() {
           <h2>Services we can help you with</h2>
           <div className="bar" />
           <p>
-            We are proficient in highly complex workflows, data structures, and hundreds of API integrations. Check out our common capabilities below!
+            We are proficient in highly complex workflows, data structures, and
+            hundreds of API integrations. Check out our common capabilities
+            below!
           </p>
         </div>
         <div className="row">
@@ -17,14 +20,26 @@ export default function Services() {
               <div className="icon">
                 <img src="assets/img/bigdata-analytics/icon1.png" alt="image" />
               </div>
-              <h3><a href="single-services.html">For startups</a></h3>
+              <h3>
+                <Link href="service-detail/startup">
+                  <a>For startups</a>
+                </Link>
+              </h3>
               <p>
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
                 eiusmod ut labore et dolore magna aliqua.
               </p>
-              <a href="single-services.html" className="learn-more-btn"><i data-feather="arrow-right" />Learn More</a>
+              <Link href="service-detail/startup">
+                <a className="learn-more-btn">
+                  <i data-feather="arrow-right" />
+                  Learn More
+                </a>
+              </Link>
               <div className="shape">
-                <img src="assets/img/bigdata-analytics/rectangle.png" alt="image" />
+                <img
+                  src="assets/img/bigdata-analytics/rectangle.png"
+                  alt="image"
+                />
               </div>
             </div>
           </div>
@@ -33,13 +48,27 @@ export default function Services() {
               <div className="icon">
                 <img src="assets/img/bigdata-analytics/icon2.png" alt="image" />
               </div>
-              <h3><a href="single-services.html">For enterprises</a></h3>
+              <h3>
+                <Link href="service-detail/enterprise">
+                  <a>For enterprises</a>
+                </Link>
+              </h3>
               <p>
-                Distinct Cloud helps tech companies to build a remote dedicated team of developers or to expand an existing one.
+                Distinct Cloud helps tech companies to build a remote dedicated
+                team of developers or to expand an existing one.
               </p>
-              <a href="single-services.html" className="learn-more-btn"><i data-feather="arrow-right" />Learn More</a>
+              <Link href="service-detail/enterprise">
+                <a className="learn-more-btn">
+                  <i data-feather="arrow-right" />
+                  Learn More
+                </a>
+              </Link>
+
               <div className="shape">
-                <img src="assets/img/bigdata-analytics/rectangle.png" alt="image" />
+                <img
+                  src="assets/img/bigdata-analytics/rectangle.png"
+                  alt="image"
+                />
               </div>
             </div>
           </div>
@@ -48,13 +77,27 @@ export default function Services() {
               <div className="icon">
                 <img src="assets/img/bigdata-analytics/icon3.png" alt="image" />
               </div>
-              <h3><a href="single-services.html">Design Services</a></h3>
+              <h3>
+                <Link href="service-detail/design">
+                  <a>Design Services</a>
+                </Link>
+              </h3>
               <p>
-                We provide web app design services that focus both on solving business problems and meeting user needs. We create custom web app designs that guarantee a great user experience.
+                We provide web app design services that focus both on solving
+                business problems and meeting user needs. We create custom web
+                app designs that guarantee a great user experience.
               </p>
-              <a href="single-services.html" className="learn-more-btn"><i data-feather="arrow-right" />Learn More</a>
+              <Link href="service-detail/design">
+                <a className="learn-more-btn">
+                  <i data-feather="arrow-right" />
+                  Learn More
+                </a>
+              </Link>
               <div className="shape">
-                <img src="assets/img/bigdata-analytics/rectangle.png" alt="image" />
+                <img
+                  src="assets/img/bigdata-analytics/rectangle.png"
+                  alt="image"
+                />
               </div>
             </div>
           </div>
@@ -63,13 +106,26 @@ export default function Services() {
               <div className="icon">
                 <img src="assets/img/bigdata-analytics/icon4.png" alt="image" />
               </div>
-              <h3><a href="single-services.html">Software Testing</a></h3>
+              <h3>
+                <Link href="service-detail/testing">
+                  <a>Software Testing</a>
+                </Link>
+              </h3>
               <p>
-                The Distinct Cloud  team assists companies in reducing costs, eliminating risks, and providing great user experiences.
+                The Distinct Cloud team assists companies in reducing costs,
+                eliminating risks, and providing great user experiences.
               </p>
-              <a href="single-services.html" className="learn-more-btn"><i data-feather="arrow-right" />Learn More</a>
+              <Link href="service-detail/testing">
+                <a className="learn-more-btn">
+                  <i data-feather="arrow-right" />
+                  Learn More
+                </a>
+              </Link>
               <div className="shape">
-                <img src="assets/img/bigdata-analytics/rectangle.png" alt="image" />
+                <img
+                  src="assets/img/bigdata-analytics/rectangle.png"
+                  alt="image"
+                />
               </div>
             </div>
           </div>
@@ -78,13 +134,27 @@ export default function Services() {
               <div className="icon">
                 <img src="assets/img/bigdata-analytics/icon5.png" alt="image" />
               </div>
-              <h3><a href="single-services.html">Web Development</a></h3>
+              <h3>
+                <Link href="service-detail/webdev">
+                  <a>Web Development</a>
+                </Link>
+              </h3>
               <p>
-                We provide web development services for fast-growing companies looking to integrate business processes, reduce workload, and build new products.
+                We provide web development services for fast-growing companies
+                looking to integrate business processes, reduce workload, and
+                build new products.
               </p>
-              <a href="single-services.html" className="learn-more-btn"><i data-feather="arrow-right" />Learn More</a>
+              <Link href="service-detail/webdev">
+                <a className="learn-more-btn">
+                  <i data-feather="arrow-right" />
+                  Learn More
+                </a>
+              </Link>
               <div className="shape">
-                <img src="assets/img/bigdata-analytics/rectangle.png" alt="image" />
+                <img
+                  src="assets/img/bigdata-analytics/rectangle.png"
+                  alt="image"
+                />
               </div>
             </div>
           </div>
@@ -93,19 +163,32 @@ export default function Services() {
               <div className="icon">
                 <img src="assets/img/bigdata-analytics/icon6.png" alt="image" />
               </div>
-              <h3><a href="single-services.html">Mobile Development</a></h3>
+              <h3>
+                <Link href="service-detail/mobdev">
+                  <a>Mobile Development</a>
+                </Link>
+              </h3>
               <p>
-                We provide iOS and Android mobile application development services so you can reach your customers on their favorite devices.
+                We provide iOS and Android mobile application development
+                services so you can reach your customers on their favorite
+                devices.
               </p>
-              <a href="single-services.html" className="learn-more-btn"><i data-feather="arrow-right" />Learn More</a>
+              <Link href="service-detail/mobdev">
+                <a className="learn-more-btn">
+                  <i data-feather="arrow-right" />
+                  Learn More
+                </a>
+              </Link>
               <div className="shape">
-                <img src="assets/img/bigdata-analytics/rectangle.png" alt="image" />
+                <img
+                  src="assets/img/bigdata-analytics/rectangle.png"
+                  alt="image"
+                />
               </div>
             </div>
           </div>
         </div>
       </div>
     </section>
-
-  )
+  );
 }
