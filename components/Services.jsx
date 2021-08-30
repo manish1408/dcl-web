@@ -26,8 +26,9 @@ export default function Services() {
                 </Link>
               </h3>
               <p>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-                eiusmod ut labore et dolore magna aliqua.
+                We are an adept digital startup app and web development company with a knack for futuristic software technology that adds wings to new venture to fly it high.
+
+                Distinct Cloud is the right digital junction helping Startups, New Ventures and Small Businesses with comprehensive startup solutions at the most cost-effective prices.
               </p>
               <Link href="service-detail/startup">
                 <a className="learn-more-btn">

@@ -6,12 +6,8 @@ export default function Blog() {
     <section className="blog-area ptb-80">
       <div className="container">
         <div className="section-title">
-          <h2>Our Recent Story</h2>
+          <h2>Our Recent Blogs</h2>
           <div className="bar" />
-          <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-            eiusmod tempor incididunt ut labore et dolore magna aliqua.
-          </p>
         </div>
         <div className="row">
           <div className="col-lg-4 col-md-6">
@@ -25,21 +21,20 @@ export default function Blog() {
                 <div className="entry-meta">
                   <ul>
                     <li>
-                      <a href="#">Admin</a>
+                      <a href="https://www.distinctcloud.io/posts/what-does-a-ux-designer-do-during-the-product-development">Mayank</a>
                     </li>
-                    <li>August 15, 2019</li>
+                    <li>August 26, 2021</li>
                   </ul>
                 </div>
                 <h3>
-                  <a href="#">
-                    Making Peace With The Feast Or Famine Of Freelancing
+                  <a href="https://www.distinctcloud.io/posts/what-does-a-ux-designer-do-during-the-product-development">
+                    What does a UX designer do during the product development lifecycle?
                   </a>
                 </h3>
                 <p>
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
-                  do eiusmod...
+                  Startups are like babies. They rely on constant care and nurturing to grow into respectable adults. However, if you ...
                 </p>
-                <a href="#" className="learn-more-btn">
+                <a href="https://www.distinctcloud.io/posts/what-does-a-ux-designer-do-during-the-product-development" className="learn-more-btn">
                   Read Story <AddIcon />
                 </a>
               </div>
@@ -56,19 +51,20 @@ export default function Blog() {
                 <div className="entry-meta">
                   <ul>
                     <li>
-                      <a href="#">Admin</a>
+                      <a href="https://www.distinctcloud.io/posts/software-release-planning-tips-and-tricks-by-the-distinct">Mayank</a>
                     </li>
                     <li>August 18, 2019</li>
                   </ul>
                 </div>
                 <h3>
-                  <a href="#">I Used The Web For A Day On A 50 MB Budget</a>
+                  <a href="https://www.distinctcloud.io/posts/software-release-planning-tips-and-tricks-by-the-distinct">
+                  Software Release Planning: Tips and Tricks by the DCL Team
+                  </a>
                 </h3>
                 <p>
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
-                  do eiusmod...
+                In Agile development, release planning is crucial. Without it, the delivery of your features can be unpredictable. This is why as a software product manager ...
                 </p>
-                <a href="#" className="learn-more-btn">
+                <a href="https://www.distinctcloud.io/posts/software-release-planning-tips-and-tricks-by-the-distinct" className="learn-more-btn">
                   Read Story <AddIcon />
                 </a>
               </div>
@@ -77,7 +73,7 @@ export default function Blog() {
           <div className="col-lg-4 col-md-6 offset-md-3 offset-lg-0">
             <div className="single-blog-post-box bg-f4faff">
               <div className="entry-thumbnail">
-                <a href="#">
+                <a href="https://www.distinctcloud.io/posts/how-to-reduce-time-to-market-for-digital-products">
                   <img src="assets/img/blog-image/3.jpg" alt="image" />
                 </a>
               </div>
@@ -85,21 +81,20 @@ export default function Blog() {
                 <div className="entry-meta">
                   <ul>
                     <li>
-                      <a href="#">Admin</a>
+                      <a href="https://www.distinctcloud.io/posts/how-to-reduce-time-to-market-for-digital-products">Mayank</a>
                     </li>
-                    <li>August 15, 2019</li>
+                    <li>August 15, 2021</li>
                   </ul>
                 </div>
                 <h3>
-                  <a href="#">
-                    Here are the 5 most telling signs of micromanagement
+                  <a href="https://www.distinctcloud.io/posts/how-to-reduce-time-to-market-for-digital-products">
+                  How to Reduce Time to Market for Digital Products
                   </a>
                 </h3>
                 <p>
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
-                  do eiusmod...
+                In this article, you'll journey through time to market (TTM) from the perspective of what it means in practice. We'll start with defining TTM...
                 </p>
-                <a href="#" className="learn-more-btn">
+                <a href="https://www.distinctcloud.io/posts/how-to-reduce-time-to-market-for-digital-products" className="learn-more-btn">
                   Read Story <AddIcon />
                 </a>
               </div>
