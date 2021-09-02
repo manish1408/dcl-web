@@ -8,7 +8,7 @@ export default function Banner() {
           <h1>A better way to build</h1>
           <p>
             Emerging software development and consulting company in India.
-            We make custom Mobile Apps, Web & Enterprise Solutions for Startups, Enterprises & Mid-Scale Businesses.
+            We make mobile apps, web solutions, and enterprise applications for startups, mid-sized businesses, and enterprises.
           </p>
 
           <a href="https://form.typeform.com/to/gZjdpopp"
@@ -26,7 +26,7 @@ export default function Banner() {
                 <div className="icon">
                 <i className="flaticon-support" />
                 </div>
-                <h3>5+ Years in Business</h3>
+                <h3>4+ Years in Business</h3>
                 
               </div>
             </div>
@@ -35,7 +35,7 @@ export default function Banner() {
                 <div className="icon">
                 <i className="flaticon-software" />
                 </div>
-                <h3>90+ Successful Projects</h3>
+                <h3>60+ Successful Projects</h3>
                 
               </div>
             </div>
@@ -44,7 +44,7 @@ export default function Banner() {
                 <div className="icon">
                 <i className="flaticon-star" />
                 </div>
-                <h3>150+ In-House Talents</h3>
+                <h3>60+ In-House Talents</h3>
               </div>
             </div>
           </div>

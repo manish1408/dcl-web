@@ -17,7 +17,7 @@ export default function Feedback() {
             <div className="single-feedback-box">
               <div className="feedback-desc">
                 <p>
-                  Quite simply, I can't give the Distinct Cloud team high enough praise. Whatever I may manage to scribble down will totally fail to represent my admiration of their abilities, and so all I will say is that any opportunity to work with RubyGarage should be grasped with both hands.
+                All I can say is that I totally recommend working with Distinct Cloud Labs on any online business idea that you might have. It's obvious that they know their stuff and can help you to live your startup dream no matter what.
                 </p>
               </div>
               <div className="client-info">
@@ -31,7 +31,7 @@ export default function Feedback() {
             <div className="single-feedback-box">
               <div className="feedback-desc">
                 <p>
-                  Distinct Cloud exceeded my expectations in many ways. As a first time, non-technical startup founder, I am happy to say that we had a drama-free collaboration. Their leadership and project managers are experienced and pragmatic; they understand startups and offered many helpful business suggestions. Their UX designer was superb and took my product vision to a completely new level. Their dedicated team of developers delivered a quality product on time and went out of their way to delight me as a customer.
+                I wanted to let you know how impressed I am with your team here at Distinct Cloud. All of the work that has been done by you and your colleagues is astounding. It was a pleasure to work with all of you and I look forward to seeing what else you can do as we move along.
                 </p>
               </div>
               <div className="client-info">
@@ -45,7 +45,8 @@ export default function Feedback() {
             <div className="single-feedback-box">
               <div className="feedback-desc">
                 <p>
-                  The Distinct Cloud team definitely excels in their technical approach. Working on the engineering side, RubyGarage offered the most efficient architecture solution for our application. Another strong side this team demonstrated is business-orienting. Along with elegant technical solutions for big data storage and management, displaying detailed analytics, and ensuring security, RubyGarage handled all of the design concept for our application. They came up with an idea for how to wrap a market research tool into an appealing and interactive social voting application.
+                Distinct Cloud is a group of very talented engineers. They excel in their technical approach and understand how data is the driving factor for any business. As such, they designed a state of the art stack for our application that accommodates both current and anticipated capacity requirements and allows our team to easily add new features and functionality without compromising on stability or scalability. 
+
                 </p>
               </div>
               <div className="client-info">

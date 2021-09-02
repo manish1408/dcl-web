@@ -20,7 +20,7 @@ export default function WhatWeDo() {
               </div>
               <h3><a href="single-services.html">Build the right thing</a></h3>
               <p>
-              Our highly experienced Product Owners will help you think through your concept and figure out the right way to build it.
+              Our in-house team of highly skilled Product Owners will help you consider your concept and figure out how to take your idea and build it in the right way.
           </p>
             </div>
           </div>
@@ -31,7 +31,7 @@ export default function WhatWeDo() {
               </div>
               <h3><a href="single-services.html">The best tech, managed for you</a></h3>
               <p>
-              Get the best of the web without the overhead. Unparalleled speed & reliability, customized to your exact specifications.
+              Exceed your customers' expectations with blazing-fast apps that adapt to their browsing habits and engage them when and where they're most receptive.
           </p>
             </div>
           </div>
@@ -42,7 +42,7 @@ export default function WhatWeDo() {
               </div>
               <h3><a href="single-services.html">Launch faster, with peace of mind</a></h3>
               <p>
-              Fixed-price plans & weekly milestones help you launch early and iterate often. All backed by our money-back guarantee.
+              Quality fixed price plans backed by our 100% money-back guarantee will allow you to launch early and iterate often.
           </p>
             </div>
           </div>
