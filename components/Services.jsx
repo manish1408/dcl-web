@@ -26,9 +26,8 @@ export default function Services() {
                 </Link>
               </h3>
               <p>
-                We are an adept digital startup app and web development company with a knack for futuristic software technology that adds wings to new venture to fly it high.
-
-                Distinct Cloud is the right digital junction helping Startups, New Ventures and Small Businesses with comprehensive startup solutions at the most cost-effective prices.
+              We are an adept digital company helping new ventures and startups to fly high through cutting edge software technology that adds wings to their project's success.
+               
               </p>
               <Link href="service-detail/startup">
                 <a className="learn-more-btn">
@@ -84,9 +83,7 @@ export default function Services() {
                 </Link>
               </h3>
               <p>
-                We provide web app design services that focus both on solving
-                business problems and meeting user needs. We create custom web
-                app designs that guarantee a great user experience.
+              We specialize in designing customized user-friendly apps with a back-end interface that make life easier for both you and your customers.
               </p>
               <Link href="service-detail/design">
                 <a className="learn-more-btn">
@@ -113,8 +110,7 @@ export default function Services() {
                 </Link>
               </h3>
               <p>
-                The Distinct Cloud team assists companies in reducing costs,
-                eliminating risks, and providing great user experiences.
+              Distinct Cloud team assists companies in simplifying complexity by reducing costs, minimizing risks, and providing detailed app testing .
               </p>
               <Link href="service-detail/testing">
                 <a className="learn-more-btn">
@@ -170,9 +166,7 @@ export default function Services() {
                 </Link>
               </h3>
               <p>
-                We provide iOS and Android mobile application development
-                services so you can reach your customers on their favorite
-                devices.
+              We provide iOS and Android App development which allows you to reach your customers on their favorite mobile device. 
               </p>
               <Link href="service-detail/mobdev">
                 <a className="learn-more-btn">
