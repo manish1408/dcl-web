@@ -9501,3 +9501,20 @@ blockquote::after,
   color: #fff;
   background: #44ce6f;
 }
+.modal {
+  z-index: 99999;
+}
+.enquiry-modal {
+  padding: 0px !important;
+}
+.form-holder {
+  padding: 30px;
+}
+.enquiry-close-btn{
+  position: relative;
+    top: -70px;
+    right: 15px;
+}
+#enquiry-modal .industries-serve-area {
+  border-radius: 4px !important;
+}

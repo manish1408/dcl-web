@@ -36,9 +36,9 @@ export default function footer() {
                   </Link>
                 </li>
                 <li>
-                  <a href="https://form.typeform.com/to/gZjdpopp"
-                    data-mode="popup"
-                    data-size="100" target="_blank" >Start a Project</a>
+                  <Link href="/develop">
+                    <a>Start a Project</a>
+                  </Link>
                 </li>
               </ul>
             </div>

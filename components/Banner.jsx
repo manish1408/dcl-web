@@ -11,9 +11,7 @@ export default function Banner() {
             We make mobile apps, web solutions, and enterprise applications for startups, mid-sized businesses, and enterprises.
           </p>
 
-          <a href="https://form.typeform.com/to/gZjdpopp"
-            data-mode="popup"
-            data-size="100" target="_blank" className="btn btn-primary">Free Consultation</a>
+          <button data-toggle="modal" data-target="#enquiryModal" className="btn btn-primary">Free Consultation</button>
         </div>
       </div>
 

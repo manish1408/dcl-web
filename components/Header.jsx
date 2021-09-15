@@ -54,7 +54,9 @@ export default function header() {
               id="navbarSupportedContent"
             >
               <ul className="navbar-nav nav ml-auto">
-                <li className="nav-item">
+
+
+                {/* <li className="nav-item">
                   <Link href="/">
                     <a
                       className={
@@ -90,7 +92,9 @@ export default function header() {
                       Develop
                     </a>
                   </Link>
-                </li>
+                </li> */}
+
+
                 <li className="nav-item">
                   <Link href="/about">
                     <a

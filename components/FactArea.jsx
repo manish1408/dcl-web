@@ -36,9 +36,7 @@ export default function FactArea() {
     </div> */}
     <div className="contact-cta-box">
       <h3>If you want to discuss a technology partnership, contact us.</h3>
-      <a href="https://form.typeform.com/to/gZjdpopp"
-            data-mode="popup"
-            data-size="100" target="_blank" className="btn btn-primary">Drop us a message</a>
+      <button data-toggle="modal" data-target="#enquiryModal" className="btn btn-primary">Drop us a message</button>
     </div>
   </div>
 </section>

@@ -3,6 +3,7 @@ import React from "react";
 import PageTitle from "../../components/PageTitle";
 import Header from "../../components/Header";
 import Footer from "../../components/Footer";
+import Enquiry from "../../components/Enquiry";
 
 function mobdev() {
   return (
@@ -26,6 +27,7 @@ function mobdev() {
         <meta name="language" content="English"></meta>
       </Head>
       <Header />
+      <Enquiry> </Enquiry>
       <PageTitle title="Services - For Enterprise " />;
       <section className="why-choose-us ptb-80 pt-0">
         <div className="container">
@@ -47,15 +49,7 @@ function mobdev() {
                   expand an existing one.
                 </p>
               </div>
-              <a
-                href="https://form.typeform.com/to/gZjdpopp"
-                data-mode="popup"
-                data-size={100}
-                target="_blank"
-                className="btn btn-primary"
-              >
-                Free Consultation
-              </a>
+              <button data-toggle="modal" data-target="#enquiryModal" className="btn btn-primary">Free consultation</button>
               {/*  */}
             </div>
             <div className="col-lg-6 col-md-12">
@@ -216,15 +210,7 @@ function mobdev() {
                   outsourcing.
                 </p>
               </div>
-              <a
-                href="https://form.typeform.com/to/gZjdpopp"
-                data-mode="popup"
-                data-size={100}
-                target="_blank"
-                className="btn btn-primary"
-              >
-                Free Consultation
-              </a>
+              <button data-toggle="modal" data-target="#enquiryModal" className="btn btn-primary">Free consultation</button>
               {/* */}
             </div>
           </div>

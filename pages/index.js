@@ -2,6 +2,7 @@ import React from "react";
 import Head from "next/head";
 import Header from "../components/Header";
 import Banner from "../components/Banner";
+import Enquiry from "../components/Enquiry";
 import Footer from "../components/Footer";
 import WhatWeDo from "../components/WhatWeDo";
 import Services from "../components/Services";
@@ -26,10 +27,13 @@ const Home = () => (
       <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
       <meta name="language" content="English"></meta>
 
-      <script type="text/javascript" src="js/typeform.js"></script>
+      {/* <script type="text/javascript" src="js/typeform.js"></script> */}
     </Head>
-    <Header></Header>
 
+    
+    <Enquiry> </Enquiry>
+
+    <Header></Header>
     <Banner></Banner>
     <WhatWeDo></WhatWeDo>
     <Services></Services>
@@ -44,6 +48,8 @@ const Home = () => (
     <div className="go-top">
       <ArrowUpwardIcon />
     </div>
+
+
   </div>
 );
 

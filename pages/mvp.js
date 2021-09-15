@@ -4,6 +4,7 @@ import Footer from "../components/Footer";
 import FactArea from "../components/FactArea";
 import PageTitle from "../components/PageTitle";
 import Head from "next/head";
+import Enquiry from "../components/Enquiry";
 
 export default function mvp() {
   return (
@@ -18,6 +19,8 @@ export default function mvp() {
       <meta name="language" content="English"></meta>
       </Head>
       <Header />
+      <Enquiry> </Enquiry>
+
       <>
         <PageTitle title="MVP" />
         {/* <div className="page-title-area">
@@ -69,9 +72,7 @@ export default function mvp() {
                     polished web app using best development practices. Submit
                     your project or idea and we will get back to you.
                   </p>
-                  <a href="https://form.typeform.com/to/gZjdpopp"
-            data-mode="popup"
-            data-size="100" target="_blank" className="btn btn-primary">Start</a>
+                  <button data-toggle="modal" data-target="#enquiryModal" className="btn btn-primary">Free consultation</button>
                 </div>
               </div>
             </div>

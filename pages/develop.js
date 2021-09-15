@@ -3,6 +3,7 @@ import Header from "../components/Header";
 import Footer from "../components/Footer";
 import FactArea from "../components/FactArea";
 import Head from "next/head";
+import Enquiry from "../components/Enquiry";
 
 export default function develop() {
   return (
@@ -17,12 +18,13 @@ export default function develop() {
       <meta name="language" content="English"></meta>
       </Head>
       <Header />
+      <Enquiry> </Enquiry>
       <>
         <div className="page-title-area">
           <div className="d-table">
             <div className="d-table-cell">
               <div className="container">
-                <h2>Development Services</h2>
+                <h2>Start a project with us.</h2>
               </div>
             </div>
           </div>
@@ -80,9 +82,7 @@ export default function develop() {
                     polished web app using best development practices. Submit
                     your project or idea and we will get back to you.
                   </p>
-                  <a href="https://form.typeform.com/to/gZjdpopp"
-            data-mode="popup"
-            data-size="100" target="_blank" className="btn btn-primary">Start</a>
+                  <button data-toggle="modal" data-target="#enquiryModal" className="btn btn-primary">Free consultation</button>
                 </div>
               </div>
             </div>

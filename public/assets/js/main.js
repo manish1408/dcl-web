@@ -2,14 +2,14 @@
   "use strict";
   //   feather.replace();
   $(".mean-menu").meanmenu({ meanScreenWidth: "991" });
-  $(".popup-youtube").magnificPopup({
-    disableOn: 320,
-    type: "iframe",
-    mainClass: "mfp-fade",
-    removalDelay: 160,
-    preloader: false,
-    fixedContentPos: false,
-  });
+  // $(".popup-youtube").magnificPopup({
+  //   disableOn: 320,
+  //   type: "iframe",
+  //   mainClass: "mfp-fade",
+  //   removalDelay: 160,
+  //   preloader: false,
+  //   fixedContentPos: false,
+  // });
   $(window).on("scroll", function () {
     if ($(this).scrollTop() > 120) {
       $("#header").addClass("is-sticky");
@@ -17,7 +17,7 @@
       $("#header").removeClass("is-sticky");
     }
   });
-  $(".popup-btn").magnificPopup({ type: "image", gallery: { enabled: true } });
+  // $(".popup-btn").magnificPopup({ type: "image", gallery: { enabled: true } });
   $(".others-option-for-responsive .dot-menu").on("click", function () {
     $(".others-option-for-responsive .container .container").toggleClass(
       "active"
