@@ -52,11 +52,11 @@ export default function footer() {
                     <a>Blog</a>
                   </Link>
                 </li>
-                <li>
+                {/* <li>
                   <Link href="/faq">
                     <a>Privacy policy</a>
                   </Link>
-                </li>
+                </li> */}
                 <li>
                   <Link href="/contact">
                     <a>Email</a>

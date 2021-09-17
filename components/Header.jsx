@@ -158,7 +158,7 @@ export default function header() {
                         </a>
                       </Link>
                     </li>
-                    <li className="nav-item">
+                    {/* <li className="nav-item">
                       <Link href="/service-detail/testing">
                         <a
                           className={
@@ -196,7 +196,7 @@ export default function header() {
                           Mobile Development
                         </a>
                       </Link>
-                    </li>
+                    </li> */}
                   </ul>
                 </li>
                 <li className="nav-item">
