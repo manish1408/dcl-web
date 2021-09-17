@@ -23,13 +23,13 @@ const Blog = ({ doc, posts }) => {
     return (
       <>
         <DefaultLayout>
+          <PageTitle title="Our Blog" />
           <section className="blog-area ptb-80">
             <div className="container">
               <Head>
                 <title>Distinct Cloud Labs - Blog</title>
               </Head>
               <Header />
-              <PageTitle title="Our Blog" />
               <div className="row">
                 <PostList posts={posts} />
               </div>
