@@ -4,6 +4,9 @@ import PageTitle from "../../components/PageTitle";
 import Header from "../../components/Header";
 import Footer from "../../components/Footer";
 import Enquiry from "../../components/Enquiry";
+import * as svg from "../../components/svg-comp";
+import FactArea from "../../components/FactArea";
+import DiscoverArea from "../../components/DiscoverArea";
 
 function startup() {
   return (
@@ -28,35 +31,41 @@ function startup() {
       </Head>
       <Header />
       <Enquiry> </Enquiry>
-
-      <PageTitle title="Services - For Enterprise " />;
+      <PageTitle title="Services for Startup " />;
       <section className="why-choose-us ptb-80 pt-0">
         <div className="container">
           <div className="row align-items-center">
             <div className="col-lg-6 col-md-12">
               <div className="section-title">
-                <h2>Get high-quality IT services at a fraction of the cost</h2>
+                <h2>Software Development For Startups</h2>
                 <div className="bar" />
                 <p>
-                  We're a community of top-tier developers with years of proven
-                  experience. Our developers have been handpicked by us for
-                  their expertise in specific technology stacks, making them
-                  highly sought after and hard to find.
+                  Distinct Cloud is a bespoke software team that enables
+                  organizations to achieve their business goals in the most
+                  efficient way. With our vast experience in software, we can
+                  assist you with all your needs - whether it's developing an
+                  app, building an IoT system or creating a digital strategy for
+                  your company.
                 </p>
                 <p>
-                  You probably know that people are the main factor of success
-                  in any business. We start from this assumption and help tech
-                  companies to build a remote dedicated team of developers or to
-                  expand an existing one.
+                  We provide a hassle-free Product Development Service . Don't
+                  worry about the costs, the timeline or anything else. We will
+                  take care of everything from ideation to execution.
                 </p>
               </div>
-              <button data-toggle="modal" data-target="#enquiryModal" className="btn btn-primary">Free consultation</button>
+              <button
+                data-toggle="modal"
+                data-target="#enquiryModal"
+                className="btn btn-primary"
+              >
+                Free consultation
+              </button>
               {/*  */}
             </div>
             <div className="col-lg-6 col-md-12">
               <div className="row">
                 <img
-                  src="assets/img/services-image/developer-team.png"
+                  src="assets/img/services-image/startup-launch.png"
                   className="wow fadeInUp"
                   alt="image"
                   style={{ visibility: "visible", animationName: "fadeInUp" }}
@@ -68,7 +77,7 @@ function startup() {
           </div>
         </div>
       </section>
-      <section className="services-details-area ptb-80">
+      {/* <section className="services-details-area ptb-80">
         <div className="container">
           <section className="why-choose-us ptb-80 pt-0">
             <div className="container">
@@ -176,9 +185,306 @@ function startup() {
           </section>
         </div>
         <div id="offshore"></div>
+      </section> */}
+      <section className="works-area ptb-80 bg-f7fafd">
+        <div className="container">
+          <div className="section-title">
+            <h2>Time for a New Approach to Startups</h2>
+            <div className="bar" />
+          </div>
+          <div className="container">
+            <div
+              style={{ textAlign: "center" }}
+              className="row align-items-center"
+            >
+              <div
+                style={{ marginBottom: "40px" }}
+                className="col-lg-12 col-md-12"
+              >
+                <p>
+                  we're an independent software development shop with vast
+                  experience producing quality work for some of today's biggest
+                  names in web and mobile technology. We’ve got same-day support
+                  available so that if you run into trouble, one of our account
+                  representatives will be able to jump onto the case
+                  immediately. Using innovative technologies, we can provide
+                  your business with an original custom solution to meet your
+                  exact needs.
+                </p>
+              </div>
+
+              <div
+                style={{ textAlign: "left" }}
+                className="col-lg-12 col-md-12 services-content"
+              >
+                <div className="row">
+                  <div className="col-lg-6 col-md-6 col-sm-6">
+                    <div className="box">
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        viewBox="0 0 64 64"
+                      >
+                        <path
+                          fill="#44ce6f"
+                          d="M44.975,23.436a2,2,0,0,1,.075,2.827L31.95,40.08a5.012,5.012,0,0,1-3.629,1.56l-.12,0A5.01,5.01,0,0,1,24.532,39.9l-5.646-6.557a2,2,0,1,1,3.031-2.611l5.646,6.559a.993.993,0,0,0,.734.347.936.936,0,0,0,.75-.311l13.1-13.817A2,2,0,0,1,44.975,23.436ZM58,32A26,26,0,1,1,32,6,26.03,26.03,0,0,1,58,32Zm-4,0A22.034,22.034,0,0,0,40.454,11.691,21.8,21.8,0,0,0,35,11a22,22,0,0,0-8.391,42.329A22,22,0,0,0,54,32Z"
+                        />
+                      </svg>
+                      Streamline Your Product Development.
+                    </div>
+                  </div>
+                  <div className="col-lg-6 col-md-6 col-sm-6">
+                    <div className="box">
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        viewBox="0 0 64 64"
+                      >
+                        <path
+                          fill="#44ce6f"
+                          d="M44.975,23.436a2,2,0,0,1,.075,2.827L31.95,40.08a5.012,5.012,0,0,1-3.629,1.56l-.12,0A5.01,5.01,0,0,1,24.532,39.9l-5.646-6.557a2,2,0,1,1,3.031-2.611l5.646,6.559a.993.993,0,0,0,.734.347.936.936,0,0,0,.75-.311l13.1-13.817A2,2,0,0,1,44.975,23.436ZM58,32A26,26,0,1,1,32,6,26.03,26.03,0,0,1,58,32Zm-4,0A22.034,22.034,0,0,0,40.454,11.691,21.8,21.8,0,0,0,35,11a22,22,0,0,0-8.391,42.329A22,22,0,0,0,54,32Z"
+                        />
+                      </svg>{" "}
+                      Save money without compromising on quality
+                    </div>
+                  </div>
+                  <div className="col-lg-6 col-md-6 col-sm-6">
+                    <div className="box">
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        viewBox="0 0 64 64"
+                      >
+                        <path
+                          fill="#44ce6f"
+                          d="M44.975,23.436a2,2,0,0,1,.075,2.827L31.95,40.08a5.012,5.012,0,0,1-3.629,1.56l-.12,0A5.01,5.01,0,0,1,24.532,39.9l-5.646-6.557a2,2,0,1,1,3.031-2.611l5.646,6.559a.993.993,0,0,0,.734.347.936.936,0,0,0,.75-.311l13.1-13.817A2,2,0,0,1,44.975,23.436ZM58,32A26,26,0,1,1,32,6,26.03,26.03,0,0,1,58,32Zm-4,0A22.034,22.034,0,0,0,40.454,11.691,21.8,21.8,0,0,0,35,11a22,22,0,0,0-8.391,42.329A22,22,0,0,0,54,32Z"
+                        />
+                      </svg>{" "}
+                      Get Good-Quality Software Engineers at No Cost.
+                    </div>
+                  </div>
+                  <div className="col-lg-6 col-md-6 col-sm-6">
+                    <div className="box">
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        viewBox="0 0 64 64"
+                      >
+                        <path
+                          fill="#44ce6f"
+                          d="M44.975,23.436a2,2,0,0,1,.075,2.827L31.95,40.08a5.012,5.012,0,0,1-3.629,1.56l-.12,0A5.01,5.01,0,0,1,24.532,39.9l-5.646-6.557a2,2,0,1,1,3.031-2.611l5.646,6.559a.993.993,0,0,0,.734.347.936.936,0,0,0,.75-.311l13.1-13.817A2,2,0,0,1,44.975,23.436ZM58,32A26,26,0,1,1,32,6,26.03,26.03,0,0,1,58,32Zm-4,0A22.034,22.034,0,0,0,40.454,11.691,21.8,21.8,0,0,0,35,11a22,22,0,0,0-8.391,42.329A22,22,0,0,0,54,32Z"
+                        />
+                      </svg>{" "}
+                      Unlock the True Potential of Your Product
+                    </div>
+                  </div>
+                  <div className="col-lg-6 col-md-6 col-sm-6">
+                    <div className="box">
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        viewBox="0 0 64 64"
+                      >
+                        <path
+                          fill="#44ce6f"
+                          d="M44.975,23.436a2,2,0,0,1,.075,2.827L31.95,40.08a5.012,5.012,0,0,1-3.629,1.56l-.12,0A5.01,5.01,0,0,1,24.532,39.9l-5.646-6.557a2,2,0,1,1,3.031-2.611l5.646,6.559a.993.993,0,0,0,.734.347.936.936,0,0,0,.75-.311l13.1-13.817A2,2,0,0,1,44.975,23.436ZM58,32A26,26,0,1,1,32,6,26.03,26.03,0,0,1,58,32Zm-4,0A22.034,22.034,0,0,0,40.454,11.691,21.8,21.8,0,0,0,35,11a22,22,0,0,0-8.391,42.329A22,22,0,0,0,54,32Z"
+                        />
+                      </svg>{" "}
+                      Develop software smarter, faster, better.
+                    </div>
+                  </div>
+                  <div className="col-lg-6 col-md-6 col-sm-6">
+                    <div className="box">
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        viewBox="0 0 64 64"
+                      >
+                        <path
+                          fill="#44ce6f"
+                          d="M44.975,23.436a2,2,0,0,1,.075,2.827L31.95,40.08a5.012,5.012,0,0,1-3.629,1.56l-.12,0A5.01,5.01,0,0,1,24.532,39.9l-5.646-6.557a2,2,0,1,1,3.031-2.611l5.646,6.559a.993.993,0,0,0,.734.347.936.936,0,0,0,.75-.311l13.1-13.817A2,2,0,0,1,44.975,23.436ZM58,32A26,26,0,1,1,32,6,26.03,26.03,0,0,1,58,32Zm-4,0A22.034,22.034,0,0,0,40.454,11.691,21.8,21.8,0,0,0,35,11a22,22,0,0,0-8.391,42.329A22,22,0,0,0,54,32Z"
+                        />
+                      </svg>{" "}
+                      Scale Your app the way you want
+                    </div>
+                  </div>
+                  {/* <div className="col-lg-6 col-md-6 col-sm-6">
+                    <div className="box">
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        width={24}
+                        height={24}
+                        viewBox="0 0 24 24"
+                        fill="none"
+                        stroke="currentColor"
+                        strokeWidth={2}
+                        strokeLinecap="round"
+                        strokeLinejoin="round"
+                        className="feather feather-shopping-cart"
+                      >
+                        <circle cx={9} cy={21} r={1} />
+                        <circle cx={20} cy={21} r={1} />
+                        <path d="M1 1h4l2.68 13.39a2 2 0 0 0 2 1.61h9.72a2 2 0 0 0 2-1.61L23 6H6" />
+                      </svg>{" "}
+                      E-commerce development
+                    </div>
+                  </div>
+                  <div className="col-lg-6 col-md-6 col-sm-6">
+                    <div className="box">
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        width={24}
+                        height={24}
+                        viewBox="0 0 24 24"
+                        fill="none"
+                        stroke="currentColor"
+                        strokeWidth={2}
+                        strokeLinecap="round"
+                        strokeLinejoin="round"
+                        className="feather feather-check-circle"
+                      >
+                        <path d="M22 11.08V12a10 10 0 1 1-5.93-9.14" />
+                        <polyline points="22 4 12 14.01 9 11.01" />
+                      </svg>{" "}
+                      Print ready design
+                    </div>
+                  </div> */}
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div className="shape8 rotateme">
+          <img src="assets/img/shape2.svg" alt="shape" />
+        </div>
+        <div className="shape2 rotateme">
+          <img src="assets/img/shape2.svg" alt="shape" />
+        </div>
+        <div className="shape7">
+          <img src="assets/img/shape4.svg" alt="shape" />
+        </div>
+        <div className="shape4">
+          <img src="assets/img/shape4.svg" alt="shape" />
+        </div>
       </section>
+      <DiscoverArea
+        question="What Makes Distinct Cloud Stand Out as a TOP startup software development company?"
+        answer="Fast team-building at a speed of your choosing, depending on the immediate needs of your business. From 2 weeks to a couple months, we'll assess what you need and be ready to work on making sure those needs are met as quickly as possible."
+      />
       <div className="separate" />
-      <section className="why-choose-us ptb-80 pt-0">
+      <section className="iot-services-area ptb-80">
+        <div className="container">
+          <div className="section-title">
+            <h2>Our Featured Services that We Provide</h2>
+            <div className="bar" />
+          </div>
+          <div className="row">
+            <div className="col-lg-4 col-md-6 col-sm-6">
+              <div className="single-iot-services">
+                <div className="icon">
+                  <svg.AiBrain />
+                  {/* <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64">
+                    <path
+                      fill="#00bebd"
+                      d="M30,0V64a7,7,0,0,1-7-7.54,9,9,0,0,1-12.34-12.7,11,11,0,0,1,.24-21.56A10,10,0,0,1,20,8c2.21,0,2,.46,2,0A8,8,0,0,1,30,0Z"
+                    />
+                    <path
+                      fill="#d9d9d9"
+                      d="M36 0a3 3 0 0 0-1 5.82V10a1 1 0 0 0 2 0V5.82A3 3 0 0 0 36 0zm0 4a1 1 0 0 1 0-2A1 1 0 0 1 36 4zM46 0a3 3 0 0 0-1 5.82V10a1 1 0 0 0 2 0V5.82A3 3 0 0 0 46 0zm0 4a1 1 0 0 1 0-2A1 1 0 0 1 46 4zM37 58.18V54a1 1 0 0 0-2 0v4.18a3 3 0 1 0 2 0zM36 62a1 1 0 0 1 0-2A1 1 0 0 1 36 62zM47 58.18V54a1 1 0 0 0-2 0v4.18a3 3 0 1 0 2 0zM46 62a1 1 0 0 1 0-2A1 1 0 0 1 46 62zM52 18h4.18a3 3 0 1 0 0-2H52A1 1 0 0 0 52 18zm7-2a1 1 0 0 1 0 2A1 1 0 0 1 59 16zM56.18 26H52a1 1 0 0 0 0 2h4.18a3 3 0 1 0 0-2zM59 28a1 1 0 0 1 0-2A1 1 0 0 1 59 28zM56.18 36H52a1 1 0 0 0 0 2h4.18a3 3 0 1 0 0-2zM59 38a1 1 0 0 1 0-2A1 1 0 0 1 59 38zM56.18 46H52a1 1 0 0 0 0 2h4.18a3 3 0 1 0 0-2zM59 48a1 1 0 0 1 0-2A1 1 0 0 1 59 48z"
+                    />
+                    <path
+                      fill="#ffac00"
+                      d="M30,10H48a4,4,0,0,1,4,4V50a4,4,0,0,1-4,4H30a0,0,0,0,1,0,0V10A0,0,0,0,1,30,10Z"
+                    />
+                    <path
+                      fill="#f3f3f3"
+                      d="M30,17H45a1,1,0,0,1,1,1V46a1,1,0,0,1-1,1H30a0,0,0,0,1,0,0V17A0,0,0,0,1,30,17Z"
+                    />
+                    <path
+                      fill="#00aaa8"
+                      d="M24.82 15a3 3 0 1 0 0 2H30V15zM22 17a1 1 0 0 1 0-2A1 1 0 0 1 22 17zM26 26a3 3 0 0 0-3 3v3a1 1 0 0 1-1 1H17.82a3 3 0 1 0 0 2H22a3 3 0 0 0 3-3V29a1 1 0 0 1 1-1h4V26zM15 35a1 1 0 0 1 0-2A1 1 0 0 1 15 35zM25 50a1 1 0 0 1-1-1V46.82a3 3 0 1 0-2 0V49a3 3 0 0 0 3 3h5V50zm-2-5a1 1 0 0 1 0-2A1 1 0 0 1 23 45z"
+                    />
+                  </svg> */}
+                </div>
+                <h3>AI and machine learning services</h3>
+                <p>
+                  We have the expertise to handle any task, no matter how large
+                  or small! Because of this, if your start-up requires any kind
+                  of machine learning or an AI feature, get in touch with us
+                  straight away.
+                </p>
+              </div>
+            </div>
+            <div className="col-lg-4 col-md-6 col-sm-6">
+              <div className="single-iot-services">
+                <div className="icon">
+                  <svg.Code1 />
+                </div>
+                <h3>UI/UX design</h3>
+                <p>
+                  UI/UX is vital to an application. Distinct Cloud will help you
+                  with the design for your product's interface, that way you
+                  have a beautiful working product. We can create a UI/UX that
+                  will surely serve as the backbone of any product manager's
+                  efforts.
+                </p>
+              </div>
+            </div>
+            <div className="col-lg-4 col-md-6 col-sm-6">
+              <div className="single-iot-services">
+                <div className="icon">
+                  <svg.InfoWebpageWireframe />
+                </div>
+                <h3>Prototyping and MVP development</h3>
+                <p>
+                  A Minimum Viable Product (MVP) is a great tool for getting
+                  your feet wet in terms of launching a product. By creating a
+                  MVP, you will be able to work out any kinks, and ultimately
+                  get a feel for what type of experience your customers want
+                  from your product.
+                </p>
+              </div>
+            </div>
+            <div className="col-lg-4 col-md-6 col-sm-6">
+              <div className="single-iot-services">
+                <div className="icon">
+                  <svg.Code />
+                </div>
+                <h3>DevOps services</h3>
+                <p>
+                  Development is the backbone of every successful startup
+                  project. Distinct Cloud can provide your development service
+                  from only the most distinguished engineers. Only those who
+                  have longstanding experience with deploying high-loaded and
+                  robust products come to work for us!
+                </p>
+              </div>
+            </div>
+            <div className="col-lg-4 col-md-6 col-sm-6">
+              <div className="single-iot-services">
+                <div className="icon">
+                  <svg.Budget />
+                </div>
+                <h3>Financial & IR consulting</h3>
+                <p>
+                  Our experienced analysts will make sure your product is
+                  profitable before it hits the launch phase. We'll work with
+                  you to expand on your value message, create an investor deck
+                  and deliver marketing and PR services when needed.
+                </p>
+              </div>
+            </div>
+            <div className="col-lg-4 col-md-6 col-sm-6">
+              <div className="single-iot-services">
+                <div className="icon">
+                  <svg.Support />
+                </div>
+                <h3>Code refactoring & support</h3>
+                <p>
+                  It might be necessary to reinvent the first version of your
+                  product - we can help. We provide our clients with maintenance
+                  and support which includes multilingual 24/7 helpline groups.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      {/* <section className="why-choose-us ptb-80 pt-0">
         <div className="container">
           <div className="row align-items-center">
             <div className="col-lg-6 col-md-12">
@@ -192,8 +498,7 @@ function startup() {
                     animationName: "fadeInUp",
                   }}
                 />
-                {/* */}
-                {/*  */}
+                
               </div>
             </div>
             <div className="col-lg-6 col-md-12">
@@ -211,13 +516,19 @@ function startup() {
                   outsourcing.
                 </p>
               </div>
-              <button data-toggle="modal" data-target="#enquiryModal" className="btn btn-primary">Free consultation</button>
-              {/* */}
+              <button
+                data-toggle="modal"
+                data-target="#enquiryModal"
+                className="btn btn-primary"
+              >
+                Free consultation
+              </button>
+              
             </div>
           </div>
         </div>
-      </section>
-      <section className="hosting-features-area ptb-80 bg-f9f6f6">
+      </section> */}
+      {/* <section className="hosting-features-area ptb-80 bg-f9f6f6">
         <div className="container">
           <div className="section-title">
             <h2>Dedicated team options</h2>
@@ -290,7 +601,8 @@ function startup() {
             </div>
           </div>
         </div>
-      </section>
+      </section> */}
+      <FactArea />
       <Footer />
     </div>
   );

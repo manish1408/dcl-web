@@ -5,6 +5,7 @@ import Footer from "../components/Footer";
 import Head from "next/head";
 import PageTitle from "../components/PageTitle";
 import Link from "next/link";
+import FactArea from "../components/FactArea";
 
 export default function about() {
   return (
@@ -519,7 +520,9 @@ export default function about() {
         </div>
       </section>
 
-      <section className="repair-cta-area bg-0f054b">
+      <FactArea />
+
+      {/* <section className="repair-cta-area bg-0f054b">
         <div className="container">
           <div className="row align-items-center">
             <div className="col-lg-6">
@@ -546,7 +549,7 @@ export default function about() {
         <div className="cta-shape">
           <img src="assets/img/cta-shape.png" alt="image" />
         </div>
-      </section>
+      </section> */}
 
       <Footer />
     </>

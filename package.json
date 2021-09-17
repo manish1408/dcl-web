@@ -5,7 +5,7 @@
     "dev": "next",
     "build": "next build",
     "start": "next dev",
-    "svg": "svgr -d components components/svg ",
+    "svg": "svgr -d components/svg-comp components/svg ",
     "postbuild": "next-on-netlify"
   },
   "dependencies": {
