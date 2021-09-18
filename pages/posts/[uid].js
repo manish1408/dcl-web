@@ -51,7 +51,8 @@ const Post = ({ post, postList, featuredPosts, categories, data }) => {
         <section className="blog-details-area ptb-80">
           <div className="container">
             <div className="row">
-              <div className="col-lg-8 col-md-12">
+            <div className="col-md-1"></div>
+              <div className="col-md-10">
                 <div className="blog-details-desc">
                   <div className="article-image">
                     <img src={post.data.banner_image.url} alt="image" />
@@ -157,22 +158,11 @@ const Post = ({ post, postList, featuredPosts, categories, data }) => {
                   </div>
                 </div>
               </div>
-              <div className="col-lg-4 col-md-12">
+              <div className="col-md-1"></div>
+              {/* <div className="col-lg-4 col-md-12">
                 <aside className="widget-area" id="secondary">
                   <section className="widget widget_search">
-                    {/* <form className="search-form">
-                      <label>
-                        <span className="screen-reader-text">Search for:</span>
-                        <input
-                          type="search"
-                          className="search-field"
-                          placeholder="Search..."
-                        />
-                      </label>
-                      <button type="submit">
-                        <Search />
-                      </button>
-                    </form> */}
+                   
                     <SearchComponent />
                   </section>
                   <section className="widget widget_startp_posts_thumb">
@@ -215,20 +205,7 @@ const Post = ({ post, postList, featuredPosts, categories, data }) => {
                       <p>No Featured Post</p>
                     )}
 
-                    {/* <article className="item">
-                      <a href="#" className="thumb">
-                        <span className="fullimage cover bg1" role="img" />
-                      </a>
-                      <div className="info">
-                        <time dateTime="2019-06-30">June 10, 2019</time>
-                        <h4 className="title usmall">
-                          <a href="#">
-                            Making Peace With The Feast Or Famine Of Freelancing
-                          </a>
-                        </h4>
-                      </div>
-                      <div className="clear" />
-                    </article> */}
+                   
                   </section>
                   <section className="widget widget_categories">
                     <h3 className="widget-title">Categories</h3>
@@ -263,13 +240,11 @@ const Post = ({ post, postList, featuredPosts, categories, data }) => {
                       ) : (
                         <p>No Matching Tags</p>
                       )}
-                      {/* <a href="#">
-                        Tips <span className="tag-link-count"> (2)</span>
-                      </a> */}
+                     
                     </div>
                   </section>
                 </aside>
-              </div>
+              </div> */}
             </div>
           </div>
         </section>
