@@ -19,9 +19,9 @@ const Home = () => (
   <div>
 
     <Head>
-      <title>Distinct Cloud Labs - Emerging software development and consulting company in India</title>
-      <meta name="title" content="Distinct Cloud Labs - Emerging software development and consulting company in India" />
-      <meta name="description" content="Emerging software development and consulting company in India. We make mobile apps, web solutions, and enterprise applications for startups, mid-sized businesses, and enterprises." />
+      <title>Distinct Cloud Labs - Custom web and mobile apps development</title>
+      <meta name="title" content="Distinct Cloud Labs - Distinct Cloud Labs - Custom web and mobile apps development" />
+      <meta name="description" content="Distinct Cloud Labs - Custom web and mobile apps development. We make mobile apps, web solutions for startups, mid-sized businesses, and enterprises." />
       <meta name="keywords" content="software development, platform development, ios development, android development, web development, ai development, machine learning platform, fundraising, market research, architecture" />
       <meta name="robots" content="index, follow" />
       <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />

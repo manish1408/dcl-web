@@ -5,10 +5,10 @@ export default function Banner() {
     <section className="bigdata-analytics-banner">
       <div className="container">
         <div className="bigdata-analytics-content">
-          <h1>A better way to build</h1>
+          <h1>Launch faster with the best tech.</h1>
           <p>
-            Emerging software development and consulting company in India.
-            We make mobile apps, web solutions, and enterprise applications for startups, mid-sized businesses, and enterprises.
+            
+            We make mobile apps, web solutions, and custom software for startups, mid-sized businesses, and enterprises.
           </p>
 
           <button data-toggle="modal" data-target="#enquiryModal" className="btn btn-primary">Free Consultation</button>
