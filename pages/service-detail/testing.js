@@ -4,6 +4,7 @@ import PageTitle from "../../components/PageTitle";
 import Header from "../../components/Header";
 import Footer from "../../components/Footer";
 import Enquiry from "../../components/Enquiry";
+import FactArea from "../../components/FactArea";
 
 function testing() {
   return (
@@ -77,12 +78,8 @@ function testing() {
       <section className="services-area-two ptb-80 bg-f7fafd">
         <div className="container">
           <div className="section-title">
-            <h2>Our Services</h2>
+            <h2>Types of software testing at DistinctCloud</h2>
             <div className="bar" />
-            <p>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-              eiusmod tempor incididunt ut labore et dolore magna aliqua.
-            </p>
           </div>
           <div className="row">
             <div className="col-lg-4 col-md-6 col-sm-6">
@@ -104,10 +101,11 @@ function testing() {
                     <path d="M19.4 15a1.65 1.65 0 0 0 .33 1.82l.06.06a2 2 0 0 1 0 2.83 2 2 0 0 1-2.83 0l-.06-.06a1.65 1.65 0 0 0-1.82-.33 1.65 1.65 0 0 0-1 1.51V21a2 2 0 0 1-2 2 2 2 0 0 1-2-2v-.09A1.65 1.65 0 0 0 9 19.4a1.65 1.65 0 0 0-1.82.33l-.06.06a2 2 0 0 1-2.83 0 2 2 0 0 1 0-2.83l.06-.06a1.65 1.65 0 0 0 .33-1.82 1.65 1.65 0 0 0-1.51-1H3a2 2 0 0 1-2-2 2 2 0 0 1 2-2h.09A1.65 1.65 0 0 0 4.6 9a1.65 1.65 0 0 0-.33-1.82l-.06-.06a2 2 0 0 1 0-2.83 2 2 0 0 1 2.83 0l.06.06a1.65 1.65 0 0 0 1.82.33H9a1.65 1.65 0 0 0 1-1.51V3a2 2 0 0 1 2-2 2 2 0 0 1 2 2v.09a1.65 1.65 0 0 0 1 1.51 1.65 1.65 0 0 0 1.82-.33l.06-.06a2 2 0 0 1 2.83 0 2 2 0 0 1 0 2.83l-.06.06a1.65 1.65 0 0 0-.33 1.82V9a1.65 1.65 0 0 0 1.51 1H21a2 2 0 0 1 2 2 2 2 0 0 1-2 2h-.09a1.65 1.65 0 0 0-1.51 1z" />
                   </svg>
                 </div>
-                <h3>Incredible Infrastructure</h3>
-                <p>
-                  Lorem ipsum dolor amet, adipiscing, sed do eiusmod tempor
-                  incididunt ut labore dolore magna aliqua.
+                <h3>Functional testing</h3>
+                <p style={{ paddingBottom: "27px" }}>
+                  Functional testing lets you breathe a sigh of relief since
+                  your application’s individual features are all working as
+                  expected.
                 </p>
               </div>
             </div>
@@ -118,7 +116,7 @@ function testing() {
                     xmlns="http://www.w3.org/2000/svg"
                     width={24}
                     height={24}
-                    viewBox="0 0 24 24"
+                    viewBox="0 0 16 16"
                     fill="none"
                     stroke="currentColor"
                     strokeWidth={2}
@@ -126,14 +124,14 @@ function testing() {
                     strokeLinejoin="round"
                     className="feather feather-mail"
                   >
-                    <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z" />
-                    <polyline points="22,6 12,13 2,6" />
+                    <path d="M0,6.51045l5.47909,5.48955l10.5209,-10.5105l-1.51045,-1.48955l-9.01045,9l-3.98955,-3.98955Z" />
                   </svg>
                 </div>
-                <h3>Email Notifications</h3>
+                <h3>Usability testing</h3>
                 <p>
-                  Lorem ipsum dolor amet, adipiscing, sed do eiusmod tempor
-                  incididunt ut labore dolore magna aliqua.
+                  Usability testing ensures your features are easy to understand
+                  and creates a positive user experience while the user
+                  interacts with your application.
                 </p>
               </div>
             </div>
@@ -156,10 +154,11 @@ function testing() {
                     <path d="M13.73 21a2 2 0 0 1-3.46 0" />
                   </svg>
                 </div>
-                <h3>Best Analytics Audits</h3>
+                <h3>Compatibility testing</h3>
                 <p>
-                  Lorem ipsum dolor amet, adipiscing, sed do eiusmod tempor
-                  incididunt ut labore dolore magna aliqua.
+                  Compatibility testing provides you with an application that
+                  operates properly in different environments and is easy to use
+                  by clients.
                 </p>
               </div>
             </div>
@@ -184,10 +183,11 @@ function testing() {
                     <rect x={3} y={14} width={7} height={7} />
                   </svg>
                 </div>
-                <h3>Simple Dashboard</h3>
+                <h3>Localization testing</h3>
                 <p>
-                  Lorem ipsum dolor amet, adipiscing, sed do eiusmod tempor
-                  incididunt ut labore dolore magna aliqua.
+                  Localization testing helps you confirm that the interface
+                  works for users in their language and location, and the
+                  product content is displayed appropriately.
                 </p>
               </div>
             </div>
@@ -211,10 +211,11 @@ function testing() {
                     <line x1={12} y1={8} x2={12} y2={8} />
                   </svg>
                 </div>
-                <h3>Information Retrieval</h3>
+                <h3>Performance testing</h3>
                 <p>
-                  Lorem ipsum dolor amet, adipiscing, sed do eiusmod tempor
-                  incididunt ut labore dolore magna aliqua.
+                  Performance testing ensures your application performance is at
+                  a high level and guarantees your product can handle high
+                  volumes of user data.
                 </p>
               </div>
             </div>
@@ -239,10 +240,11 @@ function testing() {
                     <line x1={10} y1={16} x2={10} y2={16} />
                   </svg>
                 </div>
-                <h3>Deep Technical SEO</h3>
+                <h3>Security testing</h3>
                 <p>
-                  Lorem ipsum dolor amet, adipiscing, sed do eiusmod tempor
-                  incididunt ut labore dolore magna aliqua.
+                  Security testing helps you avoid recovery expenses by
+                  detecting all security flaws and vulnerabilities, and
+                  protecting your information from criminal attacks.
                 </p>
               </div>
             </div>
@@ -265,10 +267,11 @@ function testing() {
                     <path d="M13 13l6 6" />
                   </svg>
                 </div>
-                <h3>Drag and Drop Functionality</h3>
+                <h3>Smoke testing</h3>
                 <p>
-                  Lorem ipsum dolor amet, adipiscing, sed do eiusmod tempor
-                  incididunt ut labore dolore magna aliqua.
+                  Smoke testing allows you to receive and assess the viability
+                  of your main features and then ensure you can go on with other
+                  tests.
                 </p>
               </div>
             </div>
@@ -291,10 +294,11 @@ function testing() {
                     <path d="M13.73 21a2 2 0 0 1-3.46 0" />
                   </svg>
                 </div>
-                <h3>Deadline Reminders</h3>
+                <h3>Regression testing</h3>
                 <p>
-                  Lorem ipsum dolor amet, adipiscing, sed do eiusmod tempor
-                  incididunt ut labore dolore magna aliqua.
+                  Regression testing is helpful for ensuring that new technology
+                  will not interfere with previous technological advancements,
+                  or keep them from operating efficiently.
                 </p>
               </div>
             </div>
@@ -317,10 +321,92 @@ function testing() {
                     <polygon points="22 2 15 22 11 13 2 9 22 2" />
                   </svg>
                 </div>
-                <h3>Modern Keyword Analysis</h3>
+                <h3>Acceptance testing</h3>
                 <p>
-                  Lorem ipsum dolor amet, adipiscing, sed do eiusmod tempor
-                  incididunt ut labore dolore magna aliqua.
+                  Acceptance testing helps you evaluate the results of your work
+                  and ensure that everything is acceptable to use before
+                  shipping it out!
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section className="newsletter-area">
+        <div className="container-fluid">
+          <div className="row align-items-center">
+            <div className="col-lg-6 col-md-12">
+              <div className="newsletter-image">
+                <img src="assets/img/testing.jpg" alt="image" />
+              </div>
+            </div>
+            <div className="col-lg-6 col-md-12 p-0">
+              <div className="newsletter-content">
+                <h2 style={{ marginBottom: "32px" }}>
+                  Experienced and Credible Software Testing & Consulting Partner
+                </h2>
+                {/* <form className="newsletter-form">
+                  <input
+                    type="email"
+                    className="input-newsletter"
+                    placeholder="Enter your business email here"
+                  />
+                  <button type="submit">Sign Up Free</button>
+                </form> */}
+
+                <p>
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width={24}
+                    height={24}
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    strokeWidth={2}
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                    className="feather feather-check"
+                  >
+                    <polyline points="20 6 9 17 4 12" />
+                  </svg>{" "}
+                  A better experience for your clients and a safer environment
+                  for your business
+                </p>
+                <p>
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width={24}
+                    height={24}
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    strokeWidth={2}
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                    className="feather feather-check"
+                  >
+                    <polyline points="20 6 9 17 4 12" />
+                  </svg>{" "}
+                  Dedicated testing experts will provide you with a tailored
+                  testing strategy to ensure your success.
+                </p>
+                <p>
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width={24}
+                    height={24}
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    strokeWidth={2}
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                    className="feather feather-check"
+                  >
+                    <polyline points="20 6 9 17 4 12" />
+                  </svg>{" "}
+                  The most effective and efficient testing with leading edge
+                  technology and methodology
                 </p>
               </div>
             </div>
@@ -337,10 +423,10 @@ function testing() {
                     <h2>Why Choose Us</h2>
                     <div className="bar" />
                     <p>
-                      Distinct Cloud is a full-service team for your technology
-                      needs. We have a dedicated business and technical team
-                      that provides continuous support to help you scale your
-                      team.
+                      Implement a solution that will help handle testing on a
+                      large scale. Testing allows one to focus on the areas of
+                      an application that need more attention as code is being
+                      written.
                     </p>
                   </div>
                   <div className="why-choose-us-image">
@@ -385,10 +471,11 @@ function testing() {
                         <div className="icon">
                           <i className="flaticon-team" />
                         </div>
-                        <h3>The best engineers</h3>
+                        <h3>Unparalleled product quality</h3>
                         <p>
-                          The most spectacular developers, testers and QA
-                          engineers are waiting for you.
+                          Eliminate many common mistakes including wrong data
+                          being saved, lengthy amounts of rework, and software
+                          deliveries being delayed.
                         </p>
                       </div>
                     </div>
@@ -397,10 +484,11 @@ function testing() {
                         <div className="icon">
                           <i className="flaticon-rocket" />
                         </div>
-                        <h3>Fast team building</h3>
+                        <h3>Significantly decrease time to market</h3>
                         <p>
-                          We'll build you a high-performing dev team within 4
-                          weeks.
+                          Decrease the number of bugs and increase the amount of
+                          time to produce features by implementing a testing
+                          script framework.
                         </p>
                       </div>
                     </div>
@@ -409,10 +497,12 @@ function testing() {
                         <div className="icon">
                           <i className="flaticon-shield" />
                         </div>
-                        <h3>Best cost-quality ratio</h3>
+                        <h3>
+                          Increase Quality, Save Money by Improving Testing.
+                        </h3>
                         <p>
-                          The best price-cost ratio around for custom software
-                          development.
+                          Applying automated tests as you build, you can greatly
+                          decrease regression testing time and costs.
                         </p>
                       </div>
                     </div>
@@ -421,10 +511,11 @@ function testing() {
                         <div className="icon">
                           <i className="flaticon-diamond" />
                         </div>
-                        <h3>Quality guarantees</h3>
+                        <h3>Higher coverage with no extra effort.</h3>
                         <p>
-                          Full-Time Developers, Agile Development, and Unlimited
-                          Access to Your Team
+                          A test automation tool increases the depth of your
+                          testing measures. This generates wider coverage in
+                          memory, data, and program statistics.
                         </p>
                       </div>
                     </div>
@@ -437,126 +528,7 @@ function testing() {
         <div id="offshore"></div>
       </section>
       <div className="separate" />
-      <section className="why-choose-us ptb-80 pt-0">
-        <div className="container">
-          <div className="row align-items-center">
-            <div className="col-lg-6 col-md-12">
-              <div className="row">
-                <img
-                  src="assets/img/services-image/remote.png"
-                  className="wow fadeInUp"
-                  alt="image"
-                  style={{
-                    visibility: "visible",
-                    animationName: "fadeInUp",
-                  }}
-                />
-                {/* */}
-                {/*  */}
-              </div>
-            </div>
-            <div className="col-lg-6 col-md-12">
-              <div className="section-title">
-                <h2>Your Own Offshore R & D Center Vendor</h2>
-                <div className="bar" />
-                <p>
-                  Offshore Development Center by Distinct Cloud is the right
-                  alternative for your future projects. We are the global IT
-                  solutions partner, which guarantees you: - Profitable
-                  solutions for your business - Global network of the most
-                  talented developers - A convenient location - Flexible pricing
-                  policy - Low-cost, quality work - Highly professional and
-                  friendly managers having an extensive experience in IT
-                  outsourcing.
-                </p>
-              </div>
-              <button
-                data-toggle="modal"
-                data-target="#enquiryModal"
-                className="btn btn-primary"
-              >
-                Free consultation
-              </button>
-
-              {/* */}
-            </div>
-          </div>
-        </div>
-      </section>
-      <section className="hosting-features-area ptb-80 bg-f9f6f6">
-        <div className="container">
-          <div className="section-title">
-            <h2>Dedicated team options</h2>
-            <div className="bar" />
-          </div>
-          <div className="row">
-            <div className="col-lg-6 col-md-6 col-sm-6">
-              <div className="single-hosting-features">
-                <div className="icon">
-                  <svg
-                    xmlns="http://www.w3.org/2000/svg"
-                    width={24}
-                    height={24}
-                    viewBox="0 0 24 24"
-                    fill="none"
-                    stroke="currentColor"
-                    strokeWidth={2}
-                    strokeLinecap="round"
-                    strokeLinejoin="round"
-                    className="feather feather-settings"
-                  >
-                    <circle cx={12} cy={12} r={3} />
-                    <path d="M19.4 15a1.65 1.65 0 0 0 .33 1.82l.06.06a2 2 0 0 1 0 2.83 2 2 0 0 1-2.83 0l-.06-.06a1.65 1.65 0 0 0-1.82-.33 1.65 1.65 0 0 0-1 1.51V21a2 2 0 0 1-2 2 2 2 0 0 1-2-2v-.09A1.65 1.65 0 0 0 9 19.4a1.65 1.65 0 0 0-1.82.33l-.06.06a2 2 0 0 1-2.83 0 2 2 0 0 1 0-2.83l.06-.06a1.65 1.65 0 0 0 .33-1.82 1.65 1.65 0 0 0-1.51-1H3a2 2 0 0 1-2-2 2 2 0 0 1 2-2h.09A1.65 1.65 0 0 0 4.6 9a1.65 1.65 0 0 0-.33-1.82l-.06-.06a2 2 0 0 1 0-2.83 2 2 0 0 1 2.83 0l.06.06a1.65 1.65 0 0 0 1.82.33H9a1.65 1.65 0 0 0 1-1.51V3a2 2 0 0 1 2-2 2 2 0 0 1 2 2v.09a1.65 1.65 0 0 0 1 1.51 1.65 1.65 0 0 0 1.82-.33l.06-.06a2 2 0 0 1 2.83 0 2 2 0 0 1 0 2.83l-.06.06a1.65 1.65 0 0 0-.33 1.82V9a1.65 1.65 0 0 0 1.51 1H21a2 2 0 0 1 2 2 2 2 0 0 1-2 2h-.09a1.65 1.65 0 0 0-1.51 1z" />
-                  </svg>
-                </div>
-                <h3>Build-Operate-Transfer</h3>
-                <p>
-                  We can work with you to create start-up costs or lead your
-                  internal team as they manage the transition over a flexible
-                  amount of time so that your organization is prepared to handle
-                  growth. A seasoned team of professionals who are experts in
-                  their particular domain will manage the transitions with the
-                  help of our experienced staff to ensure that your vision for
-                  the new business line is fully realized.
-                </p>
-              </div>
-            </div>
-            <div className="col-lg-6 col-md-6 col-sm-6">
-              <div className="single-hosting-features">
-                <div className="icon bg-c679e3">
-                  <svg
-                    xmlns="http://www.w3.org/2000/svg"
-                    width="24"
-                    height="24"
-                    viewBox="0 0 24 24"
-                    fill="none"
-                    stroke="currentColor"
-                    stroke-width="2"
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
-                    class="feather feather-grid"
-                  >
-                    <rect x="3" y="3" width="7" height="7"></rect>
-                    <rect x="14" y="3" width="7" height="7"></rect>
-                    <rect x="14" y="14" width="7" height="7"></rect>
-                    <rect x="3" y="14" width="7" height="7"></rect>
-                  </svg>
-                </div>
-                <h3>Full-time employees</h3>
-                <p>
-                  All team members working on your project are fully and
-                  exclusively occupied with your project - this is best for
-                  software developers, analysts and QA engineers. No recruitment
-                  troubles or administrative hassle. We will set up dedicated
-                  teams for your projects. You will save the overhead costs as
-                  we take care of the management, yet the teams are in constant
-                  communication with you.
-                </p>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
+      <FactArea />
       <Footer />
     </div>
   );
