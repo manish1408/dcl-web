@@ -9536,8 +9536,10 @@ blockquote::after,
 }
 .enquiry-close-btn {
   position: relative;
-  top: -70px;
-  right: 15px;
+  top: 15px;
+  z-index: +10000;
+  /* top: -70px; */
+  right: 20px;
 }
 #enquiry-modal .industries-serve-area {
   border-radius: 4px !important;

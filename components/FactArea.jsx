@@ -53,9 +53,13 @@ export default function FactArea() {
               <p>
                 If you want to discuss a technology partnership, contact us.
               </p>
-              <a href="#" className="btn btn-primary">
-                Drop us a message
-              </a>
+              <button
+                data-toggle="modal"
+                data-target="#enquiryModal"
+                className="btn btn-primary"
+              >
+                Free Consultation
+              </button>
             </div>
           </div>
           <div className="col-lg-6">

@@ -54,8 +54,6 @@ export default function header() {
               id="navbarSupportedContent"
             >
               <ul className="navbar-nav nav ml-auto">
-
-
                 {/* <li className="nav-item">
                   <Link href="/">
                     <a
@@ -93,7 +91,6 @@ export default function header() {
                     </a>
                   </Link>
                 </li> */}
-
 
                 <li className="nav-item">
                   <Link href="/about">
@@ -158,8 +155,11 @@ export default function header() {
                         </a>
                       </Link>
                     </li>
-                    {/* <li className="nav-item">
-                      <Link href="/service-detail/testing">
+                    <li className="nav-item">
+                      <Link
+                        href="/service-detail/testing"
+                        as="/service-detail/software-testing"
+                      >
                         <a
                           className={
                             router.pathname == "/service-detail/testing"
@@ -171,7 +171,7 @@ export default function header() {
                         </a>
                       </Link>
                     </li>
-                    <li className="nav-item">
+                    {/*  <li className="nav-item">
                       <Link href="/service-detail/webdev">
                         <a
                           className={
