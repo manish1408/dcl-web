@@ -4,6 +4,8 @@ import PageTitle from "../../components/PageTitle";
 import Header from "../../components/Header";
 import Footer from "../../components/Footer";
 import Enquiry from "../../components/Enquiry";
+import Tick from "../../components/svg-comp/Tick";
+import FactArea from "../../components/FactArea";
 
 function design() {
   return (
@@ -34,30 +36,36 @@ function design() {
           <div className="row align-items-center">
             <div className="col-lg-6 col-md-12">
               <div className="section-title">
-                <h2>Get high-quality IT services at a fraction of the cost</h2>
+                <h2>Design Services for Smart Businesses</h2>
                 <div className="bar" />
                 <p>
-                  We're a community of top-tier developers with years of proven
-                  experience. Our developers have been handpicked by us for
-                  their expertise in specific technology stacks, making them
-                  highly sought after and hard to find.
+                  We create custom web app designs that guarantee a great user
+                  experience.. Our main goal is to design outstanding online
+                  experiences for our clients and their users.
                 </p>
                 <p>
-                  You probably know that people are the main factor of success
-                  in any business. We start from this assumption and help tech
-                  companies to build a remote dedicated team of developers or to
-                  expand an existing one.
+                  We are a team of professional UI/UX designers, web developers
+                  and project managers that create engaging digital experiences
+                  for our clients. Our goal is to deliver top-notch designs
+                  while providing the highest level of customer service in the
+                  industry.
                 </p>
               </div>
-              
-              <button data-toggle="modal" data-target="#enquiryModal" className="btn btn-primary">Free consultation</button>
+
+              <button
+                data-toggle="modal"
+                data-target="#enquiryModal"
+                className="btn btn-primary"
+              >
+                Free consultation
+              </button>
 
               {/*  */}
             </div>
             <div className="col-lg-6 col-md-12">
               <div className="row">
                 <img
-                  src="assets/img/services-image/developer-team.png"
+                  src="assets/img/services-image/designing.png"
                   className="wow fadeInUp"
                   alt="image"
                   style={{ visibility: "visible", animationName: "fadeInUp" }}
@@ -69,123 +77,137 @@ function design() {
           </div>
         </div>
       </section>
-      <section className="services-details-area ptb-80">
+      <section className="pricing-area ptb-80">
         <div className="container">
-          <section className="why-choose-us ptb-80 pt-0">
-            <div className="container">
-              <div className="row align-items-center">
-                <div className="col-lg-6 col-md-12">
-                  <div className="section-title">
-                    <h2>Why Choose Us</h2>
-                    <div className="bar" />
-                    <p>
-                      Distinct Cloud is a full-service team for your technology
-                      needs. We have a dedicated business and technical team
-                      that provides continuous support to help you scale your
-                      team.
-                    </p>
+          <div className="section-title">
+            <h2>Your one-stop-shop for design and development</h2>
+            <div className="bar" />
+            <p>
+              Distinct Cloud is a full-stack mobile app design company. Our
+              full-stack team does it all – from iOS and Android app design
+              services to development and testing.
+            </p>
+          </div>
+          <div className="tab pricing-tab bg-color">
+            <div className="tab_content">
+              <div className="tabs_item">
+                <div className="row">
+                  <div className="col-lg-4 col-md-6 col-sm-6">
+                    <div className="pricing-box">
+                      <div className="pricing-header">
+                        <h3 style={{ marginBottom: "40px" }}>UX Designers</h3>
+                      </div>
+
+                      <ul className="pricing-features">
+                        <li>
+                          <Tick />
+                          We’ll create a user experience that’s so intuitive,
+                          your users won’t know they’re using an app.
+                        </li>
+                        <li>
+                          <Tick /> Our goal is to create an app that’s so easy
+                          to use, your users won’t know they’re using it.
+                        </li>
+                        <li>
+                          <Tick /> We’ll create a user experience that’s so
+                          intuitive, your users won’t know they’re using it.
+                        </li>
+                        <li>
+                          <Tick /> Our goal is to create an app that’s so easy
+                          to use, your users won’t know they’re using it.
+                        </li>
+                      </ul>
+                    </div>
                   </div>
-                  <div className="why-choose-us-image">
-                    <img
-                      src="assets/img/why-choose-us-image/man-stand.png"
-                      className="wow fadeInLeft"
-                      alt="image"
-                      style={{
-                        visibility: "visible",
-                        animationName: "fadeInLeft",
-                      }}
-                    />
-                    <img
-                      src="assets/img/why-choose-us-image/database.png"
-                      className="wow fadeInRight"
-                      alt="image"
-                      style={{
-                        visibility: "visible",
-                        animationName: "fadeInRight",
-                      }}
-                    />
-                    <img
-                      src="assets/img/services-left-image/cercle-shape.png"
-                      className="rotateme"
-                      alt="image"
-                    />
-                    <img
-                      src="assets/img/why-choose-us-image/main-static.png"
-                      className="main-pic wow fadeInUp animated"
-                      alt="image"
-                      style={{
-                        visibility: "visible",
-                        animationName: "fadeInUp",
-                      }}
-                    />
+                  <div className="col-lg-4 col-md-6 col-sm-6">
+                    <div className="pricing-box">
+                      <div className="pricing-header">
+                        <h3 style={{ marginBottom: "40px" }}>UI Designers</h3>
+                      </div>
+
+                      <ul className="pricing-features">
+                        <li>
+                          <Tick />
+                          We utilize the most innovative tools and technology to
+                          create high-quality UI designs.
+                        </li>
+                        <li>
+                          <Tick /> We guarantee a dedicated team following an
+                          iterative design process.
+                        </li>
+                        <li>
+                          <Tick /> We collaborate with our clients in order to
+                          create a customized product.
+                        </li>
+                        <li>
+                          <Tick /> We create user interfaces according to the
+                          design guidelines of Apple and Google.
+                        </li>
+                      </ul>
+                    </div>
                   </div>
-                </div>
-                <div className="col-lg-6 col-md-12">
-                  <div className="row">
-                    <div className="col-lg-6 col-md-6 col-sm-6">
-                      <div className="single-why-choose-us">
-                        <div className="icon">
-                          <i className="flaticon-team" />
-                        </div>
-                        <h3>The best engineers</h3>
-                        <p>
-                          The most spectacular developers, testers and QA
-                          engineers are waiting for you.
-                        </p>
+                  <div className="col-lg-4 col-md-6 col-sm-6 offset-lg-0 offset-md-3 offset-sm-3">
+                    <div className="pricing-box">
+                      <div className="pricing-header">
+                        <h3 style={{ marginBottom: "40px" }}>
+                          IOS / Android App Design
+                        </h3>
                       </div>
-                    </div>
-                    <div className="col-lg-6 col-md-6 col-sm-6">
-                      <div className="single-why-choose-us">
-                        <div className="icon">
-                          <i className="flaticon-rocket" />
-                        </div>
-                        <h3>Fast team building</h3>
-                        <p>
-                          We'll build you a high-performing dev team within 4
-                          weeks.
-                        </p>
-                      </div>
-                    </div>
-                    <div className="col-lg-6 col-md-6 col-sm-6">
-                      <div className="single-why-choose-us">
-                        <div className="icon">
-                          <i className="flaticon-shield" />
-                        </div>
-                        <h3>Best cost-quality ratio</h3>
-                        <p>
-                          The best price-cost ratio around for custom software
-                          development.
-                        </p>
-                      </div>
-                    </div>
-                    <div className="col-lg-6 col-md-6 col-sm-6">
-                      <div className="single-why-choose-us">
-                        <div className="icon">
-                          <i className="flaticon-diamond" />
-                        </div>
-                        <h3>Quality guarantees</h3>
-                        <p>
-                          Full-Time Developers, Agile Development, and Unlimited
-                          Access to Your Team
-                        </p>
-                      </div>
+
+                      <ul className="pricing-features">
+                        <li>
+                          <Tick />
+                          We have an expert team of iOS and Android developers.
+                        </li>
+                        <li>
+                          <Tick /> We have successfully executed a lot of
+                          projects for iOS and Android.
+                        </li>
+                        <li>
+                          <Tick /> We use our experience to build apps that best
+                          meet your business needs and deliver the best user
+                          experience.
+                        </li>
+                        <li>
+                          <Tick /> We fit your budget and we will never
+                          compromise on the quality of the mobile apps we
+                          develop.
+                        </li>
+                      </ul>
                     </div>
                   </div>
                 </div>
               </div>
             </div>
-          </section>
+          </div>
         </div>
-        <div id="offshore"></div>
+        <div className="shape2 rotateme">
+          <img src="assets/img/shape2.svg" alt="shape" />
+        </div>
+        <div className="shape3">
+          <img src="assets/img/shape3.svg" alt="shape" />
+        </div>
+        <div className="shape4">
+          <img src="assets/img/shape4.svg" alt="shape" />
+        </div>
+        <div className="shape6 rotateme">
+          <img src="assets/img/shape4.svg" alt="shape" />
+        </div>
+        <div className="shape7">
+          <img src="assets/img/shape4.svg" alt="shape" />
+        </div>
+        <div className="shape8 rotateme">
+          <img src="assets/img/shape2.svg" alt="shape" />
+        </div>
       </section>
       <div className="separate" />
-      <section className="why-choose-us ptb-80 pt-0">
+      <section className="why-choose-us ptb-80">
         <div className="container">
           <div className="row align-items-center">
             <div className="col-lg-6 col-md-12">
               <div className="row">
                 <img
-                  src="assets/img/services-image/remote.png"
+                  src="assets/img/services-image/ux-audit.png"
                   className="wow fadeInUp"
                   alt="image"
                   style={{
@@ -199,99 +221,105 @@ function design() {
             </div>
             <div className="col-lg-6 col-md-12">
               <div className="section-title">
-                <h2>Your Own Offshore R & D Center Vendor</h2>
+                <h2>UX Audit Services</h2>
                 <div className="bar" />
                 <p>
-                  Offshore Development Center by Distinct Cloud is the right
-                  alternative for your future projects. We are the global IT
-                  solutions partner, which guarantees you: - Profitable
-                  solutions for your business - Global network of the most
-                  talented developers - A convenient location - Flexible pricing
-                  policy - Low-cost, quality work - Highly professional and
-                  friendly managers having an extensive experience in IT
-                  outsourcing.
+                  The purpose of a user experience audit is to ensure that your
+                  products are proven useful, usable, reliable while being
+                  delightful to their users.
+                </p>
+                <br />
+                <p>
+                  During a UX audit, a designer uses his or her expertise along
+                  with some specific skills, tools, and methods to analyze how
+                  users interact with your product. By identifying UX flaws in
+                  an audit, you can optimize your website or app, improve
+                  business performance, and increase ROI.
                 </p>
               </div>
-              <button data-toggle="modal" data-target="#enquiryModal" className="btn btn-primary">Free consultation</button>
+              <button
+                data-toggle="modal"
+                data-target="#enquiryModal"
+                className="btn btn-primary"
+              >
+                Free consultation
+              </button>
               {/* */}
             </div>
           </div>
         </div>
       </section>
-      <section className="hosting-features-area ptb-80 bg-f9f6f6">
+      <section className="faq-area ptb-80">
         <div className="container">
-          <div className="section-title">
-            <h2>Dedicated team options</h2>
-            <div className="bar" />
-          </div>
-          <div className="row">
-            <div className="col-lg-6 col-md-6 col-sm-6">
-              <div className="single-hosting-features">
-                <div className="icon">
-                  <svg
-                    xmlns="http://www.w3.org/2000/svg"
-                    width={24}
-                    height={24}
-                    viewBox="0 0 24 24"
-                    fill="none"
-                    stroke="currentColor"
-                    strokeWidth={2}
-                    strokeLinecap="round"
-                    strokeLinejoin="round"
-                    className="feather feather-settings"
-                  >
-                    <circle cx={12} cy={12} r={3} />
-                    <path d="M19.4 15a1.65 1.65 0 0 0 .33 1.82l.06.06a2 2 0 0 1 0 2.83 2 2 0 0 1-2.83 0l-.06-.06a1.65 1.65 0 0 0-1.82-.33 1.65 1.65 0 0 0-1 1.51V21a2 2 0 0 1-2 2 2 2 0 0 1-2-2v-.09A1.65 1.65 0 0 0 9 19.4a1.65 1.65 0 0 0-1.82.33l-.06.06a2 2 0 0 1-2.83 0 2 2 0 0 1 0-2.83l.06-.06a1.65 1.65 0 0 0 .33-1.82 1.65 1.65 0 0 0-1.51-1H3a2 2 0 0 1-2-2 2 2 0 0 1 2-2h.09A1.65 1.65 0 0 0 4.6 9a1.65 1.65 0 0 0-.33-1.82l-.06-.06a2 2 0 0 1 0-2.83 2 2 0 0 1 2.83 0l.06.06a1.65 1.65 0 0 0 1.82.33H9a1.65 1.65 0 0 0 1-1.51V3a2 2 0 0 1 2-2 2 2 0 0 1 2 2v.09a1.65 1.65 0 0 0 1 1.51 1.65 1.65 0 0 0 1.82-.33l.06-.06a2 2 0 0 1 2.83 0 2 2 0 0 1 0 2.83l-.06.06a1.65 1.65 0 0 0-.33 1.82V9a1.65 1.65 0 0 0 1.51 1H21a2 2 0 0 1 2 2 2 2 0 0 1-2 2h-.09a1.65 1.65 0 0 0-1.51 1z" />
-                  </svg>
-                </div>
-                <h3>Build-Operate-Transfer</h3>
-                <p>
-                  We can work with you to create start-up costs or lead your
-                  internal team as they manage the transition over a flexible
-                  amount of time so that your organization is prepared to handle
-                  growth. A seasoned team of professionals who are experts in
-                  their particular domain will manage the transitions with the
-                  help of our experienced staff to ensure that your vision for
-                  the new business line is fully realized.
-                </p>
-              </div>
+          <div className="faq-accordion">
+            <div className="section-title">
+              <h2>Delivering a satisfying performance with user experience</h2>
+              <div className="bar" />
+              <p>
+                Our research-based approach allows us to provide you with the
+                most efficient, innovative solutions for your specific business
+                needs.
+              </p>
             </div>
-            <div className="col-lg-6 col-md-6 col-sm-6">
-              <div className="single-hosting-features">
-                <div className="icon bg-c679e3">
-                  <svg
-                    xmlns="http://www.w3.org/2000/svg"
-                    width="24"
-                    height="24"
-                    viewBox="0 0 24 24"
-                    fill="none"
-                    stroke="currentColor"
-                    stroke-width="2"
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
-                    class="feather feather-grid"
-                  >
-                    <rect x="3" y="3" width="7" height="7"></rect>
-                    <rect x="14" y="3" width="7" height="7"></rect>
-                    <rect x="14" y="14" width="7" height="7"></rect>
-                    <rect x="3" y="14" width="7" height="7"></rect>
-                  </svg>
-                </div>
-                <h3>Full-time employees</h3>
-                <p>
-                  All team members working on your project are fully and
-                  exclusively occupied with your project - this is best for
-                  software developers, analysts and QA engineers. No recruitment
-                  troubles or administrative hassle. We will set up dedicated
-                  teams for your projects. You will save the overhead costs as
-                  we take care of the management, yet the teams are in constant
-                  communication with you.
+            <ul className="accordion">
+              <li className="accordion-item">
+                <a className="accordion-title active" href="javascript:void(0)">
+                  <i className="flaticon-plus" />
+                  Project definition
+                </a>
+                <p className="accordion-content show">
+                  At the beginning of every project, we conduct a kick-off
+                  meeting so as to discuss business goals/expectations and what
+                  stakeholder will play in the process.
                 </p>
-              </div>
-            </div>
+              </li>
+              <li className="accordion-item">
+                <a className="accordion-title" href="javascript:void(0)">
+                  <i className="flaticon-plus" />
+                  Research
+                </a>
+                <p className="accordion-content">
+                  We market the right things for your brand with just a little
+                  bit of help from some trusted partners
+                </p>
+              </li>
+              <li className="accordion-item">
+                <a className="accordion-title" href="javascript:void(0)">
+                  <i className="flaticon-plus" />
+                  Ideation
+                </a>
+                <p className="accordion-content">
+                  We develop a product work structure and must evaluate the idea
+                  designs in terms of their meeting business goals and in their
+                  ability to alleviate customer issues.
+                </p>
+              </li>
+              <li className="accordion-item">
+                <a className="accordion-title" href="javascript:void(0)">
+                  <i className="flaticon-plus" /> Prototyping
+                </a>
+                <p className="accordion-content">
+                  At this stage, we turn prototypes into reality by creating a
+                  product roadmap and marketing plan.
+                </p>
+              </li>
+              <li className="accordion-item">
+                <a className="accordion-title" href="javascript:void(0)">
+                  <i className="flaticon-plus" />
+                  Testing and evaluation
+                </a>
+                <p className="accordion-content">
+                  This end-service design process is what helps us create our
+                  designs to your specifications, then conduct usability testing
+                  prior to launch, and finally introduce improvements based on
+                  users’ feedback.
+                </p>
+              </li>
+            </ul>
           </div>
         </div>
       </section>
+      <FactArea />
       <Footer />
     </div>
   );

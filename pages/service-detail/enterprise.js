@@ -4,6 +4,7 @@ import PageTitle from "../../components/PageTitle";
 import Header from "../../components/Header";
 import Footer from "../../components/Footer";
 import Enquiry from "../../components/Enquiry";
+import FactArea from "../../components/FactArea";
 
 function enterprise() {
   return (
@@ -49,7 +50,13 @@ function enterprise() {
                   expand an existing one.
                 </p>
               </div>
-              <button data-toggle="modal" data-target="#enquiryModal" className="btn btn-primary">Free consultation</button>
+              <button
+                data-toggle="modal"
+                data-target="#enquiryModal"
+                className="btn btn-primary"
+              >
+                Free consultation
+              </button>
               {/*  */}
             </div>
             <div className="col-lg-6 col-md-12">
@@ -210,7 +217,13 @@ function enterprise() {
                   outsourcing.
                 </p>
               </div>
-              <button data-toggle="modal" data-target="#enquiryModal" className="btn btn-primary">Free consultation</button>
+              <button
+                data-toggle="modal"
+                data-target="#enquiryModal"
+                className="btn btn-primary"
+              >
+                Free consultation
+              </button>
               {/* */}
             </div>
           </div>
@@ -290,6 +303,7 @@ function enterprise() {
           </div>
         </div>
       </section>
+      <FactArea />
       <Footer />
     </div>
   );
