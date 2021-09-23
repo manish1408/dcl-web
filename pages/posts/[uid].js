@@ -11,21 +11,14 @@ import { hrefResolver, linkResolver } from "prismic-configuration";
 import DefaultLayout from "layouts";
 import { BackButton, SliceZone } from "components/post";
 
-// Project functions & styles
 import { Client } from "utils/prismicHelpers";
-// import { postStyles } from "styles";
 import Footer from "components/Footer";
 import PageTitle from "components/PageTitle";
 import AccessTimeIcon from "@material-ui/icons/AccessTime";
-import { Check, Person, Search } from "@material-ui/icons";
-import CheckIcon from "@material-ui/icons/Check";
 import LabelIcon from "@material-ui/icons/Label";
-// import SearchComponent from "../components/SearchComponent";
 import Prismic from "@prismicio/client";
 import PostDate from "../../components/home/PostList/PostDate";
-// import { hrefResolver, linkResolver } from "prismic-configuration";
-import SearchComponent from "components/SearchComponent";
-import { hrefResolverCat, linkResolverCat } from "../../prismic-configuration";
+
 
 /**
  * Post page component
@@ -33,14 +26,42 @@ import { hrefResolverCat, linkResolverCat } from "../../prismic-configuration";
 const Post = ({ post, postList, featuredPosts, categories, data }) => {
   // console.log(data);
   if (post && post.data) {
+  
+
     const hasTitle = RichText.asText(post.data.title).length !== 0;
     const title = hasTitle ? RichText.asText(post.data.title) : "Untitled";
+    const pageurl = "https://www.distinctcloud.io/posts/" + post.uid;
+    const pageDescription = RichText.asText(post.data.description) || title;
+    let pageKeywords = RichText.asText(post.data.keywords) || title;;
+
 
     return (
       // <DefaultLayout>
       <>
         <Head>
           <title>{title}</title>
+
+          <meta name="title" content={title} />
+          <meta name="description" content={pageDescription} />
+          <meta name="keywords" content={pageKeywords} />
+          <meta name="robots" content="index, follow" />
+          <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+          <meta name="language" content="English" />
+
+
+          <meta property="og:type" content="website" />
+          <meta property="og:url" content={pageurl} />
+          <meta property="og:title" content={title} />
+          <meta property="og:description" content={pageDescription} />
+          <meta property="og:image" content={post.data.banner_image.url} />
+
+          <meta property="twitter:card" content={post.data.banner_image.url} />
+          <meta property="twitter:url" content={pageurl} />
+          <meta property="twitter:title" content={title} />
+          <meta property="twitter:description" content={pageDescription} />
+          <meta property="twitter:image" content={post.data.banner_image.url} />
+
+
         </Head>
         <Header></Header>
         <PageTitle title={title.length ? title : ""} />
@@ -51,7 +72,7 @@ const Post = ({ post, postList, featuredPosts, categories, data }) => {
         <section className="blog-details-area ptb-80">
           <div className="container">
             <div className="row">
-            <div className="col-md-1"></div>
+              <div className="col-md-1"></div>
               <div className="col-md-10">
                 <div className="blog-details-desc">
                   <div className="article-image">

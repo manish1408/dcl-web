@@ -5359,7 +5359,7 @@ label {
   padding-bottom: 100px;
   text-align: center;
 } */
-.page-title-area h2 {
+.page-title-area h2, .page-title-area h1 {
   font-size: 28px;
   font-weight: 700;
   margin: 0;
@@ -5482,6 +5482,13 @@ label {
   margin-top: 20px;
 }
 
+.blog-content h2{
+    font-size: 1.6rem;
+    margin-top: 40px;
+}
+.blog-content li {
+  color: #6084a4 !important;
+}
 .blog-details-desc .article-content {
   margin-top: 30px;
 }
@@ -5496,7 +5503,7 @@ label {
 .blog-details-desc .article-content .entry-meta ul li {
   position: relative;
   display: inline-block;
-  color: #0e314c;
+  color: #6084a4 !important;
   margin-right: 20px;
 }
 .blog-details-desc .article-content .entry-meta ul li a {
