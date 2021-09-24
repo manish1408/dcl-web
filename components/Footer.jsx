@@ -10,7 +10,7 @@ export default function footer() {
         <div className="row">
           <div className="col-lg-3 col-md-6 col-sm-6">
             <div className="single-footer-widget">
-              <div className="logo">
+              <div className="logo" style={{ width: "200px" }}>
                 <a href="#">
                   <img src="/assets/img/logo-black.png" alt="logo" />
                 </a>

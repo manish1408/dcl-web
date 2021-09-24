@@ -422,6 +422,12 @@ label {
   padding-top: 15px;
   padding-bottom: 15px;
 }
+
+.navbar-brand {
+  width: 200px;
+  height: 100%;
+}
+
 #header.headroom--pinned {
   -webkit-transform: translateY(0%);
   transform: translateY(0%);
@@ -852,6 +858,10 @@ label {
   .startp-responsive-nav .mean-container a.meanmenu-reveal {
     color: #0e314c;
   }
+
+  .meanmenu-reveal {
+    margin-top: 12px;
+  }
   .startp-responsive-nav .mean-container a.meanmenu-reveal span {
     background: #0e314c;
   }
@@ -860,6 +870,12 @@ label {
     width: 50%;
     z-index: 999;
   }
+
+  .logo {
+    width: 200px !important;
+    height: 100% !important;
+  }
+
   .startp-nav {
     display: none;
   }
@@ -5359,7 +5375,8 @@ label {
   padding-bottom: 100px;
   text-align: center;
 } */
-.page-title-area h2, .page-title-area h1 {
+.page-title-area h2,
+.page-title-area h1 {
   font-size: 28px;
   font-weight: 700;
   margin: 0;
@@ -5482,9 +5499,9 @@ label {
   margin-top: 20px;
 }
 
-.blog-content h2{
-    font-size: 1.6rem;
-    margin-top: 40px;
+.blog-content h2 {
+  font-size: 1.6rem;
+  margin-top: 40px;
 }
 .blog-content li {
   color: #6084a4 !important;
