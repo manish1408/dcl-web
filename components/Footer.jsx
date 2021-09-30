@@ -2,6 +2,7 @@ import React from "react";
 import Link from "next/link";
 import EmailIcon from "@material-ui/icons/Email";
 import LocationOnIcon from "@material-ui/icons/LocationOn";
+import LogoDark from "./svg-comp/LogoDark";
 
 export default function footer() {
   return (
@@ -10,9 +11,9 @@ export default function footer() {
         <div className="row">
           <div className="col-lg-3 col-md-6 col-sm-6">
             <div className="single-footer-widget">
-              <div className="logo" style={{ width: "200px" }}>
-                <a href="#">
-                  <img src="/assets/img/logo-black.png" alt="logo" />
+              <div className="logo" style={{ width: "146px" }}>
+                <a href="/">
+                  <LogoDark></LogoDark>
                 </a>
               </div>
               <p>
@@ -83,19 +84,19 @@ export default function footer() {
                 </li>
               </ul>
               {/* <ul className="social-links">
-            <li>
-              <a href="#" className="facebook"><i data-feather="facebook" /></a>
-            </li>
-            <li>
-              <a href="#" className="twitter"><i data-feather="twitter" /></a>
-            </li>
-            <li>
-              <a href="#" className="instagram"><i data-feather="instagram" /></a>
-            </li>
-            <li>
-              <a href="#" className="linkedin"><i data-feather="linkedin" /></a>
-            </li>
-          </ul> */}
+                <li>
+                  <a href="#" className="facebook"><i data-feather="facebook" /></a>
+                </li>
+                <li>
+                  <a href="#" className="twitter"><i data-feather="twitter" /></a>
+                </li>
+                <li>
+                  <a href="#" className="instagram"><i data-feather="instagram" /></a>
+                </li>
+                <li>
+                  <a href="#" className="linkedin"><i data-feather="linkedin" /></a>
+                </li>
+              </ul> */}
             </div>
           </div>
           <div className="col-lg-12 col-md-12">

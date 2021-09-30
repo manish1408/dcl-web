@@ -2,6 +2,8 @@ import ArrowUpwardIcon from "@material-ui/icons/ArrowUpward";
 import React from "react";
 import { useRouter } from "next/router";
 import Link from "next/link";
+import LogoDark from "./svg-comp/LogoDark";
+import LogoLight from "./svg-comp/LogoLight";
 
 export default function header() {
   const router = useRouter();
@@ -40,14 +42,21 @@ export default function header() {
         <div className="container">
           <nav className="navbar navbar-expand-md navbar-light">
             <a className="navbar-brand" href="/">
-              <img
+              {
+                router.pathname != "/"
+                  ? <LogoDark />
+                  : <LogoLight />
+              }
+
+
+              {/* <img
                 src={
                   router.pathname != "/"
                     ? "/assets/img/logo-black.png"
                     : "/assets/img/white-logo.png"
                 }
                 alt="logo"
-              />
+              /> */}
             </a>
             <div
               className="collapse navbar-collapse mean-menu"
