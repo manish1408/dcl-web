@@ -424,7 +424,7 @@ label {
 }
 
 .navbar-brand {
-  width: 200px !important;
+  width: 170px !important;
   /* height: 100%; */
   height: 100% !important;
 }
@@ -9420,6 +9420,7 @@ blockquote::after,
 }
 .single-footer-widget .logo {
   margin-bottom: 20px;
+  width: 170px;
 }
 .single-footer-widget .logo a {
   display: block;
@@ -9473,6 +9474,7 @@ blockquote::after,
 .single-footer-widget ul.social-links li {
   display: inline-block;
   margin-right: 2px;
+  padding-right: 10px;
 }
 .single-footer-widget ul.social-links li a {
   width: 32px;
@@ -9487,19 +9489,19 @@ blockquote::after,
   width: 15px;
 }
 .single-footer-widget ul.social-links li a.facebook {
-  border-color: #4267b2;
-  color: #4267b2;
+  border-color: #3b5998;
+  color: #3b5998;
 }
 .single-footer-widget ul.social-links li a.facebook:hover {
-  background: #4267b2;
+  background: #3b5998;
   color: #fff;
 }
 .single-footer-widget ul.social-links li a.twitter {
-  border-color: #38a1f3;
-  color: #38a1f3;
+  border-color: #1da1f2;
+  color: #1da1f2;
 }
 .single-footer-widget ul.social-links li a.twitter:hover {
-  background: #38a1f3;
+  background: #1da1f2;
   color: #fff;
 }
 .single-footer-widget ul.social-links li a.linkedin {
@@ -9511,11 +9513,11 @@ blockquote::after,
   color: #fff;
 }
 .single-footer-widget ul.social-links li a.instagram {
-  border-color: #231f20;
-  color: #231f20;
+  border-color: #e1306c;
+  color: #e1306c;
 }
 .single-footer-widget ul.social-links li a.instagram:hover {
-  background: #231f20;
+  background: #e1306c;
   color: #fff;
 }
 .single-footer-widget ul.social-links li a:hover {
@@ -9573,3 +9575,60 @@ blockquote::after,
 .single-iot-services .icon svg {
   height: 65px;
 }
+
+.loader {
+  margin: auto;
+  height: 80px;
+  width: 80px;
+  margin-bottom: 50px;
+}
+
+/* .pagination {
+  position: relative;
+  background: #fff;
+  display: flex;
+  padding: 10px 20px;
+  border-radius: 50px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+  justify-content: center;
+  width: 50%;
+  margin: auto;
+} */
+/* pagination */
+/* .pagination li {
+  list-style: none;
+  line-height: 50px;
+  margin: 0 5px;
+}
+
+.pagination li.pageNumber a {
+  width: 50px;
+  height: 50px;
+  line-height: 50px;
+  text-align: center;
+}
+
+.pagination li a {
+  display: block;
+  text-decoration: none;
+  color: #383838;
+  font-weight: 600;
+  border-radius: 50%;
+}
+.pagination li.pageNumber:hover a,
+.pagination li.pageNumber.active a {
+  background: #383838;
+  color: #fff;
+}
+
+.pagination li:first-child {
+  margin-right: 30px;
+  font-weight: 700;
+  font-size: 20px;
+}
+
+.pagination li:last-child {
+  margin-left: 30px;
+  font-weight: 700;
+  font-size: 20px;
+} */

@@ -22,7 +22,8 @@
     "prismic-javascript": "^3.0.2",
     "prismic-reactjs": "^1.3.3",
     "react": "16.14.0",
-    "react-dom": "16.14.0"
+    "react-dom": "16.14.0",
+    "react-paginate": "^7.1.3"
   },
   "devDependencies": {
     "@svgr/cli": "^5.5.0",
