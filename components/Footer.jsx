@@ -2,14 +2,11 @@ import React from "react";
 import Link from "next/link";
 import EmailIcon from "@material-ui/icons/Email";
 import LocationOnIcon from "@material-ui/icons/LocationOn";
-<<<<<<< HEAD
 import FacebookIcon from "@material-ui/icons/Facebook";
 import InstagramIcon from "@material-ui/icons/Instagram";
 import TwitterIcon from "@material-ui/icons/Twitter";
 import LinkedInIcon from "@material-ui/icons/LinkedIn";
-=======
 import LogoDark from "./svg-comp/LogoDark";
->>>>>>> dfe2838ccbb0ec967e6a435c1cb317660ffa6f63
 
 export default function footer() {
   return (
@@ -18,15 +15,9 @@ export default function footer() {
         <div className="row">
           <div className="col-lg-3 col-md-6 col-sm-6">
             <div className="single-footer-widget">
-<<<<<<< HEAD
-              <div className="logo">
-                <a href="#">
-                  <img src="/assets/img/logo-black.png" alt="logo" />
-=======
               <div className="logo" style={{ width: "146px" }}>
                 <a href="/">
                   <LogoDark></LogoDark>
->>>>>>> dfe2838ccbb0ec967e6a435c1cb317660ffa6f63
                 </a>
               </div>
               <p>
@@ -96,7 +87,6 @@ export default function footer() {
                   </a>
                 </li>
               </ul>
-<<<<<<< HEAD
               <ul className="social-links">
                 <li>
                   <a
@@ -131,22 +121,6 @@ export default function footer() {
                   </a>
                 </li>
               </ul>
-=======
-              {/* <ul className="social-links">
-                <li>
-                  <a href="#" className="facebook"><i data-feather="facebook" /></a>
-                </li>
-                <li>
-                  <a href="#" className="twitter"><i data-feather="twitter" /></a>
-                </li>
-                <li>
-                  <a href="#" className="instagram"><i data-feather="instagram" /></a>
-                </li>
-                <li>
-                  <a href="#" className="linkedin"><i data-feather="linkedin" /></a>
-                </li>
-              </ul> */}
->>>>>>> dfe2838ccbb0ec967e6a435c1cb317660ffa6f63
             </div>
           </div>
           <div className="col-lg-12 col-md-12">

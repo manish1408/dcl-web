@@ -424,13 +424,8 @@ label {
 }
 
 .navbar-brand {
-<<<<<<< HEAD
-  width: 170px !important;
-  /* height: 100%; */
-=======
   width: 146px !important;
   height: 100%;
->>>>>>> dfe2838ccbb0ec967e6a435c1cb317660ffa6f63
   height: 100% !important;
 }
 
