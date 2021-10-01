@@ -5482,7 +5482,7 @@ label {
   box-shadow: 0 2px 10px 0 #d8dde6;
 }
 .pagination-area ul .page-item .page-link:hover,
-.pagination-area ul .page-item .page-link:focus {
+.pagination-area ul .page-item {
   color: #fff;
   background-color: #44ce6f;
   -webkit-box-shadow: unset;
