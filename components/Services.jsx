@@ -26,8 +26,9 @@ export default function Services() {
                 </Link>
               </h3>
               <p>
-              We are an adept digital company helping new ventures and startups to fly high through cutting edge software technology that adds wings to their project's success.
-               
+                We are an adept digital company helping new ventures and
+                startups to fly high through cutting edge software technology
+                that adds wings to their project's success.
               </p>
               <Link href="service-detail/startup">
                 <a className="learn-more-btn">
@@ -83,7 +84,9 @@ export default function Services() {
                 </Link>
               </h3>
               <p>
-              We specialize in designing customized user-friendly apps with a back-end interface that make life easier for both you and your customers.
+                We specialize in designing customized user-friendly apps with a
+                back-end interface that make life easier for both you and your
+                customers.
               </p>
               <Link href="service-detail/design">
                 <a className="learn-more-btn">
@@ -110,7 +113,9 @@ export default function Services() {
                 </Link>
               </h3>
               <p>
-              Distinct Cloud team assists companies in simplifying complexity by reducing costs, minimizing risks, and providing detailed app testing .
+                Distinct Cloud team assists companies in simplifying complexity
+                by reducing costs, minimizing risks, and providing detailed app
+                testing .
               </p>
               <Link href="service-detail/testing">
                 <a className="learn-more-btn">
@@ -166,7 +171,8 @@ export default function Services() {
                 </Link>
               </h3>
               <p>
-              We provide iOS and Android App development which allows you to reach your customers on their favorite mobile device. 
+                We provide iOS and Android App development which allows you to
+                reach your customers on their favorite mobile device.
               </p>
               <Link href="service-detail/mobdev">
                 <a className="learn-more-btn">

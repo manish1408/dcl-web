@@ -42,12 +42,7 @@ export default function header() {
         <div className="container">
           <nav className="navbar navbar-expand-md navbar-light">
             <a className="navbar-brand" href="/">
-              {
-                router.pathname != "/"
-                  ? <LogoDark />
-                  : <LogoLight />
-              }
-
+              {router.pathname != "/" ? <LogoDark /> : <LogoLight />}
 
               {/* <img
                 src={
@@ -125,6 +120,19 @@ export default function header() {
                     Services
                   </a>
                   <ul className="dropdown_menu">
+                    <li className="nav-item">
+                      <Link href="/service-detail/mvp">
+                        <a
+                          className={
+                            router.pathname == "/service-detail/mvp"
+                              ? "nav-link active"
+                              : "nav-link"
+                          }
+                        >
+                          Create MVP
+                        </a>
+                      </Link>
+                    </li>
                     <li className="nav-item">
                       <Link href="/service-detail/startup">
                         <a
