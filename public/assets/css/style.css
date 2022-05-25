@@ -9666,3 +9666,12 @@ align-items: center;
 .feature-row .col-lg-3{
   padding: 10px !important;
 }
+
+.icon img {
+  height: 40px;
+    width: 40px;
+}
+
+.blockchain-services .single-hosting-features:hover .icon{
+  background: rgba(68, 206, 111,0.5) !important;
+}
