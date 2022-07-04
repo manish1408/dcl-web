@@ -7,24 +7,26 @@ import { linkResolver } from "../prismic-configuration";
 import { RichText } from "prismic-reactjs";
 import PropTypes from "prop-types";
 import { useEffect } from "react";
-import PageLoader from "next/dist/client/page-loader";
+// import PageLoader from "next/dist/client/page-loader";
 
 export default function SuccessStories({ posts, pages }) {
   const [password, setPassword] = useState("");
   const [auth, setAuth] = useState(false);
-  const [loader, setloader] = useState(false);
+  const [loader, setloader] = useState({ error: false, loader: false });
 
   // useEffect(() => {}, [auth, loader]);
 
   const verify = (e) => {
     e.preventDefault();
-    setloader(true);
+    setloader({ loader: true });
     const passwordString = "82852AB7708895827CB7FE668780B5498CC07316";
     if (password === passwordString) {
       setTimeout(() => {
         setAuth(true);
-        setloader(false);
+        setloader({ loader: false });
       }, 600);
+    } else {
+      setloader({ error: true });
     }
   };
 
@@ -45,7 +47,7 @@ export default function SuccessStories({ posts, pages }) {
             </div>
             <div className="row h-100 justify-content-center align-items-center">
               <div className="col-lg-12 col-md-12">
-                <form>
+                <form id="#contactForm">
                   <div className="row">
                     <div className="col-lg-12 col-md-12">
                       <div className="form-group">
@@ -57,7 +59,16 @@ export default function SuccessStories({ posts, pages }) {
                           placeholder="Password"
                           onChange={(e) => setPassword(e.target.value)}
                         />
-                        <div className="help-block with-errors" />
+                        {loader.error && (
+                          <div
+                            style={{ width: "50%", margin: "auto" }}
+                            className="help-block with-errors"
+                          >
+                            <ul className="list-unstyled">
+                              <li style={{ color: "red" }}>Wrong Password</li>
+                            </ul>
+                          </div>
+                        )}
                       </div>
                       <button
                         type="submit"
@@ -70,7 +81,7 @@ export default function SuccessStories({ posts, pages }) {
                         }}
                         onClick={verify}
                       >
-                        {loader ? "Send Message" : "Verifying..."}
+                        {loader.loader ? "Verifying..." : "Send Message "}
                       </button>
                     </div>
                   </div>
