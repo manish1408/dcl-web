@@ -5,13 +5,14 @@ import Link from "next/link";
 import LogoDark from "./svg-comp/LogoDark";
 import LogoLight from "./svg-comp/LogoLight";
 
-export default function header() {
+export default function header({ background }) {
   const router = useRouter();
   console.log(router.pathname);
 
   return (
     <header
       id="header"
+      style={{ background: background }}
       className={
         router.pathname != "/"
           ? "headroom navbar-style-two"
