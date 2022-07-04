@@ -55,9 +55,9 @@ export default function SuccessStories({ posts, pages }) {
                           style={{ width: "50%", margin: "auto" }}
                           type="text"
                           value={password}
+                          onChange={(e) => setPassword(e.target.value)}
                           className="form-control"
                           placeholder="Password"
-                          onChange={(e) => setPassword(e.target.value)}
                         />
                         {loader.error && (
                           <div
@@ -81,7 +81,7 @@ export default function SuccessStories({ posts, pages }) {
                         }}
                         onClick={verify}
                       >
-                        {loader.loader ? "Verifying..." : "Send Message "}
+                        {loader ? "Verifying..." : "Send Message "}
                       </button>
                     </div>
                   </div>
