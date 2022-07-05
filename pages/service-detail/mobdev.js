@@ -49,7 +49,7 @@ function mobdev() {
                   expand an existing one.
                 </p>
               </div>
-              <button data-toggle="modal" data-target="#enquiryModal" className="btn btn-primary">Free consultation</button>
+              <button data-toggle="modal" data-target="#enquiryModal" className="btn btn-primary">Talk to us</button>
               {/*  */}
             </div>
             <div className="col-lg-6 col-md-12">
@@ -210,7 +210,7 @@ function mobdev() {
                   outsourcing.
                 </p>
               </div>
-              <button data-toggle="modal" data-target="#enquiryModal" className="btn btn-primary">Free consultation</button>
+              <button data-toggle="modal" data-target="#enquiryModal" className="btn btn-primary">Talk to us</button>
               {/* */}
             </div>
           </div>

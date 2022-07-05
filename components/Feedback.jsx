@@ -5,11 +5,10 @@ export default function Feedback() {
     <section className="bigdata-feedback-area ptb-80">
       <div className="container">
         <div className="section-title">
-          <h2>What Users Saying</h2>
+          <h2>Feedback from clients</h2>
           <div className="bar" />
           <p>
-            Our track record proves our spotless reputation. We successfully work with large enterprises and early-stage companies
-
+            Our track record proves our spotless reputation. Our startup focused approach helps in building our reputation.
           </p>
         </div>
         <div className="row">
@@ -21,9 +20,9 @@ export default function Feedback() {
                 </p>
               </div>
               <div className="client-info">
-                <img src="assets/img/author1.jpg" alt="image" />
-                <h3>David Luis</h3>
-                <span>Founder &amp; CEO</span>
+                <img src="assets/img/soho-client.jpeg" alt="image" />
+                <h3>David</h3>
+                <span>Founder, DIY Work.Net</span>
               </div>
             </div>
           </div>
@@ -35,9 +34,9 @@ export default function Feedback() {
                 </p>
               </div>
               <div className="client-info">
-                <img src="assets/img/author2.jpg" alt="image" />
-                <h3>Steven Smith</h3>
-                <span>Investor, Founder Trade Cloud</span>
+                {/* <img src="assets/img/author2.jpg" alt="image" /> */}
+                <h3>Rahul Singh</h3>
+                <span>CEO, Trade Cloud</span>
               </div>
             </div>
           </div>
@@ -50,8 +49,8 @@ export default function Feedback() {
                 </p>
               </div>
               <div className="client-info">
-                <img src="assets/img/author3.jpg" alt="image" />
-                <h3>Sarah </h3>
+                <img src="assets/img/one-box-client.jpeg" alt="image" />
+                <h3>Sarah J.</h3>
                 <span>One Box, CEO</span>
               </div>
             </div>

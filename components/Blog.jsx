@@ -3,7 +3,7 @@ import AddIcon from "@material-ui/icons/Add";
 
 export default function Blog() {
   return (
-    <section className="blog-area ptb-80">
+    <section className="blog-area ptb-80 bg-eef6fd">
       <div className="container">
         <div className="section-title">
           <h2>Our Recent Blogs</h2>

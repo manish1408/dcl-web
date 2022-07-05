@@ -55,7 +55,7 @@ function enterprise() {
                 data-target="#enquiryModal"
                 className="btn btn-primary"
               >
-                Free consultation
+                Talk to us
               </button>
               {/*  */}
             </div>
@@ -222,7 +222,7 @@ function enterprise() {
                 data-target="#enquiryModal"
                 className="btn btn-primary"
               >
-                Free consultation
+                Talk to us
               </button>
               {/* */}
             </div>

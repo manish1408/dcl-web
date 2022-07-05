@@ -70,7 +70,7 @@ h6 {
   background-color: #f9fafb;
 }
 .bg-0f054b {
-  background-color: #0f054b;
+  background-color: #0e314c;
 }
 .bg-eef6fd {
   background-color: #eef6fd;
@@ -3387,9 +3387,9 @@ label {
   margin-top: 20px;
   margin-bottom: 0;
 }
-.bigdata-feedback-area {
+/* .bigdata-feedback-area {
   background-color: #eef6fd;
-}
+} */
 .single-feedback-box {
   position: relative;
   margin-left: 25px;
@@ -3397,7 +3397,7 @@ label {
   margin-bottom: 30px;
 }
 .single-feedback-box .feedback-desc {
-  background-color: #fff;
+  background-color: #eef6fd;
   border-radius: 5px;
   position: relative;
   z-index: 1;
@@ -3433,7 +3433,7 @@ label {
   width: 25px;
   height: 25px;
   z-index: -1;
-  background: #fff;
+  background: #eef6fd;
   -webkit-transform: rotate(45deg);
   transform: rotate(45deg);
 }
@@ -7159,8 +7159,8 @@ blockquote::after,
   overflow: hidden;
   position: relative;
   z-index: 1;
-  padding-top: 10px;
-  padding-bottom: 10px;
+  padding-top: 80px;
+  padding-bottom: 80px;
 }
 .cta-repair-content h3 {
   color: #fff;
@@ -10004,4 +10004,12 @@ align-items: center;
     transform: scale(1, 0);
     transform-origin: 0% 100%;
   }
+}
+.poly-logo{
+  background: #757575;
+  padding: 8px;
+  border-radius: 8px;
+}
+.tech-we-work img{
+  height: 60px !important;
 }

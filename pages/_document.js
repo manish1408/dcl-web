@@ -61,7 +61,8 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
           {/* <script src="assets/js/form-validator.min.js"></script> */}
           {/* <script src="assets/js/contact-form-script.js"></script> */}
           {/* <script src="assets/js/startp-map.js"></script> */}
-          {/* <script src="assets/js/main.js"></script> */}
+          <script src="assets/js/jquery.min.js"></script>
+          <script src="assets/js/main.js"></script>
         </body>
       </Html>
     );

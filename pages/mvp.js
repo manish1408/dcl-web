@@ -72,7 +72,7 @@ export default function mvp() {
                     polished web app using best development practices. Submit
                     your project or idea and we will get back to you.
                   </p>
-                  <button data-toggle="modal" data-target="#enquiryModal" className="btn btn-primary">Free consultation</button>
+                  <button data-toggle="modal" data-target="#enquiryModal" className="btn btn-primary">Talk to us</button>
                 </div>
               </div>
             </div>

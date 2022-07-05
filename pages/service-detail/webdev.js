@@ -49,7 +49,7 @@ function webdev() {
                   expand an existing one.
                 </p>
               </div>
-              <button data-toggle="modal" data-target="#enquiryModal" className="btn btn-primary">Free consultation</button>
+              <button data-toggle="modal" data-target="#enquiryModal" className="btn btn-primary">Talk to us</button>
 
               {/*  */}
             </div>
@@ -211,7 +211,7 @@ function webdev() {
                   outsourcing.
                 </p>
               </div>
-              <button data-toggle="modal" data-target="#enquiryModal" className="btn btn-primary">Free consultation</button>
+              <button data-toggle="modal" data-target="#enquiryModal" className="btn btn-primary">Talk to us</button>
 
               {/* */}
             </div>

@@ -52,7 +52,7 @@ function mvp() {
                       data-target="#enquiryModal"
                       className="btn btn-primary"
                     >
-                      Free Consultation
+                      Talk to us
                     </button>
                   </div>
                 </div>

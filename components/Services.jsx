@@ -6,7 +6,7 @@ export default function Services() {
     <section className="bigdata-services-area ptb-80 bg-eef6fd">
       <div className="container">
         <div className="section-title">
-          <h2>Services we can help you with</h2>
+          <h2>Technologies we can help you with</h2>
           <div className="bar" />
           <p>
             We are proficient in highly complex workflows, data structures, and
@@ -15,7 +15,7 @@ export default function Services() {
           </p>
         </div>
         <div className="row">
-          <div className="col-lg-4 col-md-6 col-sm-12">
+          {/* <div className="col-lg-4 col-md-6 col-sm-12">
             <div className="single-services-box-item">
               <div className="icon">
                 <img src="assets/img/bigdata-analytics/icon1.png" alt="image" />
@@ -101,7 +101,7 @@ export default function Services() {
                 />
               </div>
             </div>
-          </div>
+          </div> */}
           <div className="col-lg-4 col-md-6 col-sm-12">
             <div className="single-services-box-item">
               <div className="icon">
@@ -109,20 +109,39 @@ export default function Services() {
               </div>
               <h3>
                 <Link href="service-detail/testing">
-                  <a>Software Testing</a>
+                  <a>Web3, Blockchain</a>
                 </Link>
               </h3>
               <p>
-                Distinct Cloud team assists companies in simplifying complexity
-                by reducing costs, minimizing risks, and providing detailed app
-                testing .
+                The internet is demanding an upgrade to web3.
+                Distinct Cloud team assists companies in simplifying complexity of Web3 development.
               </p>
-              <Link href="service-detail/testing">
+              <div className="row mt-4 tech-we-work">
+                <div className="col text-center">
+                  <img
+                    src="assets/img/tech/Blockchain.svg"
+                    alt="Technology"
+                  />
+                </div>
+                <div className="col text-center">
+                  <img
+                    src="assets/img/tech/rust_a971271085.svg"
+                    alt="Technology"
+                  />
+                </div>
+                <div className="col text-center">
+                  <img
+                    src="assets/img/tech/Solidity_logo.svg"
+                    alt="Technology"
+                  />
+                </div>
+              </div>
+              {/* <Link href="service-detail/testing">
                 <a className="learn-more-btn">
                   <i data-feather="arrow-right" />
                   Learn More
                 </a>
-              </Link>
+              </Link> */}
               <div className="shape">
                 <img
                   src="assets/img/bigdata-analytics/rectangle.png"
@@ -146,12 +165,12 @@ export default function Services() {
                 looking to integrate business processes, reduce workload, and
                 build new products.
               </p>
-              <Link href="service-detail/webdev">
+              {/* <Link href="service-detail/webdev">
                 <a className="learn-more-btn">
                   <i data-feather="arrow-right" />
                   Learn More
                 </a>
-              </Link>
+              </Link> */}
               <div className="shape">
                 <img
                   src="assets/img/bigdata-analytics/rectangle.png"
@@ -167,19 +186,19 @@ export default function Services() {
               </div>
               <h3>
                 <Link href="service-detail/mobdev">
-                  <a>Mobile Development</a>
+                  <a>iOS, Android</a>
                 </Link>
               </h3>
               <p>
                 We provide iOS and Android App development which allows you to
                 reach your customers on their favorite mobile device.
               </p>
-              <Link href="service-detail/mobdev">
+              {/* <Link href="service-detail/mobdev">
                 <a className="learn-more-btn">
                   <i data-feather="arrow-right" />
                   Learn More
                 </a>
-              </Link>
+              </Link> */}
               <div className="shape">
                 <img
                   src="assets/img/bigdata-analytics/rectangle.png"
