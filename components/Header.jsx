@@ -4,48 +4,53 @@ import { useRouter } from "next/router";
 import Link from "next/link";
 import LogoDark from "./svg-comp/LogoDark";
 import LogoLight from "./svg-comp/LogoLight";
+import { useState } from "react";
+import Enquiry from "./Enquiry";
 
 export default function header({ background }) {
   const router = useRouter();
-  console.log(router.pathname);
+  const [modal, setModal] = useState(false);
+
+  // console.log(router.pathname);
 
   return (
-    <header
-      id="header"
-      style={{ background: background }}
-      className={
-        router.pathname != "/"
-          ? "headroom navbar-style-two"
-          : "headroom navbar-color-white"
-      }
-    >
-      <div className="startp-responsive-nav">
-        <div className="container">
-          <div className="startp-responsive-menu">
-            <div className="logo">
-              <Link href="/">
-                <a>
-                  <img
-                    src={
-                      router.pathname != "/"
-                        ? "/assets/img/logo-black.png"
-                        : "/assets/img/white-logo.png"
-                    }
-                    alt="logo"
-                  />
-                </a>
-              </Link>
+    <>
+      <header
+        id="header"
+        style={{ background: background }}
+        className={
+          router.pathname != "/"
+            ? "headroom navbar-style-two"
+            : "headroom navbar-color-white"
+        }
+      >
+        <div className="startp-responsive-nav">
+          <div className="container">
+            <div className="startp-responsive-menu">
+              <div className="logo">
+                <Link href="/">
+                  <a>
+                    <img
+                      src={
+                        router.pathname != "/"
+                          ? "/assets/img/logo-black.png"
+                          : "/assets/img/white-logo.png"
+                      }
+                      alt="logo"
+                    />
+                  </a>
+                </Link>
+              </div>
             </div>
           </div>
         </div>
-      </div>
-      <div className="startp-nav">
-        <div className="container">
-          <nav className="navbar navbar-expand-md navbar-light">
-            <a className="navbar-brand" href="/">
-              {router.pathname != "/" ? <LogoDark /> : <LogoLight />}
+        <div className="startp-nav">
+          <div className="container">
+            <nav className="navbar navbar-expand-md navbar-light">
+              <a className="navbar-brand" href="/">
+                {router.pathname != "/" ? <LogoDark /> : <LogoLight />}
 
-              {/* <img
+                {/* <img
                 src={
                   router.pathname != "/"
                     ? "/assets/img/logo-black.png"
@@ -53,13 +58,13 @@ export default function header({ background }) {
                 }
                 alt="logo"
               /> */}
-            </a>
-            <div
-              className="collapse navbar-collapse mean-menu"
-              id="navbarSupportedContent"
-            >
-              <ul className="navbar-nav nav ml-auto">
-                {/* <li className="nav-item">
+              </a>
+              <div
+                className="collapse navbar-collapse mean-menu"
+                id="navbarSupportedContent"
+              >
+                <ul className="navbar-nav nav ml-auto">
+                  {/* <li className="nav-item">
                   <Link href="/">
                     <a
                       className={
@@ -97,99 +102,99 @@ export default function header({ background }) {
                   </Link>
                 </li> */}
 
-                <li className="nav-item">
-                  <Link href="/about">
+                  <li className="nav-item">
+                    <Link href="/about">
+                      <a
+                        className={
+                          router.pathname == "/about"
+                            ? "nav-link active"
+                            : "nav-link"
+                        }
+                      >
+                        About
+                      </a>
+                    </Link>
+                  </li>
+                  <li className="nav-item">
                     <a
                       className={
-                        router.pathname == "/about"
+                        router.pathname.startsWith("/service-detail")
                           ? "nav-link active"
                           : "nav-link"
                       }
                     >
-                      About
+                      Services
                     </a>
-                  </Link>
-                </li>
-                <li className="nav-item">
-                  <a
-                    className={
-                      router.pathname.startsWith("/service-detail")
-                        ? "nav-link active"
-                        : "nav-link"
-                    }
-                  >
-                    Services
-                  </a>
-                  <ul className="dropdown_menu">
-                    <li className="nav-item">
-                      <Link href="/service-detail/mvp">
-                        <a
-                          className={
-                            router.pathname == "/service-detail/mvp"
-                              ? "nav-link active"
-                              : "nav-link"
-                          }
+                    <ul className="dropdown_menu">
+                      <li className="nav-item">
+                        <Link href="/service-detail/mvp">
+                          <a
+                            className={
+                              router.pathname == "/service-detail/mvp"
+                                ? "nav-link active"
+                                : "nav-link"
+                            }
+                          >
+                            Create MVP
+                          </a>
+                        </Link>
+                      </li>
+                      <li className="nav-item">
+                        <Link href="/service-detail/startup">
+                          <a
+                            className={
+                              router.pathname == "/service-detail/startup"
+                                ? "nav-link active"
+                                : "nav-link"
+                            }
+                          >
+                            For Startups
+                          </a>
+                        </Link>
+                      </li>
+                      <li className="nav-item">
+                        <Link href="/service-detail/enterprise">
+                          <a
+                            className={
+                              router.pathname == "/service-detail/enterprise"
+                                ? "nav-link active"
+                                : "nav-link"
+                            }
+                          >
+                            For enterprises
+                          </a>
+                        </Link>
+                      </li>
+                      <li className="nav-item">
+                        <Link href="/service-detail/design">
+                          <a
+                            className={
+                              router.pathname == "/service-detail/design"
+                                ? "nav-link active"
+                                : "nav-link"
+                            }
+                          >
+                            Design Services
+                          </a>
+                        </Link>
+                      </li>
+                      <li className="nav-item">
+                        <Link
+                          href="/service-detail/testing"
+                          as="/service-detail/software-testing"
                         >
-                          Create MVP
-                        </a>
-                      </Link>
-                    </li>
-                    <li className="nav-item">
-                      <Link href="/service-detail/startup">
-                        <a
-                          className={
-                            router.pathname == "/service-detail/startup"
-                              ? "nav-link active"
-                              : "nav-link"
-                          }
-                        >
-                          For Startups
-                        </a>
-                      </Link>
-                    </li>
-                    <li className="nav-item">
-                      <Link href="/service-detail/enterprise">
-                        <a
-                          className={
-                            router.pathname == "/service-detail/enterprise"
-                              ? "nav-link active"
-                              : "nav-link"
-                          }
-                        >
-                          For enterprises
-                        </a>
-                      </Link>
-                    </li>
-                    <li className="nav-item">
-                      <Link href="/service-detail/design">
-                        <a
-                          className={
-                            router.pathname == "/service-detail/design"
-                              ? "nav-link active"
-                              : "nav-link"
-                          }
-                        >
-                          Design Services
-                        </a>
-                      </Link>
-                    </li>
-                    <li className="nav-item">
-                      <Link
-                        href="/service-detail/testing"
-                        as="/service-detail/software-testing"
-                      >
-                        <a
-                          className={
-                            router.pathname == "/service-detail/testing"
-                              ? "nav-link active"
-                              : "nav-link"
-                          }
-                        >
-                          Software Testing
-                        </a>
-                      </Link>
-                    </li>
-                    {/*  <li className="nav-item">
+                          <a
+                            className={
+                              router.pathname == "/service-detail/testing"
+                                ? "nav-link active"
+                                : "nav-link"
+                            }
+                          >
+                            Software Testing
+                          </a>
+                        </Link>
+                      </li>
+                      {/*  <li className="nav-item">
                       <Link href="/service-detail/webdev">
                         <a
                           className={
@@ -215,22 +220,22 @@ export default function header({ background }) {
                         </a>
                       </Link>
                     </li> */}
-                  </ul>
-                </li>
-                <li className="nav-item">
-                  <Link href="/blog">
-                    <a
-                      className={
-                        router.pathname == "/blog"
-                          ? "nav-link active"
-                          : "nav-link"
-                      }
-                    >
-                      Blog
-                    </a>
-                  </Link>
-                </li>
-                {/* <li className="nav-item">
+                    </ul>
+                  </li>
+                  <li className="nav-item">
+                    <Link href="/blog">
+                      <a
+                        className={
+                          router.pathname == "/blog"
+                            ? "nav-link active"
+                            : "nav-link"
+                        }
+                      >
+                        Blog
+                      </a>
+                    </Link>
+                  </li>
+                  {/* <li className="nav-item">
               <Link href="/services">
                 <a className={router.pathname == "/services" ? "nav-link active" : "nav-link"} >Services</a>
               </Link>
@@ -240,7 +245,7 @@ export default function header({ background }) {
                 <a className={router.pathname == "/projects" ? "nav-link active" : "nav-link"} >Projects</a>
               </Link>
             </li> */}
-                {/* <li className="nav-item">
+                  {/* <li className="nav-item">
                   <Link href="/blog">
                     <a
                       className={
@@ -253,37 +258,42 @@ export default function header({ background }) {
                     </a>
                   </Link>
                 </li> */}
-                <li className="nav-item">
-                  <Link href="/contact">
-                    <a
-                      className={
-                        router.pathname == "/contact"
-                          ? "nav-link active"
-                          : "nav-link"
-                      }
-                    >
-                      Contact
-                    </a>
-                  </Link>
-                </li>
-              </ul>
-            </div>
-            <div className="-">
-            <button data-toggle="modal" data-target="#enquiryModal" className="btn btn-primary">Talk to us</button>
-            </div>
-          </nav>
+                  <li className="nav-item">
+                    <Link href="/contact">
+                      <a
+                        className={
+                          router.pathname == "/contact"
+                            ? "nav-link active"
+                            : "nav-link"
+                        }
+                      >
+                        Contact
+                      </a>
+                    </Link>
+                  </li>
+                </ul>
+              </div>
+              <div className="-">
+                <button
+                  onClick={() => setModal(true)}
+                  className="btn btn-primary"
+                >
+                  Talk to us
+                </button>
+              </div>
+            </nav>
+          </div>
         </div>
-      </div>
-      <div className="others-option-for-responsive">
-        <div className="container">
-          {/* <div className="dot-menu">
+        <div className="others-option-for-responsive">
+          <div className="container">
+            {/* <div className="dot-menu">
         <div className="inner">
           <div className="circle circle-one" />
           <div className="circle circle-two" />
           <div className="circle circle-three" />
         </div>
       </div> */}
-          {/* <div className="container">
+            {/* <div className="container">
         <div className="option-inner">
           <div className="others-option">
             <a href="cart.html" className="cart-wrapper-btn"><i data-feather="shopping-cart" /><span>0</span></a>
@@ -291,12 +301,14 @@ export default function header({ background }) {
           </div>
         </div>
       </div> */}
+          </div>
         </div>
-      </div>
-      <div className="go-top">
-        <ArrowUpwardIcon />
-        {/* <i data-feather="arrow-up" /> */}
-      </div>
-    </header>
+        <div className="go-top">
+          <ArrowUpwardIcon />
+          {/* <i data-feather="arrow-up" /> */}
+        </div>
+      </header>
+      <Enquiry modal={modal} setModal={setModal} />
+    </>
   );
 }

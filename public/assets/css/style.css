@@ -10013,3 +10013,69 @@ align-items: center;
 .tech-we-work img{
   height: 60px !important;
 }
+
+.popup {
+  width: 100%;
+  height: 100%;
+  background: rgb(137 137 119);
+  display: none;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  text-align: center;
+  z-index: 999999;
+}
+.popup .popup__content {
+  width: 55%;
+  overflow: auto;
+  padding: 0px;
+  background: rgb(137 137 119);
+  color: black;
+  position: relative;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  box-sizing: border-box;
+}
+
+@media screen and (max-width:600px) {
+
+  .popup .popup__content {
+      width: 90%;
+  }
+  .popup .popup__content .close {
+      right: 94% !important;
+  }
+  .header-btn {display: none !important;}
+}
+
+.popup .popup__content .close {
+  position: absolute;
+  right: 26px;
+  top: 45px;
+  width: 20px;
+  display: block;
+}
+.popup .popup__content .close span {
+  cursor: pointer;
+  position: fixed;
+  width: 20px;
+  height: 3px;
+  background: #999;
+}
+.popup .popup__content .close span:nth-child(1) {
+  transform: rotate(45deg);
+}
+.popup .popup__content .close span:nth-child(2) {
+  transform: rotate(135deg);
+}
+
+.eazy-nft-calendly {
+  width: 100%;
+  height: 807px;
+  border-radius: 20px;
+  margin-top: 20px;
+  border: 0px;
+}
