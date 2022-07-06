@@ -17,8 +17,9 @@ export default function about() {
   const [message, setMessage] = useState({ error: false, data: "" });
   const [loader, setloader] = useState(false);
   const regEx = /[a-zA-Z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,8}(.[a-z{2,8}])?/g;
-  const sendForm = (e) => {
+  const sendForm = async (e) => {
     e.preventDefault();
+
     const data = {
       name: name.data,
       email: email.data,
@@ -46,11 +47,12 @@ export default function about() {
 
     if (name.data && !email.error && subject.data && message.data) {
       setloader(true);
+
       console.log(data);
       fetch(
         "https://api.eazynft.co/api/v1/general/email/contact",
         requestOptions
-      ).then(setloader(false));
+      ).then(() => setloader(false));
     }
   };
   return (
@@ -281,7 +283,7 @@ export default function about() {
                         className="btn btn-primary"
                         onClick={sendForm}
                       >
-                        {loader ? "Submitting..." : "Send Message "}
+                        {loader ? "Submitting..." : "Send Message"}
                       </button>
                       <div id="msgSubmit" className="h3 text-center hidden" />
                       <div className="clearfix" />
