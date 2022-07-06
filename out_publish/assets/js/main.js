@@ -1,15 +1,15 @@
 (function ($) {
   "use strict";
   //   feather.replace();
-  $(".mean-menu").meanmenu({ meanScreenWidth: "991" });
-  $(".popup-youtube").magnificPopup({
-    disableOn: 320,
-    type: "iframe",
-    mainClass: "mfp-fade",
-    removalDelay: 160,
-    preloader: false,
-    fixedContentPos: false,
-  });
+  // $(".mean-menu").meanmenu({ meanScreenWidth: "991" });
+  // $(".popup-youtube").magnificPopup({
+  //   disableOn: 320,
+  //   type: "iframe",
+  //   mainClass: "mfp-fade",
+  //   removalDelay: 160,
+  //   preloader: false,
+  //   fixedContentPos: false,
+  // });
   $(window).on("scroll", function () {
     if ($(this).scrollTop() > 120) {
       $("#header").addClass("is-sticky");

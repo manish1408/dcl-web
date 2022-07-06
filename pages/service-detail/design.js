@@ -57,7 +57,7 @@ function design() {
                 data-target="#enquiryModal"
                 className="btn btn-primary"
               >
-                Free consultation
+                Talk to us
               </button>
 
               {/*  */}
@@ -242,7 +242,7 @@ function design() {
                 data-target="#enquiryModal"
                 className="btn btn-primary"
               >
-                Free consultation
+                Talk to us
               </button>
               {/* */}
             </div>

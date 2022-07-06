@@ -55,7 +55,7 @@ function testing() {
                 data-target="#enquiryModal"
                 className="btn btn-primary"
               >
-                Free consultation
+                Talk to us
               </button>
 
               {/*  */}

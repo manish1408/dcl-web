@@ -268,10 +268,9 @@ export default function header({ background }) {
                 </li>
               </ul>
             </div>
-            {/* <div className="others-option">
-          <a href="cart.html" className="cart-wrapper-btn"><i data-feather="shopping-cart" /><span>0</span></a>
-          <a href="#" className="btn btn-primary">Get Started</a>
-        </div> */}
+            <div className="-">
+            <button data-toggle="modal" data-target="#enquiryModal" className="btn btn-primary">Talk to us</button>
+            </div>
           </nav>
         </div>
       </div>

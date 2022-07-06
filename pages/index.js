@@ -19,8 +19,8 @@ const Home = () => (
   <div>
 
     <Head>
-      <title>Distinct Cloud Labs - Custom web and mobile apps development</title>
-      <meta name="title" content="Distinct Cloud Labs - Distinct Cloud Labs - Custom web and mobile apps development" />
+      <title>Distinct Cloud Labs - Custom web and mobile apps development for startups.</title>
+      <meta name="title" content="Distinct Cloud Labs - Custom web and mobile apps development for startups" />
       <meta name="description" content="Distinct Cloud Labs - Custom web and mobile apps development. We make mobile apps, web solutions for startups, mid-sized businesses, and enterprises." />
       <meta name="keywords" content="software development, platform development, ios development, android development, web development, ai development, machine learning platform, fundraising, market research, architecture" />
       <meta name="robots" content="index, follow" />
@@ -35,12 +35,12 @@ const Home = () => (
 
     <Header></Header>
     <Banner></Banner>
+    <Parteners></Parteners>
     <WhatWeDo></WhatWeDo>
+    <FactArea></FactArea>
     <Services></Services>
     {/* <OurTeam></OurTeam> */}
-    <FactArea></FactArea>
     <Feedback></Feedback>
-    <Parteners></Parteners>
     <Blog></Blog>
     <Newsletter></Newsletter>
 

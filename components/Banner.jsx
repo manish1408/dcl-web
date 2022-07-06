@@ -5,13 +5,13 @@ export default function Banner() {
     <section className="bigdata-analytics-banner">
       <div className="container">
         <div className="bigdata-analytics-content">
-          <h1>Launch faster with the best tech.</h1>
+          <h1>Stop searching. <br /> Start building.</h1>
           <p>
-            
-            We make mobile apps, web solutions, and custom software for startups, mid-sized businesses, and enterprises.
+            Skip the recruitment process and the onboarding hassle.
+            Our highly experienced software engineers can start right away.
           </p>
 
-          <button data-toggle="modal" data-target="#enquiryModal" className="btn btn-primary">Free Consultation</button>
+          <button data-toggle="modal" data-target="#enquiryModal" className="btn btn-primary">Talk to us</button>
         </div>
       </div>
 
@@ -22,27 +22,27 @@ export default function Banner() {
             <div className="col-lg-4 col-md-6 col-sm-6">
               <div className="single-banner-boxes">
                 <div className="icon">
-                <i className="flaticon-support" />
+                  <i className="flaticon-support" />
                 </div>
-                <h3>4+ Years in Business</h3>
-                
+                <h3>Hire the exact skill you need</h3>
+
               </div>
             </div>
             <div className="col-lg-4 col-md-6 col-sm-6">
               <div className="single-banner-boxes">
                 <div className="icon">
-                <i className="flaticon-software" />
+                  <i className="flaticon-software" />
                 </div>
-                <h3>60+ Successful Projects</h3>
-                
+                <h3>Easy, compliant, and secure hiring</h3>
+
               </div>
             </div>
             <div className="col-lg-4 col-md-6 col-sm-6 offset-lg-0 offset-md-3 offset-sm-3">
               <div className="single-banner-boxes">
                 <div className="icon">
-                <i className="flaticon-star" />
+                  <i className="flaticon-star" />
                 </div>
-                <h3>60+ In-House Talents</h3>
+                <h3>40+ untapped Silicon Valley caliber engineers</h3>
               </div>
             </div>
           </div>
