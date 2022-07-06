@@ -5,6 +5,7 @@ import Header from "../../components/Header";
 import Footer from "../../components/Footer";
 import Enquiry from "../../components/Enquiry";
 import FactArea from "../../components/FactArea";
+import Link from "next/link";
 
 function testing() {
   return (
@@ -50,13 +51,9 @@ function testing() {
                   your production application.
                 </p>
               </div>
-              <button
-                data-toggle="modal"
-                data-target="#enquiryModal"
-                className="btn btn-primary"
-              >
-                Talk to us
-              </button>
+              <Link href="/scheduleCall">
+                <a className="btn btn-primary">Talk to us</a>
+              </Link>
 
               {/*  */}
             </div>

@@ -5,18 +5,28 @@ import FactArea from "../components/FactArea";
 import PageTitle from "../components/PageTitle";
 import Head from "next/head";
 import Enquiry from "../components/Enquiry";
+import Link from "next/link";
 
 export default function mvp() {
   return (
     <div>
       <Head>
-      <title>Distinct Cloud Labs - Cloud Product Development services</title>
-      <meta name="title" content="Distinct Cloud Labs - Cloud Product Development services" />
-      <meta name="description" content="Distinct cloud offers a suite of software products and services in web, mobile, analytics, complex algos and AI" />
-      <meta name="keywords" content="software development, platform development, ios development, android development, web development, ai development, machine learning platform, fundraising, market research, architecture" />
-      <meta name="robots" content="index, follow" />
-      <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-      <meta name="language" content="English"></meta>
+        <title>Distinct Cloud Labs - Cloud Product Development services</title>
+        <meta
+          name="title"
+          content="Distinct Cloud Labs - Cloud Product Development services"
+        />
+        <meta
+          name="description"
+          content="Distinct cloud offers a suite of software products and services in web, mobile, analytics, complex algos and AI"
+        />
+        <meta
+          name="keywords"
+          content="software development, platform development, ios development, android development, web development, ai development, machine learning platform, fundraising, market research, architecture"
+        />
+        <meta name="robots" content="index, follow" />
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+        <meta name="language" content="English"></meta>
       </Head>
       <Header />
       <Enquiry> </Enquiry>
@@ -72,7 +82,9 @@ export default function mvp() {
                     polished web app using best development practices. Submit
                     your project or idea and we will get back to you.
                   </p>
-                  <button data-toggle="modal" data-target="#enquiryModal" className="btn btn-primary">Talk to us</button>
+                  <Link href="/scheduleCall">
+                    <a className="btn btn-primary">Talk to us</a>
+                  </Link>
                 </div>
               </div>
             </div>

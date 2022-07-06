@@ -1,3 +1,4 @@
+import Link from "next/link";
 import React from "react";
 import { useState } from "react";
 import Enquiry from "./Enquiry";
@@ -16,10 +17,9 @@ export default function Banner() {
               Skip the recruitment process and the onboarding hassle. Our highly
               experienced software engineers can start right away.
             </p>
-
-            <button onClick={() => setModal(true)} className="btn btn-primary">
-              Talk to us
-            </button>
+            <Link href="/scheduleCall">
+              <a className="btn btn-primary">Talk to us</a>
+            </Link>
           </div>
         </div>
 

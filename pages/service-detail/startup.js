@@ -7,6 +7,7 @@ import Enquiry from "../../components/Enquiry";
 import * as svg from "../../components/svg-comp";
 import FactArea from "../../components/FactArea";
 import DiscoverArea from "../../components/DiscoverArea";
+import Link from "next/link";
 
 function startup() {
   return (
@@ -53,13 +54,9 @@ function startup() {
                   take care of everything from ideation to execution.
                 </p>
               </div>
-              <button
-                data-toggle="modal"
-                data-target="#enquiryModal"
-                className="btn btn-primary"
-              >
-                Talk to us
-              </button>
+              <Link href="/scheduleCall">
+                <a className="btn btn-primary">Talk to us</a>
+              </Link>
               {/*  */}
             </div>
             <div className="col-lg-6 col-md-12">

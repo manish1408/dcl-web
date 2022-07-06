@@ -1,3 +1,4 @@
+import Link from "next/link";
 import React from "react";
 
 export default function FactArea() {
@@ -7,19 +8,15 @@ export default function FactArea() {
         <div className="row align-items-center">
           <div className="col-lg-6">
             <div className="cta-repair-content">
-              <h3>
-                We now live in a remote-first world
-              </h3>
+              <h3>We now live in a remote-first world</h3>
               <p>
-                Companies are in competition to garner the benefits of remote engineering talent. We are startup focused and make remote development easy, compliant, and secure
+                Companies are in competition to garner the benefits of remote
+                engineering talent. We are startup focused and make remote
+                development easy, compliant, and secure
               </p>
-              <button
-                data-toggle="modal"
-                data-target="#enquiryModal"
-                className="btn btn-primary"
-              >
-                Talk to us
-              </button>
+              <Link href="/scheduleCall">
+                <a className="btn btn-primary">Talk to us</a>
+              </Link>
             </div>
           </div>
           <div className="col-lg-6">

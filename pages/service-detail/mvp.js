@@ -10,6 +10,7 @@ import Svgtrust from "../../components/svg-comp/Svgtrust";
 import Svgminimize from "../../components/svg-comp/Svgminimize";
 import Svgdevelopment from "../../components/svg-comp/Svgdevelopment";
 import Svgblueprint from "../../components/svg-comp/Svgblueprint";
+import Link from "next/link";
 
 function mvp() {
   return (
@@ -47,13 +48,9 @@ function mvp() {
                     <p>
                       Meet the MVP developers that bring you to market quickly
                     </p>
-                    <button
-                      data-toggle="modal"
-                      data-target="#enquiryModal"
-                      className="btn btn-primary"
-                    >
-                      Talk to us
-                    </button>
+                    <Link href="/scheduleCall">
+                      <a className="btn btn-primary">Talk to us</a>
+                    </Link>
                   </div>
                 </div>
                 <div className="col-lg-6 offset-lg-1 mvp-banner-image">

@@ -274,12 +274,9 @@ export default function header({ background }) {
                 </ul>
               </div>
               <div className="-">
-                <button
-                  onClick={() => setModal(true)}
-                  className="btn btn-primary"
-                >
-                  Talk to us
-                </button>
+                <Link href="/scheduleCall">
+                  <a className="btn btn-primary">Talk to us</a>
+                </Link>
               </div>
             </nav>
           </div>

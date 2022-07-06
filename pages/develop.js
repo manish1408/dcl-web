@@ -4,18 +4,28 @@ import Footer from "../components/Footer";
 import FactArea from "../components/FactArea";
 import Head from "next/head";
 import Enquiry from "../components/Enquiry";
+import Link from "next/link";
 
 export default function develop() {
   return (
     <div>
       <Head>
-      <title>Distinct Cloud Labs - Cloud Product Development services</title>
-      <meta name="title" content="Distinct Cloud Labs - Cloud Product Development services" />
-      <meta name="description" content="Distinct cloud offers a suite of software products and services in web, mobile, analytics, complex algos and AI" />
-      <meta name="keywords" content="software development, platform development, ios development, android development, web development, ai development, machine learning platform, fundraising, market research, architecture" />
-      <meta name="robots" content="index, follow" />
-      <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-      <meta name="language" content="English"></meta>
+        <title>Distinct Cloud Labs - Cloud Product Development services</title>
+        <meta
+          name="title"
+          content="Distinct Cloud Labs - Cloud Product Development services"
+        />
+        <meta
+          name="description"
+          content="Distinct cloud offers a suite of software products and services in web, mobile, analytics, complex algos and AI"
+        />
+        <meta
+          name="keywords"
+          content="software development, platform development, ios development, android development, web development, ai development, machine learning platform, fundraising, market research, architecture"
+        />
+        <meta name="robots" content="index, follow" />
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+        <meta name="language" content="English"></meta>
       </Head>
       <Header />
       <Enquiry> </Enquiry>
@@ -66,23 +76,28 @@ export default function develop() {
               </div>
               <div className="col-lg-6 col-md-12">
                 <div className="agency-about-content">
-                  <span className="sub-title">
-                    Code your Imagination
-                  </span>
+                  <span className="sub-title">Code your Imagination</span>
                   <h2>
                     {" "}
-                    Stay ahead of your competitors by accelerating your business with secure, fast, and real-time development
+                    Stay ahead of your competitors by accelerating your business
+                    with secure, fast, and real-time development
                   </h2>
                   <div className="bar" />
                   <p>
-                    Distinct cloud helps shaping your ideas into result oriented applications. With our deep expertise in multiple domains, we reduce the complexity involved in web development by scaling your application from front end to back end under a single roof.
+                    Distinct cloud helps shaping your ideas into result oriented
+                    applications. With our deep expertise in multiple domains,
+                    we reduce the complexity involved in web development by
+                    scaling your application from front end to back end under a
+                    single roof.
                   </p>
                   <p>
                     Our team will understand your vision and turn it into a
                     polished web app using best development practices. Submit
                     your project or idea and we will get back to you.
                   </p>
-                  <button data-toggle="modal" data-target="#enquiryModal" className="btn btn-primary">Talk to us</button>
+                  <Link href="/scheduleCall">
+                    <a className="btn btn-primary">Talk to us</a>
+                  </Link>
                 </div>
               </div>
             </div>
@@ -323,7 +338,9 @@ export default function develop() {
             <div className="section-title">
               <span className="sub-title">How we work</span>
               <h2>
-              One of our most experienced Product Owners will interview relevant stakeholders, conduct market research, and come up with proposed functionality for your product.
+                One of our most experienced Product Owners will interview
+                relevant stakeholders, conduct market research, and come up with
+                proposed functionality for your product.
               </h2>
               <div className="bar" />
               <p>

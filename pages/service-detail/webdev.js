@@ -4,6 +4,7 @@ import PageTitle from "../../components/PageTitle";
 import Header from "../../components/Header";
 import Footer from "../../components/Footer";
 import Enquiry from "../../components/Enquiry";
+import Link from "next/link";
 
 function webdev() {
   return (
@@ -49,7 +50,9 @@ function webdev() {
                   expand an existing one.
                 </p>
               </div>
-              <button data-toggle="modal" data-target="#enquiryModal" className="btn btn-primary">Talk to us</button>
+              <Link href="/scheduleCall">
+                <a className="btn btn-primary">Talk to us</a>
+              </Link>
 
               {/*  */}
             </div>
@@ -211,7 +214,9 @@ function webdev() {
                   outsourcing.
                 </p>
               </div>
-              <button data-toggle="modal" data-target="#enquiryModal" className="btn btn-primary">Talk to us</button>
+              <Link href="/scheduleCall">
+                <a className="btn btn-primary">Talk to us</a>
+              </Link>
 
               {/* */}
             </div>
