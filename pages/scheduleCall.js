@@ -2,10 +2,7 @@ import React from "react";
 import Header from "../components/Header";
 import Footer from "../components/Footer";
 import Head from "next/head";
-import Feedback from "../components/Feedback";
-import Parteners from "../components/Parteners";
-import Blog from "../components/Blog";
-import Newsletter from "../components/Newsletter";
+
 
 export default function ScheduleCall() {
   return (

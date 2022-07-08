@@ -165,6 +165,29 @@ export default function Services() {
                 looking to integrate business processes, reduce workload, and
                 build new products.
               </p>
+
+              <div className="row mt-4 tech-we-work">
+                <div className="col text-center">
+                  <img
+                    src="https://d2mk45aasx86xg.cloudfront.net/Angular_developer_6af28faf86.svg"
+                    alt="Technology"
+                  />
+                </div>
+                <div className="col text-center">
+                  <img
+                    src="https://d2mk45aasx86xg.cloudfront.net/React_deb424863a.svg"
+                    alt="Technology"
+                  />
+                </div>
+                <div className="col text-center">
+                  <img
+                    src="https://d2mk45aasx86xg.cloudfront.net/Node_js_developers_95b2c48703.svg"
+                    alt="Technology"
+                  />
+                </div>
+              </div>
+
+
               {/* <Link href="service-detail/webdev">
                 <a className="learn-more-btn">
                   <i data-feather="arrow-right" />
@@ -193,6 +216,26 @@ export default function Services() {
                 We provide iOS and Android App development which allows you to
                 reach your customers on their favorite mobile device.
               </p>
+              <div className="row mt-4 tech-we-work">
+                <div className="col text-center">
+                  <img
+                    src="https://d2mk45aasx86xg.cloudfront.net/apple_ios_c0bda8190a.svg"
+                    alt="Technology"
+                  />
+                </div>
+                <div className="col text-center">
+                  <img
+                    src="https://d2mk45aasx86xg.cloudfront.net/Android_259069df6a.svg"
+                    alt="Technology"
+                  />
+                </div>
+                <div className="col text-center">
+                  <img
+                    src="https://d2mk45aasx86xg.cloudfront.net/ionic_bb282a4845.svg"
+                    alt="Technology"
+                  />
+                </div>
+              </div>
               {/* <Link href="service-detail/mobdev">
                 <a className="learn-more-btn">
                   <i data-feather="arrow-right" />
