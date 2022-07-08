@@ -19,7 +19,7 @@ export default function SuccessStories({ posts, pages }) {
   const verify = (e) => {
     e.preventDefault();
     setloader({ loader: true });
-    const passwordString = "82852AB7708895827CB7FE668780B5498CC07316";
+    const passwordString = "welcome_to_dcl";
     if (password === passwordString) {
       setTimeout(() => {
         setAuth(true);
@@ -81,7 +81,7 @@ export default function SuccessStories({ posts, pages }) {
                         }}
                         onClick={verify}
                       >
-                        {loader ? "Verifying..." : "Send Message "}
+                        {loader.loader ? "Verifying..." : "Verify"}
                       </button>
                     </div>
                   </div>

@@ -30,61 +30,142 @@ export default function ScheduleCall() {
       </Head>
       <Header />
       <>
-        <div className="page-title-area">
-          <div className="d-table">
-            <div className="d-table-cell">
-              <div className="container">
-                <h2>Schehudle a Call</h2>
-              </div>
-            </div>
-          </div>
-          <div className="shape1">
-            <img src="assets/img/shape1.png" alt="shape" />
-          </div>
-          <div className="shape2 rotateme">
-            <img src="assets/img/shape2.svg" alt="shape" />
-          </div>
-          <div className="shape3">
-            <img src="assets/img/shape3.svg" alt="shape" />
-          </div>
-          <div className="shape4">
-            <img src="assets/img/shape4.svg" alt="shape" />
-          </div>
-          <div className="shape5">
-            <img src="assets/img/shape5.png" alt="shape" />
-          </div>
-          <div className="shape6 rotateme">
-            <img src="assets/img/shape4.svg" alt="shape" />
-          </div>
-          <div className="shape7">
-            <img src="assets/img/shape4.svg" alt="shape" />
-          </div>
-          <div className="shape8 rotateme">
-            <img src="assets/img/shape2.svg" alt="shape" />
-          </div>
-        </div>
-
-        <Parteners />
-
         <section className="contact-area ptb-80">
-          <div className="container">
-            <div className="row h-100 justify-content-center align-items-center">
-              {/* <div className="col-lg-4 col-md-12">
-                <img src="assets/img/1.png" alt="image" />
-              </div> */}
-              <div className="col-lg-12 col-md-12">
+          <div className="container mt-5">
+            <div className="row h-100 logos">
+              <div className="col-lg-6 col-md-12">
+                <div style={{ textAlign: "left" }} className="section-title">
+                  <h2>Trusted for building successful startups</h2>
+                  <div style={{ marginLeft: "0" }} className="bar" />
+                  <p className="m-0">
+                    Join companies that trust us to hire remote software
+                    developers
+                  </p>
+                </div>
+                <div className="row mb-5">
+                  <div className="col-lg-4 col-sm-3 col-md-3 text-center">
+                    <img
+                      src="https://www.polyone.io/splash/polylogo.130c477e.png"
+                      class="l-dark poly-logo"
+                      height="60"
+                      alt="Company_logo"
+                    />
+                  </div>
+                  <div className="col-lg-4  col-sm-3 col-md-3 text-center">
+                    <img
+                      src="https://www.tradecloud.in/assets/images/logo-dark.svg"
+                      class="l-dark"
+                      height="60"
+                      alt="Company_logo"
+                    />
+                  </div>
+                  <div className="col-lg-4  col-sm-3 col-md-3 text-center">
+                    <img
+                      src="https://pwa.signalled.co/assets/logo/logo.png"
+                      class="l-dark"
+                      height="60"
+                      alt="Company_logo"
+                    />
+                  </div>
+                  <div className="col-lg-4  col-sm-3 col-md-3 text-center">
+                    <img
+                      src="https://images.prismic.io/diywork/cf392d3a-7a08-44ae-a21b-81d5d94b684c_logo-dark.png?auto=compress,format"
+                      class="l-dark"
+                      height="60"
+                      alt="Company_logo"
+                    />
+                  </div>
+                  <div className="col-lg-4  col-sm-3 col-md-3 text-center">
+                    <img
+                      src="https://www.ezaccessmot.com/wp-content/uploads/2018/02/ezaccess-logo-large-300x132.png"
+                      class="l-dark"
+                      height="60"
+                      alt="Company_logo"
+                    />
+                  </div>
+
+                  <div className="col-lg-4  col-sm-3 col-md-3 text-center">
+                    <img
+                      src="assets/img/logo-eazynft.svg"
+                      class="l-dark"
+                      height="60"
+                      alt="Company_logo"
+                    />
+                  </div>
+                </div>
+
+                <div style={{ textAlign: "left" }} className="section-title">
+                  <h2>An initiative of people from top companies </h2>
+                  <div style={{ marginLeft: "0" }} className="bar" />
+                  <p className="m-0">You are in good hands</p>
+                </div>
+
+                <div className="row mb-5">
+                  <div className="col-lg-4 col-sm-3 col-md-3 text-center">
+                    <img
+                      src="/assets/img/company-logo/Color-Deutsche-Bank-Logo.jpg"
+                      height="60"
+                      alt="Company_logo"
+                    />
+                  </div>
+                  <div className="col-lg-4  col-sm-3 col-md-3 text-center">
+                    <img
+                      src="/assets/img/company-logo/cognizant.jpg"
+                      height="60"
+                      alt="Company_logo"
+                    />
+                  </div>
+                  <div className="col-lg-4  col-sm-3 col-md-3 text-center">
+                    <img
+                      src="/assets/img/company-logo/Veritas_Logo_RGB_RED.jpg"
+                      class="l-dark"
+                      height="60"
+                      alt="Company_logo"
+                    />
+                  </div>
+                  <div className="col-lg-4  col-sm-3 col-md-3 text-center">
+                    <img
+                      src="/assets/img/company-logo/gdg.png"
+                      class="l-dark"
+                      height="60"
+                      alt="Company_logo"
+                    />
+                  </div>
+                  <div className="col-lg-4  col-sm-3 col-md-3 text-center">
+                    <img
+                      src="/assets/img/company-logo/amazon.jpg"
+                      class="l-dark"
+                      height="60"
+                      alt="Company_logo"
+                    />
+                  </div>
+
+                  <div className="col-lg-4  col-sm-3 col-md-3 text-center">
+                    <img
+                      src="/assets/img/company-logo/microsoft.png"
+                      class="l-dark"
+                      height="60"
+                      alt="Company_logo"
+                    />
+                  </div>
+                </div>
+              </div>
+              <div className="col-lg-6 col-md-12">
                 <iframe
                   frameBorder={0}
+                  scrolling="no"
                   src="https://calendly.com/manish-gautam/project-discovery"
                   className="eazy-nft-calendly"
                 />
               </div>
             </div>
           </div>
+          <div className="analytics-shape2">
+            <img src="assets/img/bigdata-analytics/vector.png" alt="image" />
+          </div>
         </section>
       </>
-      <Feedback></Feedback>
-      <Blog></Blog>
+
       {/* <Newsletter></Newsletter> */}
 
       <Footer />
