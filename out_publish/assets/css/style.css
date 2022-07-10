@@ -9500,3 +9500,6 @@ blockquote::after,
   color: #fff;
   background: #44ce6f;
 }
+.talk-to-logos img {
+  height: 60px;
+}

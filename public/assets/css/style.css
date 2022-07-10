@@ -10013,7 +10013,10 @@ align-items: center;
 .tech-we-work img{
   height: 60px !important;
 }
-
+.talk-to-logos img {
+  height: 46px;
+  margin-bottom: 15px;
+}
 .popup {
   width: 100%;
   height: 100%;
@@ -10077,6 +10080,15 @@ align-items: center;
   height: 948px;
   margin-top: 20px;
   border: 0px;
+}
+@media (max-width: 600px) {
+  .eazy-nft-calendly {
+    padding-top: 80px !important;
+    width: 100%;
+    height: 1113px;
+    margin-top: 20px;
+    border: 0px;
+  }
 }
 
 .logos img {
